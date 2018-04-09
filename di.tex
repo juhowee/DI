@@ -85,10 +85,10 @@ Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
 \pagenumbering{gobble}
 
 % Dokumentin tiedot
-\title{BETONIN VALINTA LATTIOIHIN}
+\title{TERÄSRAKENTEISEN HALLIN PITUUSSUUNTAISTEN JÄYKISTERAKENTEIDEN OPTIMOINTI}
 \author{JUHO VASTAPUU}
-\newcommand{\documenttype}{Kandidaatintyö} % Työn tyyppi kansilehdellä, esim. "diplomityö"
-\newcommand{\inspector}   {TkT Jukka Lahdensivu } % Työn tarkastaja
+\newcommand{\documenttype}{Diplomityö} % Työn tyyppi kansilehdellä, esim. "diplomityö"
+\newcommand{\inspector}   {TkT Kristo Mela } % Työn tarkastaja
 \newcommand{\approvaldate}{6.6.2016}      % Työn hyväksyttämispäivämäärä
 
 % Sisällysluettelon otsikko suomeksi.
@@ -155,15 +155,15 @@ Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
 \section*{Tiivistelmä}
 \begin{spacing}{1.0}
 {\fontfamily{phv}\selectfont
-\textbf{JUHO VASTAPUU}: Betonin valinta lattioihin\\
+\textbf{JUHO VASTAPUU}: Teräsrakenteisen hallin pituussuuntaisen jäykistysjärjestelmän optimointi\\
 Tampereen teknillinen yliopisto\\
-Kandidaatintyö, 27 sivua, 2 liitesivua\\
-Kesäkuu 2016\\
-Rakennustekniikan kandidaatin tutkinto-ohjelma\\
-Pääaine: Talonrakentaminen\\
-Tarkastaja: TkT Jukka Lahdensivu\par
+Diplomityö, x sivua, x liitesivua\\
+Joulukuu 2018\\
+Rakennustekniikan diplomi-insinöörin tutkinto-ohjelma\\
+Pääaine: Rakennesuunnittelu\\
+Tarkastaja: TkT Kristo Mela\par
 
-Avainsanat: betonilattia, betonilaatta, lattialuokka, kutistuminen, halkeilu, betonin valinta, lattiabetoni, työselostus\par
+Avainsanat: \par
 }
 \end{spacing}
 
@@ -212,11 +212,11 @@ Avainsanat: betonilattia, betonilaatta, lattialuokka, kutistuminen, halkeilu, be
 \subsection{Työn rajaukset}
 
 \section{Optimointi}
-\subsection{Optimointi matematiikassa}
+\subsection{Optimointitehtävän matemaattinen määrittely}
 
 Matemaattisella optimoinnilla tarkoitetaan prosessia, jolla löydetään jollekkin funktiolle paras mahdollinen arvo sille asetetut reunaehdot huomioiden. Asettamalla optimoitava kohde sekä halutut rajoite-ehdot matemaattiseen muotoon, voidaan optimoimalla löytää matemaattisin keinoin paras käypä ratkaisu. Käyvällä ratkaisulla tarkoitetaan ratkaisua, joka kuuluu annettujen rajoite-ehtojen joukkoon. 
 
-Matemaattisesti optimoinnissa on tavoitteena etsiä funktiolle käyvästä joukosta minimi- tai maksimiarvo. Optimointitekniikoita ja algoritmeja on kehitetty lukuisia ja kukin niistä soveltuu käytettäväksi eri tavalla eri optimointitehtäviin. Optimointi ja erilaisten optimoitimenetelmien tutkiminen on yksi matemaattisen operaatiotutkimuksen osa-alueista. Optimoinnista voidaan joissain yhteyksissä käyttää myös nimitystä matemaattinen ohjelmointi (engl. mathematical programming), jolla viitataan matemaattisten algoritmien kehittämiseen ja ohjelmoimista optimointitarkoituksiin.  \parencite[1]{engopt}
+Matemaattisesti optimoinnissa on tavoitteena etsiä funktiolle käyvästä joukosta minimi- tai maksimiarvo. Optimointitekniikoita ja algoritmeja on kehitetty lukuisia ja kukin niistä soveltuu käytettäväksi eri tavalla eri optimointitehtäviin. Optimointi ja erilaisten optimoitimenetelmien tutkiminen on yksi matemaattisen operaatiotutkimuksen osa-alueista. Optimoinnista voidaan joissain yhteyksissä käyttää myös nimitystä matemaattinen ohjelmointi (mathematical programming), jolla viitataan matemaattisten algoritmien kehittämiseen ja ohjelmoimista optimointitarkoituksiin.  \parencite[1]{engopt}
 
 Optimointitehtävä kirjoitetaan matemaattisesti seuraavanlaisessa muodossa.
 \begin{equation*}
@@ -230,17 +230,18 @@ x_n
 \text{    joka minimoi } f(\textbf{X}) \text{, siten että}
 \end{equation*}
 \begin{align}
+\label{rajoitteet}
 \begin{split}
-g_j(\textbf{x}) \leq 0, \quad j = 1,2, \cdots , m  \\ 
+g_i(\textbf{x}) \leq 0, \quad j = 1,2, \cdots , m  \\ 
 h_j(\textbf{x}) = 0, \quad j = 1,2, \cdots , p
 \end{split}
 \end{align}
 
-missä \textbf{x} on pystyvektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_j(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja. Rajoite-ehdot voivat olla yhtälön mukaisesti joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. \parencite[6]{engopt}
+missä \textbf{x} on vektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja. Rajoite-ehdot voivat olla yhtälön mukaisesti joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. Kaavassa \eqref{rajoitteet} on esitetty optimointitehtävän standardimuotoinen asettelu (standard design optimization model). \parencite[6]{engopt}
 
-Vektori \textbf{x} sisältää optimointitehtävän kaikki suunnittelumuuttujat. Muuttamalla jonkin suunnittelumuuttujan $x_i$ arvoa, muuttuu myös tavoitefunktion f(\textbf{x}) arvo. Suunnittelumuuttujista voidaan käyttää myös nimitystä optimointimuuttujat tai vapaat muuttujat, eli niiden arvoja voidaan muutella vapaasti kun haetaan tavoitefunktiolle arvoa. Toisistaan riippumattomien eli itsenäisten suunnittelumuuttujien lukumäärä on optimointiongelman vapausasteluku (design degree of freedom). Yleisesti ottaen suunnittelumuuttujien tulee olla toisistaan riippumattomia, mutta joissain tapauksissa niiden määrä voi olla ongelman vapausastelukua suurempi. Tämä on perusteltua esimerkiksi silloin, kun kohdefunktion määrittely pelkillä itsenäisillä suunnittelumuuttujilla olisi hankalaa. Jokaiselle suunnittelumuuttujalle täytyy myös pystyä asettamaan jokin numeerinen lähtöarvo, jotta optimointitehtävä pystytään suorittamaan. 
+Vektori \textbf{x} sisältää optimointitehtävän kaikki suunnittelumuuttujat (design variables). Muuttamalla jonkin suunnittelumuuttujan $x_i$ arvoa, muuttuu myös tavoitefunktion f(\textbf{x}) arvo. Suunnittelumuuttujista voidaan käyttää myös nimitystä optimointimuuttujat tai vapaat muuttujat, eli niiden arvoja voidaan muutella vapaasti kun haetaan tavoitefunktiolle arvoa. Toisistaan riippumattomien eli itsenäisten suunnittelumuuttujien lukumäärä on optimointiongelman vapausasteluku (design degree of freedom). Yleisesti ottaen suunnittelumuuttujien tulee olla toisistaan riippumattomia, mutta joissain tapauksissa niiden määrä voi olla ongelman vapausastelukua suurempi. Tämä on perusteltua esimerkiksi silloin, kun kohdefunktion määrittely pelkillä itsenäisillä suunnittelumuuttujilla olisi hankalaa. Jokaiselle suunnittelumuuttujalle täytyy myös pystyä asettamaan jokin numeerinen lähtöarvo, jotta optimointitehtävä pystytään suorittamaan. 
 
-Kohde- tai tavoitefunktio f(\textbf{x}) on optimointitehtävän matemaattinen muoto ilmoitettuna suunnittelumuuttujavektorin \textbf{x} funktiona. Optimointitehtävän tavoitteena on joko minimoida tai maksimoida kohdefunktion arvo. Mikäli optimointitehtävässä on useampi kuin yksi kohdefunktio, käytetään tehtävästä nimitystä monitavoiteoptimointi. Tällöin kohdefunktio ilmaistaan matemaattisesti kohdefunktioiden joukkona 
+Kohde- tai tavoitefunktio f(\textbf{x}) (objective function) on optimointitehtävän matemaattinen muoto ilmoitettuna suunnittelumuuttujavektorin \textbf{x} funktiona. Optimointitehtävän tavoitteena on joko minimoida tai maksimoida kohdefunktion arvo. Mikäli optimointitehtävässä on useampi kuin yksi kohdefunktio, käytetään tehtävästä nimitystä monitavoiteoptimointi (multiobjective design optimization). Tällöin kohdefunktio ilmaistaan matemaattisesti kohdefunktioiden joukkona 
 \begin{align}
 \textbf{f(x)} = \begin{bmatrix}
 f_1(\textbf{x}) &  f_2(\textbf{x}) & \cdots & f_p(\textbf{x})
@@ -248,12 +249,55 @@ f_1(\textbf{x}) &  f_2(\textbf{x}) & \cdots & f_p(\textbf{x})
 \end{align}
 jossa jokainen kohdefunktio koostuu kuitenkin samasta suunnittelumuuttujavektorista \textbf{x}.
 
+Optimoitavalle kohteelle asetettavat rajoite-ehdot esitetään rajoitefunktioina $g_i(\textbf{x})$ ja $h_j(\textbf{x})$. Optimointialgoritmi ratkaisee optimointitehtävän siten, että kohdefunktion arvo toteuttaa rajoite-ehdot. Rajoite-ehtojen muodostamaa joukkoa kutsutaan täten optimointiongelman käyväksi joukoksi (feasible region). Mitä tahansa käyvässä joukossa olevaa kohdefunktion arvoa kutsutaan käyväksi ratkaisuksi (feasible design) huolimatta siitä onko kyseessä optimiratkaisu. Kaksiuloitteisessa tapauksessa käypää joukkoa voidaan havainnollistaa piirtämällä rajoitefunktioiden käyrät koordinaatistoon. Käypä joukko muodostuu näiden käyrien rajoittamana alueena. Käyvän joukon negaatiota kutsutaan ei-käyväksi joukoksi (unfeasible region). Sekä tavoitefunktion f(\textbf{x}), että rajoite-ehtojen $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ on oltava toisitaan joko implisiittisesti tai eksplisiittisesti riippuvia. Mikäli riippuvuutta funktioiden välillä ei ole, ei optimointitehtävää voi muodostaa eikä varsinaista optimointiongelmaa voi edes osoittaa. \parencite[43]{intro} 
+
+Kuten optimointitehtävän määrittelevä kaava \eqref{rajoitteet} osoittaa, optimointiongelmalle voidaan asettaa rajoite-ehtoja sekä yhtälö- että epäyhtälömuodossa. Epäyhtälörajoitteita kutsutaan käypään joukkoon nähden toispuoleisiksi rajoite-ehdoiksi (unilateral constraints tai one-sided constraints). Epäyhtälörajoitteiden rajoittama käypä joukko on täten paljon laajempi kun verrataan yhtälörajoitteista käypää joukkoa. Esimerkiksi kakisuloitteisessa tapauksessa yhtälörajoite tarkoittaisi, että käypä ratkaisu löytyisi rajoitefunktion käyrältä. \parencite[16-18]{intro} 
+
+Yhtälömuotoisten rajoite-ehtojen määrän tulee olla maksimissaan suunnittelumuuttujien määrä, toisin sanottuna optimointitehtävän kaavan \eqref{rajoitteet} tulee toteuttaa ehto
+
+\begin{equation}
+\label{yhtälörajoite-ehto}
+p \leq n.
+\end{equation}
+
+Tapaus, jossa yhtälömuotoisia rajoite-ehtoja on annettuja suunnittelumuuttujia enemmän, on kyseessä ylimääritetty yhtälöryhmä (overdetermined system). Tällaisessa tapauksessa rajoite-ehtojen joukossa on ylimääräisiä eli redundatteja ehtoja, jotka toteuttavat suoraan jonkun muun rajoite-ehdon, eikä niiden ilmoittaminen täten ole tarpeellista. Triviaalitapauksessa jossa suunnittelumuuttujien määrä ja yhtälömuotoisten rajoite-ehtojen määrä on yhtäsuuri, löytyy tehtävälle ratkaisu analyyttisin keinoin eikä optimointi ole tarpeellista. Kaksiuloitteisessa tapauksessa tämä tarkoittaisi kahden käyrän leikkauspistettä. 
+
+Standardimuotoisessa optimointitehtävässä epäyhtälörajoitteet ilmoitetaan aina kaavan \eqref{rajoitteet} osoittamassa muodossa, eli siten että rajoite-ehto on pienempi tai yhtäsuuri kuin nolla ($\leq$ 0). Tästä huolimatta voidaan optimointitehtävässä käsitellä myös $\geq$ -tyyppisiä rajoite-ehtoja. Standardimuotoista tehtävää aseteltaessa nämä voidaan muuttaa $\leq$ -muotoon yksinkertaisesti kertomalla ehto luvulla -1. Epäyhtälömuotoisten rajoite-ehtojen määrää ei ole rajoitettu, toisin kuin yhtälömuotoiset rajoitteet kaavassa \eqref{yhtälörajoite-ehto}. Niiden määrää ei ole siis rajoitettu.   \parencite[43]{intro}
+
+\subsection{Optimointitehtävän luokittelu}
 
 
-\parencite[16-17]{intro}
+Rajoitefunktioiden perusteella tehtävä voidaan luokitella joko rajoitetuksi- tai ei-rajoitetuksi tehtäväksi. Mikäli tehtävällä on yksikin rajoitefunktio, on kyseessä rajoitettu optimointitehtävä. Luokittelua voidaan tarkentaa edelleen osittain rajoitetuksi tai täysin suljetuksi systeemiksi. Suljetulla systeemillä tarkoitetaan tilannetta, jossa rajoitefunktiot muodostavat äärellisen kokoisen käyvän joukon. 
+
+Suunnittelumuuttujien perusteella tehtävä voidaan jakaa staattiseksi tai dynaamiseksi tehtäväksi. Staattisessa tai parametrisessa tehtävässä kohdefunktio on määritelty suunnittelumuuttujien suhteessa ja tehtävänä on ratkaista suunnittelumuuttujat. Kaavan \eqref{rajoitteet} määrittelyssä kyseessä on staattinen optimointitehtävä, jossa siis etsitään suunnittelumuuttujille arvo. Dynaamisessa tehtävässä kohdefunktio muodostuu puolestaan funktioista, jotka on määritelty jonkun tietyn parametrin suhteen, kuten esimerkiksi seuraavasti.
+
+\begin{equation}
+\label{dynaaminen}
+\text{Etsi } \textbf{x}(t) = 
+\begin{Bmatrix} 
+b(t) \\ 
+d(t) \\ 
+\end{Bmatrix}
+\text{    joka minimoi } f[\textbf{X}(t)].
+\end{equation}
+
+Dynaamisessa tehtävässä etsitään siis kohdefunktioon sijoitettavien suunnittelumuuttujien sijasta funktiot, jotka esitetään jonkin parametrin suhteen. 
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 \subsection{Rakenteiden optimointi}
+
+
 
 
 %\section{Algoritmiavusteinen suunnittelu}

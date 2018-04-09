@@ -1,8 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {finnish}
+\babel@toc {english}{}
+\babel@toc {finnish}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Johdanto}{1}
 \defcounter {refsection}{0}\relax 
@@ -14,8 +12,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Optimointi}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Optimointi matematiikassa}{1}
+\contentsline {subsection}{\numberline {2.1}Optimointiteht\IeC {\"a}v\IeC {\"a}n matemaattinen m\IeC {\"a}\IeC {\"a}rittely}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Rakenteiden optimointi}{3}
+\contentsline {subsection}{\numberline {2.2}Optimointiteht\IeC {\"a}v\IeC {\"a}n luokittelu}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {}Viitteet}{3}
+\contentsline {subsection}{\numberline {2.3}Rakenteiden optimointi}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {}Viitteet}{4}
