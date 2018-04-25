@@ -227,7 +227,7 @@ x_2 \\
 \vdots \\
 x_n  
 \end{Bmatrix}
-\text{    joka minimoi } f(\textbf{X}) \text{, siten että}
+\text{    joka minimoi } f(\textbf{x}) \text{, siten että}
 \end{equation*}
 \begin{align}
 \label{rajoitteet}
@@ -237,7 +237,7 @@ h_j(\textbf{x}) = 0, \quad j = 1,2, \cdots , p
 \end{split}
 \end{align}
 
-missä \textbf{x} on vektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja. Rajoite-ehdot voivat olla yhtälön mukaisesti joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. Kaavassa \eqref{rajoitteet} on esitetty optimointitehtävän standardimuotoinen asettelu (standard design optimization model). \parencite[6]{engopt}
+missä \textbf{x} on vektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja. Rajoite-ehdot voivat olla joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. Kaavassa \eqref{rajoitteet} on esitetty optimointitehtävän standardimuotoinen asettelu (standard design optimization model). \parencite[6]{engopt}
 
 Vektori \textbf{x} sisältää optimointitehtävän kaikki suunnittelumuuttujat (design variables). Muuttamalla jonkin suunnittelumuuttujan $x_i$ arvoa, muuttuu myös tavoitefunktion f(\textbf{x}) arvo. Suunnittelumuuttujista voidaan käyttää myös nimitystä optimointimuuttujat tai vapaat muuttujat, eli niiden arvoja voidaan muutella vapaasti kun haetaan tavoitefunktiolle arvoa. Toisistaan riippumattomien eli itsenäisten suunnittelumuuttujien lukumäärä on optimointiongelman vapausasteluku (design degree of freedom). Yleisesti ottaen suunnittelumuuttujien tulee olla toisistaan riippumattomia, mutta joissain tapauksissa niiden määrä voi olla ongelman vapausastelukua suurempi. Tämä on perusteltua esimerkiksi silloin, kun kohdefunktion määrittely pelkillä itsenäisillä suunnittelumuuttujilla olisi hankalaa. Jokaiselle suunnittelumuuttujalle täytyy myös pystyä asettamaan jokin numeerinen lähtöarvo, jotta optimointitehtävä pystytään suorittamaan. 
 
@@ -269,21 +269,26 @@ Standardimuotoisessa optimointitehtävässä epäyhtälörajoitteet ilmoitetaan 
 
 Rajoitefunktioiden perusteella tehtävä voidaan luokitella joko rajoitetuksi- tai ei-rajoitetuksi tehtäväksi. Mikäli tehtävällä on yksikin rajoitefunktio, on kyseessä rajoitettu optimointitehtävä. Luokittelua voidaan tarkentaa edelleen osittain rajoitetuksi tai täysin suljetuksi systeemiksi. Suljetulla systeemillä tarkoitetaan tilannetta, jossa rajoitefunktiot muodostavat äärellisen kokoisen käyvän joukon. 
 
-Suunnittelumuuttujien perusteella tehtävä voidaan jakaa staattiseksi tai dynaamiseksi tehtäväksi. Staattisessa tai parametrisessa tehtävässä kohdefunktio on määritelty suunnittelumuuttujien suhteessa ja tehtävänä on ratkaista suunnittelumuuttujat. Kaavan \eqref{rajoitteet} määrittelyssä kyseessä on staattinen optimointitehtävä, jossa siis etsitään suunnittelumuuttujille arvo. Dynaamisessa tehtävässä kohdefunktio muodostuu puolestaan funktioista, jotka on määritelty jonkun tietyn parametrin suhteen, kuten esimerkiksi seuraavasti.
+Suunnittelumuuttujien perusteella tehtävä voidaan jakaa staattiseksi tai dynaamiseksi tehtäväksi. Staattisessa tai parametrisessa tehtävässä kohdefunktio on määritelty suunnittelumuuttujien suhteessa ja tehtävänä on ratkaista suunnittelumuuttujat. Kaavan \eqref{rajoitteet} määrittelyssä kyseessä on staattinen optimointitehtävä, jossa siis etsitään suunnittelumuuttujille arvo siten, että se minimoi kohdefunktion. Dynaamisessa tehtävässä kohdefunktio puolestaan muodostuu funktioista, jotka on määritelty jonkun tietyn parametrin suhteen, kuten esimerkiksi seuraavasti.
 
 \begin{equation}
 \label{dynaaminen}
 \text{Etsi } \textbf{x}(t) = 
 \begin{Bmatrix} 
-b(t) \\ 
-d(t) \\ 
+x_1(t) \\ 
+x_2(t) \\ 
+\vdots \\ 
+x_n(t) \\ 
 \end{Bmatrix}
-\text{    joka minimoi } f[\textbf{X}(t)].
+\text{    joka minimoi } f[\textbf{x}(t)].
 \end{equation}
 
 Dynaamisessa tehtävässä etsitään siis kohdefunktioon sijoitettavien suunnittelumuuttujien sijasta funktiot, jotka esitetään jonkin parametrin suhteen. 
 
+Optimointitehtävä luokitellaan myös kohdefunktion tai rajoite-ehtojen matemaattisen muodon perusteella. Tämä luokittelutapa on erityisen kriittinen optimointitehtävän ratkaisun kannalta, sillä monet optimointialgoritmit toimivat vain tietyntyyppisille optimointitehtäville juurikin kohdefunktioiden tai rajoite-ehtojen matemaattisen muodon mukaan. Yksi yleisin optimointitehtävän muoto on epälineaarinen ongelma (nonlinear programming problem, NLP). Optimointitehtävä on epälineaarinen mikäli sen kohdefunktio tai yksikin rajoitefunktioista on muodoltaan epälineaarinen. Optimoinnissa muodostuvat ongelmat ovat hyvin usein muodoltaan epälineaarisia ja matematiikan osa-aluetta, joka tutkii epälineaaristen optimointiongelmien ratkaisua, kutsutaan epälineaariseksi matemaattiseksi ohjelmoinniksi (nonlinear programming). Muita optimoinnin tehtävätyyppejä ovat esimerkiksi geometrinen ja kvadraattinen ongelma.  
 
+\todo{tarkista oikea suomenkielinen termi !}
+Säätöongelmassa tai säätöoptimointitehtävässä (optimal control) on kyse tehtävästä, joka jakautuu useampiin osioihin tai sekvensseihin \todo{tarkista termin oikeellisuus}. Jokainen sekvenssi kehittyy edellisestään määritetyllä tavalla. Tehtävän määrittelyyn käytetään suunnittelumuuttujien lisäksi tilamuuttujia (state variables). Säätöoptimointitehtävässä suunnittelumuuttujat määrittävät systeemin kussakin sekvenssissä sekä tavan, jolla systeemi siirtyy seuraavaan sekvenssiin. Tilamuuttujat puolestaan määrittävät kussakin sekvenssissä systeemin tilan, eli tutkittavan ongelman käyttäytymisen kussakin sekvenssissä. Säätöongelmassa tehtävänä on löytää suunnittelu- tai tilamuuttujille sellaiset arvot kussakin eri sekvenssissä, että kohdefunktioiden summa eri sekvensseissä saadaan minimoitua rajoite-ehdot huomoiden. Tämänkaltaiset tehtävät ovat tavallisia sellaisissa teknisissä sovelluksissa, joiden tila muuttuu jatkuvasti ja tilan ylläpitoon vaaditaan resursseja. Yksi yleinen säätöoptimointitehtäviä soveltava tekniikan ala on säätötekniikka.
 
 
 

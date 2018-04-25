@@ -16,6 +16,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Optimointiteht\IeC {\"a}v\IeC {\"a}n luokittelu}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Rakenteiden optimointi}{4}
+\contentsline {subsection}{\numberline {2.3}Rakenteiden optimointi}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {}Viitteet}{4}
+\contentsline {section}{\numberline {}Viitteet}{5}

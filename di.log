@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.28)  9 APR 2018 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.28)  25 APR 2018 09:19
 entering extended mode
 **./di.tex
 (di.tex
@@ -1324,7 +1324,29 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
 (biblatex)                Setting 'uniquename=init' on input line 139.
 
-(di.aux (kansilehti.aux))
+(di.aux
+! Undefined control sequence.
+l.3 \abx@aux@sortscheme
+                       {nyt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \abx@aux@sortscheme{n
+                         yt}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(kansilehti.aux))
 \openout1 = `di.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
@@ -1384,8 +1406,98 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `di.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
+
+
+Package biblatex Warning: File 'di.bbl' is wrong format version - expected 2.9.
+
+
 Package biblatex Info: ... file 'di.bbl' found.
- (di.bbl)
+(di.bbl
+! Undefined control sequence.
+l.21   \sortlist
+                [entry]{nyt/global/}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\entry ...ata@\the \c@refsection @\blx@dlist@name 
+                                                  @\abx@field@entrykey }\blx...
+l.22     \entry{intro}{book}{}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...equal \expandafter {\blx@dlist@type 
+                                                  }{entry} {\listcsxadd {blx...
+l.43     \endentry
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...equal \expandafter {\blx@dlist@type 
+                                                  }{list} {\blx@bbl@labelfie...
+l.43     \endentry
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\entry ...ata@\the \c@refsection @\blx@dlist@name 
+                                                  @\abx@field@entrykey }\blx...
+l.44     \entry{engopt}{book}{}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...equal \expandafter {\blx@dlist@type 
+                                                  }{entry} {\listcsxadd {blx...
+l.65     \endentry
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...equal \expandafter {\blx@dlist@type 
+                                                  }{list} {\blx@bbl@labelfie...
+l.65     \endentry
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.66   \endsortlist
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
 Package biblatex Info: Reference section=0 on input line 139.
 Package biblatex Info: Reference segment=0 on input line 139.
  ABD: EveryShipout initializing macros
@@ -1426,10 +1538,14 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+[1
+
+{C:/Users/JUVA/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `kansilehti.aux'.
 
+
 (kansilehti.tex
-<tty-logo.pdf, id=4, 565.1879pt x 87.259pt>
+<tty-logo.pdf, id=10, 565.1879pt x 87.259pt>
 File: tty-logo.pdf Graphic file (type pdf)
 <use tty-logo.pdf>
 Package pdftex.def Info: tty-logo.pdf  used on input line 13.
@@ -1479,11 +1595,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 ("C:\Users\JUVA\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-[1
+[2
 
-
-{C:/Users/JUVA/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./tty-logo.p
-df>])
+ <./tty-logo.pdf>])
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
@@ -1499,6 +1613,10 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
  [2
 
 ]
+
+LaTeX Warning: Citation 'engopt' on page 1 undefined on input line 219.
+
+
 Overfull \hbox (15.92015pt too wide) in paragraph at lines 219--220
 []\T1/lmr/m/n/12 Matemaattisesti op-ti-moin-nis-sa on ta-voit-tee-na et-siä fun
 k-tiol-le käy-väs-tä jou-kos-ta minimi-
@@ -1508,16 +1626,36 @@ k-tiol-le käy-väs-tä jou-kos-ta minimi-
 
 
 ]
+
+LaTeX Warning: Citation 'engopt' on page 2 undefined on input line 240.
+
+
+Overfull \hbox (4.90082pt too wide) in paragraph at lines 240--241
+\T1/lmr/m/n/12 tai yh-tä-lö-muo-toi-ses-ti il-moi-tet-tu-ja. Suun-nit-te-lu-muu
+t-tu-jien lu-ku-mää-rä (n) se-kä rajoite-
+ []
+
+
 Overfull \hbox (2.14616pt too wide) in paragraph at lines 242--243
 []\T1/lmr/m/n/12 Vektori \T1/lmr/bx/n/12 x \T1/lmr/m/n/12 si-säl-tää op-ti-moin
 -ti-teh-tä-vän kaik-ki suun-nit-te-lu-muut-tu-jat (de-sign va-riables).
  []
 
+
+LaTeX Warning: Citation 'intro' on page 2 undefined on input line 252.
+
 [2]
+
+LaTeX Warning: Citation 'intro' on page 3 undefined on input line 254.
+
+
 Overfull \hbox (7.96188pt too wide) in paragraph at lines 263--264
 []\T1/lmr/m/n/12 Tapaus, jos-sa yh-tä-lö-muo-toi-sia rajoite-ehtoja on an-net-t
 u-ja suun-nit-te-lu-muut-tu-jia enem-
  []
+
+
+LaTeX Warning: Citation 'intro' on page 3 undefined on input line 265.
 
 
 Overfull \hbox (1.43199pt too wide) in paragraph at lines 265--266
@@ -1526,44 +1664,60 @@ a-joit-teet il-moi-te-taan ai-na kaa-
  []
 
 [3]
-Overfull \hbox (4.20514pt too wide) in paragraph at lines 285--286
+Overfull \hbox (4.20514pt too wide) in paragraph at lines 286--287
 []\T1/lmr/m/n/12 Dynaamisessa teh-tä-väs-sä et-si-tään siis koh-de-funk-tioon s
 i-joi-tet-ta-vien suun-nit-te-lu-muut-
  []
 
-[4] (di.aux (kansilehti.aux))
+
+LaTeX Warning: Marginpar on page 4 moved.
+
+[4]
+
+LaTeX Warning: Empty bibliography on input line 336.
+
+[5] (di.aux (kansilehti.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                di
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'di.run.xml'.
 \openout1 = `di.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23649 strings out of 493305
- 444855 string characters out of 3130237
- 891962 words of memory out of 3000000
- 26735 multiletter control sequences out of 15000+200000
- 64674 words of font info for 54 fonts, out of 3000000 for 9000
+ 23720 strings out of 493305
+ 446499 string characters out of 3130237
+ 897962 words of memory out of 3000000
+ 26806 multiletter control sequences out of 15000+200000
+ 64869 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,92p,1177b,1850s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,16n,92p,1178b,1850s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
 }{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
 enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
 it.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
 m.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
 thex.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/
-8r.enc}<C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mbx12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmcsc10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmex10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmmi12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmmi8.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr8.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmsy10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on di.pdf (7 pages, 156092 bytes).
+8r.enc} <C:\Users\JUVA\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecrm1200.pk><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmbx12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmex10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmmi12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmmi8.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmr10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmr12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmr8.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/JUVA/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on di.pdf (9 pages, 163590 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
