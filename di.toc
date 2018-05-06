@@ -14,8 +14,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Optimointiteht\IeC {\"a}v\IeC {\"a}n matemaattinen m\IeC {\"a}\IeC {\"a}rittely}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Optimointiteht\IeC {\"a}v\IeC {\"a}n luokittelu}{4}
+\contentsline {subsection}{\numberline {2.2}Optimointiteht\IeC {\"a}v\IeC {\"a}n luokittelu}{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Rakenteiden optimointi}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {}Viitteet}{5}
+\contentsline {section}{\numberline {3}Ter\IeC {\"a}shallin j\IeC {\"a}ykist\IeC {\"a}minen}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Puristetun sauvan stabiliteetti}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Ristikon yl\IeC {\"a}paarteen tuenta}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {}Viitteet}{7}

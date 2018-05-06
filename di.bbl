@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,21 +18,25 @@
 
 
 \refsection{0}
-  \sortlist[entry]{nyt/global/}
-    \entry{intro}{book}{}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{arora}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=0859b9633906de4a34ec6b8f3e59800f}{%
+        {{uniquename=0,uniquepart=base,hash=0859b9633906de4a34ec6b8f3e59800f}{%
            family={Arora},
            familyi={A\bibinitperiod},
            given={Jasbir\bibnamedelima S},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{0859b9633906de4a34ec6b8f3e59800f}
       \strng{fullhash}{0859b9633906de4a34ec6b8f3e59800f}
+      \strng{bibnamehash}{0859b9633906de4a34ec6b8f3e59800f}
+      \strng{authorbibnamehash}{0859b9633906de4a34ec6b8f3e59800f}
       \strng{authornamehash}{0859b9633906de4a34ec6b8f3e59800f}
       \strng{authorfullhash}{0859b9633906de4a34ec6b8f3e59800f}
       \field{sortinit}{A}
-      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -41,20 +45,24 @@
       \field{title}{Introduction to optimum design}
       \field{year}{2004}
     \endentry
-    \entry{engopt}{book}{}
+    \entry{rao}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=01f82bb83632588593a4d74979c576d5}{%
+        {{uniquename=0,uniquepart=base,hash=01f82bb83632588593a4d74979c576d5}{%
            family={Rao},
            familyi={R\bibinitperiod},
            given={Singiresu\bibnamedelima S},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{01f82bb83632588593a4d74979c576d5}
       \strng{fullhash}{01f82bb83632588593a4d74979c576d5}
+      \strng{bibnamehash}{01f82bb83632588593a4d74979c576d5}
+      \strng{authorbibnamehash}{01f82bb83632588593a4d74979c576d5}
       \strng{authornamehash}{01f82bb83632588593a4d74979c576d5}
       \strng{authorfullhash}{01f82bb83632588593a4d74979c576d5}
       \field{sortinit}{R}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -63,7 +71,8 @@
       \field{title}{Engineering optimization : theory and practice}
       \field{year}{1999}
     \endentry
-  \endsortlist
+  \enddatalist
+  \missing{en1993}
 \endrefsection
 \endinput
 
