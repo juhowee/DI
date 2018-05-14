@@ -9,7 +9,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
-\usepackage{mathptmx}
+% \usepackage{mathptmx}
 	
 \usepackage{tabularx}					% Paremmat taulukot
 
@@ -17,6 +17,11 @@
 
 \usepackage{setspace} 					% Kansilehden tarkastajaboksia varten
 \usepackage{hyphenat} 					% Joku höskä kansilehden toimintaa varten
+
+% Plotit
+\usepackage{pgfplots}
+
+\usepackage{graphicx}
 
 
 %Lähdeluettelon muotoilua
@@ -312,26 +317,91 @@ Suunnittelumuuttujat tai kohdefunktion parametrit voivat saada määriteltyjen e
 
 
 \section{Teräshallin jäykistäminen}
-\subsection{Puristetun sauvan stabiliteetti}
+
+\section{Jäykistäminen yleisesti}
+
+
+
+\subsection{Puristetun sauvan stabiliteetti EN 1993 mukaisesti}
 Puristetun sauvan stabiliteetti perustuu Eulerin nurjahdukseen, jossa ideaalisuoraa homogeenisesta materiaalista koostuvaa hoikkaa pilaria kuormitetaan keskeisesti. Voimaa, joka aiheuttaa pilarin nurjahduksen kutsutaan nurjahduskuormaksi tai kriittiseksi voimaksi ja se määritellään kaavalla
 
 \begin{equation}
+\label{euler}
 N_{cr} = \frac{\pi^2 E I}{L^2},
 \end{equation}
 
-missä E on materiaalin kimmokerroin, I on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja L on pilarin kyseeseen tulevaa nurjahdusmuotoa nurjahduspituus. 
+missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L$ on pilarin kyseeseen tulevaa nurjahdusmuotoa vastaava nurjahduspituus. \todo{jotain nurjahdusmuodoista yms tähän.}
 
-Standardin  \parencite{en1993}
+Puristetun sauvan todellisen aksiaalisen puristuskapasiteetin määrittämiseksi on Eulerin teoreettisen nurjahduskapasiteetin lisäksi huomioitava epätarkkuustekijät, joita ovat esimerkiksi poikkeama ideaalisuorasta rakenteesta, materiaalin epälineaarisuus tai materiaalin muokkaamisen seurauksena syntyneet jäännösjännitykset. Näiden tekijöiden huomioiminen vaatii poikkeuksetta epälineaarista analyysia ja niiden laskentaan on historian aikana kehitetty laskentakaavoja, jotka perustuvat niin kokeelliseen tutkimukseen, kuin erilaisiin lujuusopin teorioihin.\parencite[27]{ziemian} Teräsrakenteiden suunnittelustandardi (\citeauthor{en1993})\todo{viittaus kuntoon!} esittää näiden poikkeamien huomioon ottamiseksi viisi (5) erilaista epätarkkuustekijää rakenteen valmistustavasta ja profiilin muodosta riippuen. Nämä epätarkkuustekijät on esitetty taulukossa (\ref{epätarkkuustekijät}). 
 
-\subsection{Ristikon yläpaarteen tuenta}
-Teräsristikon puristettu yläpaarre on tuettava ristikkon tasoon nähden poikittaisessa suunnassa tukirakenteella, joka on toisesta päästään kiinnittetty sivusiirtymättömään rakenteeseen. Nämä sivuttaiset tuet kuuluvat osana katon jäykistysjärjestelmää. 
+\begin{table}[htb]
+\centering
+\caption{Nurjahduskäyrien epätarkkuustekijät standardin (\citeauthor{en1993})  mukaan.}
+\begin{tabular}{c c c c c c}
+\label{epätarkkuustekijät}
+
+Nurjahduskäyrä & $a_0$ & a & b & c & d \\
+\hline
+Epätarkkuustekijä $\alpha$ & 0,13 & 0,21 & 0,34 & 0,49 & 0,76
+\end{tabular}
+\end{table}
+
+Epätarkkuustekijöiden perusteella standardiin on määritetty ja kuvaajin esitetty nurjahduskäyrät, jotka esittävät puristuskapasiteetin laskentaa varten tarvittavan pienennystekijän $\chi$ rakenteen hoikkuuden $\lambda$ funktiona. Kutakin epätarkkuustekijää vastaa oma nurjahduskäyränsä, ja ne on esitetty kuvaajassa (\ref{fig:nurjahduskäyräkuvaaja}). 
+
+\begin{figure}[htb]
+\input{Kuvaajat/nurjahdus.tex}
+\caption{\citeauthor{en1993} mukaiset nurjahduskäyrät verrattuna Eulerin nurjahdukseen. }
+\label{fig:nurjahduskäyräkuvaaja}
+\end{figure}
+\todo{symbolit käyrän labeleihin}
+
+Standardin mukaan rakenteen nurjahduskapasiteetin $N_{b,Rd}$ ja plastisen puristuskapasiteetin $N_{pl,Rd}$ suhdetta kuvaa nurjahduksen pienennystekijä $\Phi$, joka määritetään kaavalla
+
+\begin{equation}
+\label{en_buckl_coeff}
+\chi = \frac{N_{b,Rd}}{N_{pl,Rd}} =\frac{1}{\Phi + \sqrt{\Phi^2-\lambda^2}},
+\end{equation}
+
+missä $\lambda$ on poikkileikkauksen muunnettu hoikkuus ja $\chi$ epätarkkuuden huomioon ottava kerroin. Muunnettu hoikkuus määritetään kaavalla 
+
+\begin{equation}
+\label{hoikkuus}
+\lambda = \sqrt{\frac{A f_y}{N_{cr}}},
+\end{equation}
+
+missä $N_{cr}$ Eulerin nurjahdusvoima (kaava \ref{euler}), $A$ on rakenteen poikkileikkauksen pinta-ala ja $f_y$ materiaalin myötölujuus. Mikäli rakenteen muunnettu hoikkuus täyttää ehdon $\lambda \leq 0,2$ ei nurjahdusta tarvitse standardin mukaan ottaa huomioon (kohta 6.3.1.2(4)). Edelleen kaavan (\ref{en_buckl_coeff}) termi $\Phi$ määritellään kaavalla
+
+\begin{equation}
+\label{phi}
+\Phi = \frac{1+\alpha (\lambda-0.2)+\lambda^2}{2},
+\end{equation}   
+
+missä $\alpha$ on aiemmin mainuttu rakenteen muodosta ja valmistustavasta riippuva epätarkkuustekijä. 
+
+Tässä diplomityössä käsiteltävät profiilit rajautuvat lujuusluokan S355 -rakenneputkiin, joiden nurjahduskäyrä on kylmämuovattuna c ($\alpha = 0,49$) ja kuumavalssattuna a ($\alpha = 0,21$).  
+
+
+
+\subsection{Ristikon yläpaarteen tuenta hallin pituussuunnassa}
+
+Teräsristikon puristettu yläpaarre on tuettava ristikon tasoon nähden poikittaisessa suunnassa rakennuksen pituussuuntaisin tukirakentein. Tukirakenteet on kuvattu ristikon tuentaa esittävässä kuvassa (\ref{fig:ristikon_nurjahdus}). Näistä tukirakenteista käytetään nimitystä kattositeet tai ristikon (nurjahdus)siteet ja ne kuuluvat osana rakennuksen jäykistysjärjestelmää.  \parencite{try_kaitila}
  
+\begin{figure}[htb]
 
+\includegraphics[width=15cm]{Kuvat/ristikko_upperchord_buckling.pdf}
+\caption{Putkiristikon puristetun yläpaarteen nurjahdusmuoto ja nurjahdustuennat.}
+\label{fig:ristikon_nurjahdus}
+\end{figure}
 
+Ristikon tuenta ja nurjahdustukien väliset etäisyydet $L$ suunnitellaan siten, että nurjahduksen kaavan (\ref{phi}) esittämä yläpaarteen nurjahduskapasiteetti $N_{b,Rd}$ ei alita paarteeseen ristikon pystykuormista aiheutuvaa aksiaalista puristusvoimaa. Puristusvoiman ylittäessä yläpaarteen nurjahduskapasiteetin, on yläpaarteeseen muodostuvan nurjahtavan sauvan nurjahdusmuoto kuvan (\ref{fig:ristikon_nurjahdus}) mukainen. Suunnittelustandardin (\citeauthor{en1993} liite BB) mukaan kaavassa (\ref{euler}) tarvittavaksi nurjahduspituudeksi voidaan putkiristikon paarteelle asettaa 0,9 kertaa ristikon poikittaistukien väli.
 
+Ristikko kannattelee pystykuormaa palkin tavoin. Ristikon paarteet toimivat taivutuksessa kuten palkin laipat vastaanottaen taivutusmomentista aiheutuvan veto- ja puristusrasituksen. Uumasauvat välittävät leikkausrasituksia palkin uuman tavoin. Koska ristikko ei kuitenkaan ole jatkuva rakenne, paarteille kohdistuvan normaalivoiman jakauma on jatkuvan jakauman sijasta portaittainen. Tätä porrastusta on havainnollistettu kuvassa (\ref{fig:ristikon_yläpaarteen_puristus}), jossa on esitettynä ristikon yläpaarteen puristusvoiman porrastuksen periaate. Normaalivoima puristetulla yläpaarteella muttuu aina vedetyn uumasauvan kohdalla, kuten kuva esittää. 
 
-
-
+\begin{figure}[htb]
+\includegraphics[width=15cm]{Kuvat/ristikko_paarre_normaalivoima.pdf}
+\caption{Periaatekuva normaalivoiman $N_c$ portaittaisesta jakautumisesta ristikon yläpaarteelle pystykuormasta $p$ Pratt -tyypin ristikossa.}
+\label{fig:ristikon_yläpaarteen_puristus}
+\end{figure}
 
 
 

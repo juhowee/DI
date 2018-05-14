@@ -45,6 +45,34 @@
       \field{title}{Introduction to optimum design}
       \field{year}{2004}
     \endentry
+    \entry{try_kaitila}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ba374e9dcc4f8106bab14905b410935a}{%
+           family={Kaitila},
+           familyi={K\bibinitperiod},
+           given={Olli},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Teräsrakenneyhdistys}%
+      }
+      \strng{namehash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{fullhash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{bibnamehash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{authorbibnamehash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{authornamehash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{authorfullhash}{ba374e9dcc4f8106bab14905b410935a}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{7978-952-9683-50-5}
+      \field{title}{Teräsrakenteiden suunnittelu ja mitoitus : Eurocode 3 -oppikirja}
+      \field{year}{2010}
+    \endentry
     \entry{rao}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=01f82bb83632588593a4d74979c576d5}{%
@@ -71,8 +99,60 @@
       \field{title}{Engineering optimization : theory and practice}
       \field{year}{1999}
     \endentry
+    \entry{en1993}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=453d127a48233c4ec7005e7e2b902eab}{%
+           family={{SFS-EN 1993-1-1}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Suomen standardoimisliitto SFS}%
+      }
+      \list{location}{1}{%
+        {Helsinki}%
+      }
+      \strng{namehash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{fullhash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{bibnamehash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{authorbibnamehash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{authornamehash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{authorfullhash}{453d127a48233c4ec7005e7e2b902eab}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Eurocode 3: Teräsrakenteiden suunnittelu, Osa 1-1: Yleiset säännöt ja rakennuksia koskevat säännöt}
+      \field{year}{2010}
+    \endentry
+    \entry{ziemian}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8eb6a48ee6f3d0ff73170f920ca940c5}{%
+           family={Ziemian},
+           familyi={Z\bibinitperiod},
+           given={Ronald\bibnamedelima D},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{fullhash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{bibnamehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{authorbibnamehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{authornamehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{authorfullhash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{isbn}{978-0-470-08525-7}
+      \field{title}{Stability design criteria for metal structures}
+      \field{year}{2010}
+    \endentry
   \enddatalist
-  \missing{en1993}
 \endrefsection
 \endinput
 
