@@ -1,6 +1,8 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
-\babel@toc {finnish}{}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {finnish}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Johdanto}{1}
 \defcounter {refsection}{0}\relax 
@@ -18,10 +20,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Rakenteiden optimointi}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Ter\IeC {\"a}shallin j\IeC {\"a}ykist\IeC {\"a}minen}{6}
+\contentsline {section}{\numberline {3}Ter\IeC {\"a}shallin j\IeC {\"a}ykist\IeC {\"a}minen}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{6}
+\contentsline {section}{\numberline {4}J\IeC {\"a}ykist\IeC {\"a}minen yleisesti}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Ristikon yl\IeC {\"a}paarteen tuenta hallin pituussuunnassa}{8}
+\contentsline {subsection}{\numberline {4.1}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {}Viitteet}{10}
+\contentsline {subsection}{\numberline {4.2}Ristikon yl\IeC {\"a}paarteen tuenta hallin pituussuunnassa}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {}Viitteet}{12}

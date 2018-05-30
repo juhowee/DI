@@ -221,12 +221,13 @@ Avainsanat: \par
 \section{Optimointi}
 \subsection{Optimointitehtävän matemaattinen määrittely}
 
-Matemaattisella optimoinnilla tarkoitetaan prosessia, jolla löydetään jollekkin funktiolle paras mahdollinen arvo sille asetetut reunaehdot huomioiden. Asettamalla optimoitava kohde sekä halutut rajoite-ehdot matemaattiseen muotoon, voidaan optimoimalla löytää matemaattisin keinoin paras käypä ratkaisu. Käyvällä ratkaisulla tarkoitetaan ratkaisua, joka kuuluu annettujen rajoite-ehtojen joukkoon. 
+Matemaattisella optimoinnilla tarkoitetaan prosessia, jolla etsitään systemaattisesti asetetulle funktiolle paras mahdollinen arvo siten, että sille asetetut reunaehdot toteutuvat. Asettamalla optimoitava kohde sekä halutut rajoite-ehdot matemaattiseen muotoon, voidaan optimoimalla löytää matemaattisin keinoin paras käypä ratkaisu. Käyvällä ratkaisulla tarkoitetaan ratkaisua, joka kuuluu annettujen rajoite-ehtojen joukkoon. 
 
 Matemaattisesti optimoinnissa on tavoitteena etsiä funktiolle käyvästä joukosta minimi- tai maksimiarvo. Optimointitekniikoita ja algoritmeja on kehitetty lukuisia ja kukin niistä soveltuu käytettäväksi eri tavalla eri optimointitehtäviin. Optimointi ja erilaisten optimoitimenetelmien tutkiminen on yksi matemaattisen operaatiotutkimuksen osa-alueista. Optimoinnista voidaan joissain yhteyksissä käyttää myös nimitystä matemaattinen ohjelmointi (mathematical programming), jolla viitataan matemaattisten algoritmien kehittämiseen ja ohjelmoimista optimointitarkoituksiin.  \parencite[1]{rao}
 
 Optimointitehtävä kirjoitetaan matemaattisesti seuraavanlaisessa muodossa.
-\begin{equation*}
+\begin{equation}
+\label{optimointi_määrittely}
 \text{Etsi } \textbf{x} = 
 \begin{Bmatrix} 
 x_1 \\ 
@@ -234,17 +235,17 @@ x_2 \\
 \vdots \\
 x_n  
 \end{Bmatrix}
-\text{    joka minimoi } f(\textbf{x}) \text{, siten että}
-\end{equation*}
-\begin{align}
+\text{    joka } \min_{x_1 \in S} f(\textbf{x}) \text{, siten että}
+\end{equation}
+\begin{equation}
 \label{rajoitteet}
 \begin{split}
-g_i(\textbf{x}) \leq 0, \quad j = 1,2, \cdots , m  \\ 
-h_j(\textbf{x}) = 0, \quad j = 1,2, \cdots , p
+g_i(\textbf{x}) \leq 0, \quad i = 1,2, \dots , m  \\ 
+h_j(\textbf{x}) = 0, \quad j = 1,2, \dots , p
 \end{split}
-\end{align}
+\end{equation}
 
-missä \textbf{x} on vektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja. Rajoite-ehdot voivat olla joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. Kaavassa \eqref{rajoitteet} on esitetty optimointitehtävän standardimuotoinen asettelu (standard design optimization model). \parencite[6]{rao}
+missä \textbf{x} on vektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja ja S on tehtävän toteuttavien suunnittelumuuttujien muodostama joukko. Rajoite-ehdot voivat olla joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. Kaavassa \eqref{rajoitteet} on esitetty optimointitehtävän standardimuotoinen asettelu (standard design optimization model). \parencite[6]{rao}
 
 Vektori \textbf{x} sisältää optimointitehtävän kaikki suunnittelumuuttujat (design variables). Muuttamalla jonkin suunnittelumuuttujan $x_i$ arvoa, muuttuu myös tavoitefunktion f(\textbf{x}) arvo. Suunnittelumuuttujista voidaan käyttää myös nimitystä optimointimuuttujat tai vapaat muuttujat, eli niiden arvoja voidaan muutella vapaasti kun haetaan tavoitefunktiolle arvoa. Toisistaan riippumattomien eli itsenäisten suunnittelumuuttujien lukumäärä on optimointiongelman vapausasteluku (design degree of freedom). Yleisesti ottaen suunnittelumuuttujien tulee olla toisistaan riippumattomia, mutta joissain tapauksissa niiden määrä voi olla ongelman vapausastelukua suurempi. Tämä on perusteltua esimerkiksi silloin, kun kohdefunktion määrittely pelkillä itsenäisillä suunnittelumuuttujilla olisi hankalaa. Jokaiselle suunnittelumuuttujalle täytyy myös pystyä asettamaan jokin numeerinen lähtöarvo, jotta optimointitehtävä pystytään suorittamaan. 
 
@@ -256,7 +257,14 @@ f_1(\textbf{x}) &  f_2(\textbf{x}) & \cdots & f_p(\textbf{x})
 \end{align}
 jossa jokainen kohdefunktio koostuu kuitenkin samasta suunnittelumuuttujavektorista \textbf{x}.
 
-Optimoitavalle kohteelle asetettavat rajoite-ehdot esitetään rajoitefunktioina $g_i(\textbf{x})$ ja $h_j(\textbf{x})$. Optimointialgoritmi ratkaisee optimointitehtävän siten, että kohdefunktion arvo toteuttaa rajoite-ehdot. Rajoite-ehtojen muodostamaa joukkoa kutsutaan täten optimointiongelman käyväksi joukoksi (feasible region). Mitä tahansa käyvässä joukossa olevaa kohdefunktion arvoa kutsutaan käyväksi ratkaisuksi (feasible design) huolimatta siitä onko kyseessä optimiratkaisu. Kaksiuloitteisessa tapauksessa käypää joukkoa voidaan havainnollistaa piirtämällä rajoitefunktioiden käyrät koordinaatistoon. Käypä joukko muodostuu näiden käyrien rajoittamana alueena. Käyvän joukon negaatiota kutsutaan ei-käyväksi joukoksi (unfeasible region). Sekä tavoitefunktion f(\textbf{x}), että rajoite-ehtojen $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ on oltava toisitaan joko implisiittisesti tai eksplisiittisesti riippuvia. Mikäli riippuvuutta funktioiden välillä ei ole, ei optimointitehtävää voi muodostaa eikä varsinaista optimointiongelmaa voi edes osoittaa. \parencite[43]{arora} 
+Optimoitavalle kohteelle asetettavat rajoite-ehdot esitetään rajoitefunktioina $g_i(\textbf{x})$ ja $h_j(\textbf{x})$. Optimointialgoritmi ratkaisee optimointitehtävän siten, että kohdefunktion arvo toteuttaa rajoite-ehdot. Rajoite-ehtojen muodostamaa joukkoa kutsutaan täten optimointiongelman käyväksi joukoksi (feasible region). Käypää joukkoa esittää kaavassa (\ref{optimointi_määrittely}) osoitettu joukko S, joka määritellään 
+
+\begin{equation}
+\label{käypä_joukko}
+S = \{\textbf{x} | g_i(\textbf{x}) \leq 0; h_j(\textbf{x}) = 0; i = 1, 2, \dots,m; j = 1, 2, \dots,p\} 
+\end{equation}
+
+Mitä tahansa käyvässä joukossa $S$ olevaa kohdefunktion arvoa kutsutaan käyväksi ratkaisuksi (feasible design) huolimatta siitä onko kyseessä optimiratkaisu. Kaksiuloitteisessa tapauksessa käypää joukkoa voidaan havainnollistaa piirtämällä rajoitefunktioiden käyrät koordinaatistoon. Käypä joukko muodostuu näiden käyrien rajoittamana alueena. Käyvän joukon negaatiota kutsutaan ei-käyväksi joukoksi (unfeasible region). Sekä tavoitefunktion f(\textbf{x}), että rajoite-ehtojen $g_i(\textbf{x})$ ja $h_j(\textbf{x})$ on oltava toisitaan joko implisiittisesti tai eksplisiittisesti riippuvia. Mikäli riippuvuutta funktioiden välillä ei ole, ei optimointitehtävää voi muodostaa eikä varsinaista optimointiongelmaa voi edes osoittaa. \parencite[43]{arora} 
 
 Kuten optimointitehtävän määrittelevä kaava \eqref{rajoitteet} osoittaa, optimointiongelmalle voidaan asettaa rajoite-ehtoja sekä yhtälö- että epäyhtälömuodossa. Epäyhtälörajoitteita kutsutaan käypään joukkoon nähden toispuoleisiksi rajoite-ehdoiksi (unilateral constraints tai one-sided constraints). Epäyhtälörajoitteiden rajoittama käypä joukko on täten paljon laajempi kun verrataan yhtälörajoitteista käypää joukkoa. Esimerkiksi kakisuloitteisessa tapauksessa yhtälörajoite tarkoittaisi, että käypä ratkaisu löytyisi rajoitefunktion käyrältä. \parencite[16-18]{arora} 
 
@@ -272,7 +280,9 @@ Tapaus, jossa yhtälömuotoisia rajoite-ehtoja on annettuja suunnittelumuuttujia
 Standardimuotoisessa optimointitehtävässä epäyhtälörajoitteet ilmoitetaan aina kaavan \eqref{rajoitteet} osoittamassa muodossa, eli siten että rajoite-ehto on pienempi tai yhtäsuuri kuin nolla ($\leq$ 0). Tästä huolimatta voidaan optimointitehtävässä käsitellä myös $\geq$ -tyyppisiä rajoite-ehtoja. Standardimuotoista tehtävää aseteltaessa nämä voidaan muuttaa $\leq$ -muotoon yksinkertaisesti kertomalla ehto luvulla -1. Epäyhtälömuotoisten rajoite-ehtojen määrää ei ole rajoitettu, toisin kuin yhtälömuotoiset rajoitteet kaavassa \eqref{yhtälörajoite-ehto}. Niiden määrää ei ole siis rajoitettu.   \parencite[43]{arora}
 
 \subsection{Optimointitehtävän luokittelu}
-\todo{Tähän alustus}
+
+Optimointitehtävän luokittelu perustuu tehtävän asettelun eli kohdefunktioiden, rajoite-ehtojen ja suunnittelumuuttujien matemaattiseen muotoon. Eri tyyppisille optimoinitehtäville on sovellettava erilaisia ratkaisumenetelmiä. Tämän vuoksi tehtävän oikeanlainen ja mahdollisimman tarkka luokittelu on tärkeää, jotta tehtävälle löytyisi mahdollisimman tehokas ratkaisukeino. Singresu Rao esittää kirjassaan \parencite{rao} kahdeksan optimointitehtävien jaottelutapaa. Sen mukaan optimointitehtävä voidaan luokitella:
+
 \begin{enumerate}
 \item Rajoitetuksi tai ei-rajoitetuksi
 \item Staattiseksi tai dynaamiseksi
@@ -283,8 +293,6 @@ Standardimuotoisessa optimointitehtävässä epäyhtälörajoitteet ilmoitetaan 
 \item Kohdefunktion separoituvuuden perusteella
 \item Kohdefunktioiden määrän perusteella
 \end{enumerate}
-
-\parencite{rao}
 
 Rajoitefunktioiden perusteella tehtävä voidaan luokitella joko rajoitetuksi- tai ei-rajoitetuksi tehtäväksi. Mikäli tehtävällä on yksikin rajoitefunktio, on kyseessä rajoitettu optimointitehtävä. Luokittelua voidaan tarkentaa edelleen osittain rajoitetuksi tai täysin suljetuksi systeemiksi. Suljetulla systeemillä tarkoitetaan tilannetta, jossa rajoitefunktiot muodostavat äärellisen kokoisen käyvän joukon. 
 
@@ -313,7 +321,39 @@ Suunnittelumuuttujien saadessa vain diskreettejä arvoja, käytetään optimoint
 
 Suunnittelumuuttujat tai kohdefunktion parametrit voivat saada määriteltyjen eli deterministisien arvojen sijasta todennäköisyyteen perustuvia arvoja. Tällöin optimointitehtävä on stokastinen eli siinä käsitellään determinististen muuttujien sijasta satunnaismuuttujia. \parencite[29]{rao} \todo{tähän lisää}
 
+Optimointitehtävä on separoituva, mikäli kohdefunktio ja rajoite-ehdot voidaan esittää yhden muuttujan funktioiden summana, eli muodossa 
+
+\begin{equation}
+\label{separoituva_funktio}
+f(\textbf{x}) = \sum_{i=1}^n f_i(x_i)
+\end{equation}.
+
+Mikäli optimointitehtävä sisältää yhden tavoitefunktion sijasta useamman funktion, on kyseessä monitavoiteoptimointi. 
+
+
+
+
 \subsection{Rakenteiden optimointi}
+
+Rakenteiden optimoinnissa tavoitteena on löytää mahdollisimman taloudellinen, mutta vaatimukset täyttävä rakenne. Tavallisimpia optimointitehtäviä ovat esimerkiksi rakenteiden massan tai tuotantokustannusten minimointi. Kun suunniteltava rakenne asetetaan matemaattiseksi malliksi ja formuloidaan optimointitehtävän muotoon, voidaan rakenne optimoida.  
+
+Useista sauvoista koostuvan rakennekokonaisuuden optimointi jaotellaan tavallisesti mitoitusoptimointiin, muodon eli geometrian optimointiin ja topologian optimointiin. Rakennekokonaisuuden geometrialla tarkoitetaan sen sisältämien sauvojen välisten solmupisteiden sijaintia suhteessa toisiinsa. Topologialla puolestaan tarkoitetaan kokonaisuuden sisältämien solmupisteiden määrää. Esimerkiksi teräsristikon topologia sisältää tiedon paarresauvojen ja diagonaalien välisten solmupisteiden määrästä, mutta ei niiden sijainnista \parencite[2]{mela_doct}.
+
+Mitoitusoptimoinnissa rakennekokonaisuudelle haetaan sellaiset rakenneosat, joilla asetetut reunaehdot täyttyvät kuitenkaan rakennekokonaisuuden geometriaa muuttamatta. Esimerkiksi teräsristikon mitoitusoptimointitehtävässä haetaan määrätyn muotoisen ristikon kullekkin paarre- ja diagonaalisauvalle mahdollisimman pieni poikkileikkaus. Mitoitusoptimointitehtävä on siis tyypiltään hyvin yksinkertainen eikä välttämättä yksinkertaisilla rakenteilla vaadi kovinkaan monimutkaista laskentaa.
+\begin{figure}[htb]
+
+\includegraphics[width=7cm]{Kuvat/mitoitusoptimointi.pdf}
+\caption{Havainne-esimerkki teräsputkiristikon mitoitusoptimoinnista.}
+\label{fig:mitoitusoptimointi}
+\end{figure}
+
+Muodon tai geometrian optimoinnissa eri rakenneosien välisten liitoskohtien sijaintia muuttamalla pyritään hakemaan paras ratkaisu siten, että asetetut reunaehdot täyttyvät. Geometrian optimoinnissa rakenneosien välisten liitosten lukumäärä säilyy vakiona, ainoastaan niiden keskinäinen sijainti muuttuu. Tavallisesti tähän tehtävätyyppiin liitetään myös mitoitusoptimointi. Esimerkiksi eräsristikon geometrian optimointitehtävässä vaihdetaan diagonaalisauvojen liitoskohtien sijaintia paarteilla ja pyritään sillä hakemaan ristikolle optimirakenne.
+
+Topologian optimoinnissa rakennekokonaisuudelle haetaan optimitopologia siten, että asetetut reunaehdot täyttyvät. Koska topologia käsitteenä kuvaa ainoastaan rakennekokonaisuuden sauvojen liittymistä toisiinsa sekä kokonaisuudessa olevien liitosten määrää, sisältää topologian optimointi tavallisesti myös geometrian ja mitoituksen optimoinnin. Topologian optimoinnissa haetaan siis esimerkiksi teräsristikon tapauksessa optimein sauvajärjestely muuttamalla sekä sauvojen ja liitosten määrää että liitosten välistä keskinäistä sijaintia. 
+
+
+
+
 
 
 \section{Teräshallin jäykistäminen}
