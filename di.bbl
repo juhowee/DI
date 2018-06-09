@@ -135,6 +135,54 @@
       \field{title}{Eurocode 3: Teräsrakenteiden suunnittelu, Osa 1-1: Yleiset säännöt ja rakennuksia koskevat säännöt}
       \field{year}{2010}
     \endentry
+    \entry{timoshenko}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a3801f34cb8e23319090fc44b600d36a}{%
+           family={Timoshenko},
+           familyi={T\bibinitperiod},
+           given={Stephen\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=73400b9316d28160ca9c4c24b3e3f709}{%
+           family={Gere},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3840cc02106314cc7ba1808eea1fed58}
+      \strng{fullhash}{3840cc02106314cc7ba1808eea1fed58}
+      \strng{authornamehash}{3840cc02106314cc7ba1808eea1fed58}
+      \strng{authorfullhash}{3840cc02106314cc7ba1808eea1fed58}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{17}
+      \field{isbn}{0-07-Y85821-7}
+      \field{title}{Theory of elastic stability}
+      \field{year}{1963}
+    \endentry
+    \entry{winter}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0a0eb26ee8d59439d4b56d421033a61a}{%
+           family={Winter},
+           familyi={W\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a0eb26ee8d59439d4b56d421033a61a}
+      \strng{fullhash}{0a0eb26ee8d59439d4b56d421033a61a}
+      \strng{authornamehash}{0a0eb26ee8d59439d4b56d421033a61a}
+      \strng{authorfullhash}{0a0eb26ee8d59439d4b56d421033a61a}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American society of civil engineers}
+      \field{title}{Lateral bracing of columns and beams}
+      \field{year}{1958}
+    \endentry
     \entry{ziemian}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=8eb6a48ee6f3d0ff73170f920ca940c5}{%

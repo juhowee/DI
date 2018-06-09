@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.20)  15 MAY 2018 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.20)  9 JUN 2018 19:47
 entering extended mode
 **./di.tex
 (di.tex
@@ -549,6 +549,28 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen129
 \Gin@req@width=\dimen130
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen131
+\captionmargin@=\dimen132
+\captionwidth=\dimen133
+\caption@tempdima=\dimen134
+\caption@indent=\dimen135
+\caption@parindent=\dimen136
+\caption@hangindent=\dimen137
+)
+\c@ContinuedFloat=\count106
+)
+\c@subfigure=\count107
+\c@subtable=\count108
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
@@ -566,8 +588,8 @@ Package: pgfplots 2016/08/10 v1.14 Data Visualization (1.14)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen131
-\pgfutil@tempdimb=\dimen132
+\pgfutil@tempdima=\dimen138
+\pgfutil@tempdimb=\dimen139
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
 x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
@@ -593,20 +615,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 x"
 \pgfkeys@tmptoks=\toks27
 ))
-\pgf@x=\dimen133
-\pgf@y=\dimen134
-\pgf@xa=\dimen135
-\pgf@ya=\dimen136
-\pgf@xb=\dimen137
-\pgf@yb=\dimen138
-\pgf@xc=\dimen139
-\pgf@yc=\dimen140
+\pgf@x=\dimen140
+\pgf@y=\dimen141
+\pgf@xa=\dimen142
+\pgf@ya=\dimen143
+\pgf@xb=\dimen144
+\pgf@yb=\dimen145
+\pgf@xc=\dimen146
+\pgf@yc=\dimen147
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count106
-\c@pgf@countb=\count107
-\c@pgf@countc=\count108
-\c@pgf@countd=\count109
+\c@pgf@counta=\count109
+\c@pgf@countb=\count110
+\c@pgf@countc=\count111
+\c@pgf@countd=\count112
 \t@pgf@toka=\toks28
 \t@pgf@tokb=\toks29
 \t@pgf@tokc=\toks30
@@ -625,8 +647,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count110
-\pgfsyssoftpath@bigbuffer@items=\count111
+\pgfsyssoftpath@smallbuffer@items=\count113
+\pgfsyssoftpath@bigbuffer@items=\count114
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -655,8 +677,8 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen141
-\pgfmath@count=\count112
+\pgfmath@dimen=\dimen148
+\pgfmath@count=\count115
 \pgfmath@box=\box29
 \pgfmath@toks=\toks31
 \pgfmath@stack@operand=\toks32
@@ -680,37 +702,37 @@ ex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
 hmetics.code.tex")))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count113
+\c@pgfmathroundto@lastzeros=\count116
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen142
-\pgf@picmaxx=\dimen143
-\pgf@picminy=\dimen144
-\pgf@picmaxy=\dimen145
-\pgf@pathminx=\dimen146
-\pgf@pathmaxx=\dimen147
-\pgf@pathminy=\dimen148
-\pgf@pathmaxy=\dimen149
-\pgf@xx=\dimen150
-\pgf@xy=\dimen151
-\pgf@yx=\dimen152
-\pgf@yy=\dimen153
-\pgf@zx=\dimen154
-\pgf@zy=\dimen155
+\pgf@picminx=\dimen149
+\pgf@picmaxx=\dimen150
+\pgf@picminy=\dimen151
+\pgf@picmaxy=\dimen152
+\pgf@pathminx=\dimen153
+\pgf@pathmaxx=\dimen154
+\pgf@pathminy=\dimen155
+\pgf@pathmaxy=\dimen156
+\pgf@xx=\dimen157
+\pgf@xy=\dimen158
+\pgf@yx=\dimen159
+\pgf@yy=\dimen160
+\pgf@zx=\dimen161
+\pgf@zy=\dimen162
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen156
-\pgf@path@lasty=\dimen157
+\pgf@path@lastx=\dimen163
+\pgf@path@lasty=\dimen164
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen158
-\pgf@shorten@start@additional=\dimen159
+\pgf@shorten@end@additional=\dimen165
+\pgf@shorten@start@additional=\dimen166
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
@@ -718,19 +740,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box30
 \pgf@hbox=\box31
 \pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count114
+\pgf@picture@serial@count=\count117
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen160
+\pgflinewidth=\dimen167
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen161
-\pgf@pt@y=\dimen162
-\pgf@pt@temp=\dimen163
+\pgf@pt@x=\dimen168
+\pgf@pt@y=\dimen169
+\pgf@pt@temp=\dimen170
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -746,12 +768,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen164
+\pgfarrowsep=\dimen171
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen165
-\pgf@sys@shading@range@num=\count115
+\pgf@max=\dimen172
+\pgf@sys@shading@range@num=\count118
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -782,8 +804,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
 sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen166
-\pgf@nodesepend=\dimen167
+\pgf@nodesepstart=\dimen173
+\pgf@nodesepend=\dimen174
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
 sty"
@@ -797,8 +819,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen168
-\pgffor@skip=\dimen169
+\pgffor@iter=\dimen175
+\pgffor@skip=\dimen176
 \pgffor@stack=\toks34
 \pgffor@toks=\toks35
 ))
@@ -808,31 +830,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count116
-\pgfplotmarksize=\dimen170
+\pgf@plot@mark@count=\count119
+\pgfplotmarksize=\dimen177
 )
-\tikz@lastx=\dimen171
-\tikz@lasty=\dimen172
-\tikz@lastxsaved=\dimen173
-\tikz@lastysaved=\dimen174
-\tikzleveldistance=\dimen175
-\tikzsiblingdistance=\dimen176
+\tikz@lastx=\dimen178
+\tikz@lasty=\dimen179
+\tikz@lastxsaved=\dimen180
+\tikz@lastysaved=\dimen181
+\tikzleveldistance=\dimen182
+\tikzsiblingdistance=\dimen183
 \tikz@figbox=\box35
 \tikz@figbox@bg=\box36
 \tikz@tempbox=\box37
 \tikz@tempbox@bg=\box38
-\tikztreelevel=\count117
-\tikznumberofchildren=\count118
-\tikznumberofcurrentchild=\count119
-\tikz@fig@count=\count120
+\tikztreelevel=\count120
+\tikznumberofchildren=\count121
+\tikznumberofcurrentchild=\count122
+\tikz@fig@count=\count123
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count121
-\pgfmatrixcurrentcolumn=\count122
-\pgf@matrix@numberofcolumns=\count123
+\pgfmatrixcurrentrow=\count124
+\pgfmatrixcurrentcolumn=\count125
+\pgf@matrix@numberofcolumns=\count126
 )
-\tikz@expandcount=\count124
+\tikz@expandcount=\count127
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -843,9 +865,9 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 \t@pgfplots@toka=\toks36
 \t@pgfplots@tokb=\toks37
 \t@pgfplots@tokc=\toks38
-\pgfplots@tmpa=\dimen177
-\c@pgfplots@coordindex=\count125
-\c@pgfplots@scanlineindex=\count126
+\pgfplots@tmpa=\dimen184
+\c@pgfplots@coordindex=\count128
+\c@pgfplots@scanlineindex=\count129
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.
 tex"))
@@ -861,7 +883,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 fsupp_pgflibraryfpu.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
 fsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count127
+\c@pgfmathroundto@lastzeros=\count130
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
@@ -870,13 +892,13 @@ ructure.code.tex")
 ructureext.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.
 code.tex"
-\c@pgfplotsarray@tmp=\count128
+\c@pgfplotsarray@tmp=\count131
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix
 .code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstableshared
 .code.tex"
-\c@pgfplotstable@counta=\count129
+\c@pgfplotstable@counta=\count132
 \t@pgfplotstable@a=\toks39
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.
@@ -889,7 +911,7 @@ e.tex"))
 tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surf
 shading.code.tex"
-\c@pgfplotslibrarysurf@no=\count130
+\c@pgfplotslibrarysurf@no=\count133
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfs
 hading.pgfsys-pdftex.def")))
@@ -916,14 +938,14 @@ ex")))
 librarydecorations.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code
 .tex"
-\pgfdecoratedcompleteddistance=\dimen178
-\pgfdecoratedremainingdistance=\dimen179
-\pgfdecoratedinputsegmentcompleteddistance=\dimen180
-\pgfdecoratedinputsegmentremainingdistance=\dimen181
-\pgf@decorate@distancetomove=\dimen182
-\pgf@decorate@repeatstate=\count131
-\pgfdecorationsegmentamplitude=\dimen183
-\pgfdecorationsegmentlength=\dimen184
+\pgfdecoratedcompleteddistance=\dimen185
+\pgfdecoratedremainingdistance=\dimen186
+\pgfdecoratedinputsegmentcompleteddistance=\dimen187
+\pgfdecoratedinputsegmentremainingdistance=\dimen188
+\pgf@decorate@distancetomove=\dimen189
+\pgf@decorate@repeatstate=\count134
+\pgfdecorationsegmentamplitude=\dimen190
+\pgfdecorationsegmentlength=\dimen191
 )
 \tikz@lib@dec@box=\box39
 )
@@ -935,13 +957,13 @@ ecorations.pathmorphing.code.tex"))
 librarydecorations.pathreplacing.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
 ecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count132
-\pgfplots@xmin@reg=\dimen185
-\pgfplots@xmax@reg=\dimen186
-\pgfplots@ymin@reg=\dimen187
-\pgfplots@ymax@reg=\dimen188
-\pgfplots@zmin@reg=\dimen189
-\pgfplots@zmax@reg=\dimen190
+\pgfplots@numplots=\count135
+\pgfplots@xmin@reg=\dimen192
+\pgfplots@xmax@reg=\dimen193
+\pgfplots@ymin@reg=\dimen194
+\pgfplots@ymax@reg=\dimen195
+\pgfplots@zmin@reg=\dimen196
+\pgfplots@zmax@reg=\dimen197
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 libraryplotmarks.code.tex"
@@ -971,7 +993,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count133
+\etb@tempcnta=\count136
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -988,7 +1010,7 @@ Package etexcmds Info: Could not find \expanded.
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count134
+\lrq@indent=\count137
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1003,49 +1025,49 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
 \@xs@message=\write4
-\integerpart=\count135
-\decimalpart=\count136
+\integerpart=\count138
+\decimalpart=\count139
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count137
-\c@listtotal=\count138
-\c@listcount=\count139
-\c@liststart=\count140
-\c@liststop=\count141
-\c@citecount=\count142
-\c@citetotal=\count143
-\c@multicitecount=\count144
-\c@multicitetotal=\count145
-\c@instcount=\count146
-\c@maxnames=\count147
-\c@minnames=\count148
-\c@maxitems=\count149
-\c@minitems=\count150
-\c@citecounter=\count151
-\c@savedcitecounter=\count152
-\c@uniquelist=\count153
-\c@uniquename=\count154
-\c@refsection=\count155
-\c@refsegment=\count156
-\c@maxextratitle=\count157
-\c@maxextratitleyear=\count158
-\c@maxextrayear=\count159
-\c@maxextraalpha=\count160
-\c@abbrvpenalty=\count161
-\c@highnamepenalty=\count162
-\c@lownamepenalty=\count163
-\c@maxparens=\count164
-\c@parenlevel=\count165
-\blx@tempcnta=\count166
-\blx@tempcntb=\count167
-\blx@tempcntc=\count168
-\blx@maxsection=\count169
-\blx@maxsegment@0=\count170
-\blx@notetype=\count171
-\blx@parenlevel@text=\count172
-\blx@parenlevel@foot=\count173
-\blx@sectionciteorder@0=\count174
+\c@tabx@nest=\count140
+\c@listtotal=\count141
+\c@listcount=\count142
+\c@liststart=\count143
+\c@liststop=\count144
+\c@citecount=\count145
+\c@citetotal=\count146
+\c@multicitecount=\count147
+\c@multicitetotal=\count148
+\c@instcount=\count149
+\c@maxnames=\count150
+\c@minnames=\count151
+\c@maxitems=\count152
+\c@minitems=\count153
+\c@citecounter=\count154
+\c@savedcitecounter=\count155
+\c@uniquelist=\count156
+\c@uniquename=\count157
+\c@refsection=\count158
+\c@refsegment=\count159
+\c@maxextratitle=\count160
+\c@maxextratitleyear=\count161
+\c@maxextrayear=\count162
+\c@maxextraalpha=\count163
+\c@abbrvpenalty=\count164
+\c@highnamepenalty=\count165
+\c@lownamepenalty=\count166
+\c@maxparens=\count167
+\c@parenlevel=\count168
+\blx@tempcnta=\count169
+\blx@tempcntb=\count170
+\blx@tempcntc=\count171
+\blx@maxsection=\count172
+\blx@maxsegment@0=\count173
+\blx@notetype=\count174
+\blx@parenlevel@text=\count175
+\blx@parenlevel@foot=\count176
+\blx@sectionciteorder@0=\count177
 \labelnumberwidth=\skip52
 \labelalphawidth=\skip53
 \biblabelsep=\skip54
@@ -1056,9 +1078,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip59
 \blx@bcfin=\read2
 \blx@bcfout=\write5
-\c@mincomprange=\count175
-\c@maxcomprange=\count176
-\c@mincompwidth=\count177
+\c@mincomprange=\count178
+\c@maxcomprange=\count179
+\c@mincompwidth=\count180
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1067,72 +1089,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count178
-\c@savedafterword=\count179
-\c@annotator=\count180
-\c@savedannotator=\count181
-\c@author=\count182
-\c@savedauthor=\count183
-\c@bookauthor=\count184
-\c@savedbookauthor=\count185
-\c@commentator=\count186
-\c@savedcommentator=\count187
-\c@editor=\count188
-\c@savededitor=\count189
-\c@editora=\count190
-\c@savededitora=\count191
-\c@editorb=\count192
-\c@savededitorb=\count193
-\c@editorc=\count194
-\c@savededitorc=\count195
-\c@foreword=\count196
-\c@savedforeword=\count197
-\c@holder=\count198
-\c@savedholder=\count199
-\c@introduction=\count266
-\c@savedintroduction=\count267
-\c@namea=\count268
-\c@savednamea=\count269
-\c@nameb=\count270
-\c@savednameb=\count271
-\c@namec=\count272
-\c@savednamec=\count273
-\c@translator=\count274
-\c@savedtranslator=\count275
-\c@shortauthor=\count276
-\c@savedshortauthor=\count277
-\c@shorteditor=\count278
-\c@savedshorteditor=\count279
-\c@labelname=\count280
-\c@savedlabelname=\count281
-\c@institution=\count282
-\c@savedinstitution=\count283
-\c@lista=\count284
-\c@savedlista=\count285
-\c@listb=\count286
-\c@savedlistb=\count287
-\c@listc=\count288
-\c@savedlistc=\count289
-\c@listd=\count290
-\c@savedlistd=\count291
-\c@liste=\count292
-\c@savedliste=\count293
-\c@listf=\count294
-\c@savedlistf=\count295
-\c@location=\count296
-\c@savedlocation=\count297
-\c@organization=\count298
-\c@savedorganization=\count299
-\c@origlocation=\count300
-\c@savedoriglocation=\count301
-\c@origpublisher=\count302
-\c@savedorigpublisher=\count303
-\c@publisher=\count304
-\c@savedpublisher=\count305
-\c@language=\count306
-\c@savedlanguage=\count307
-\c@pageref=\count308
-\c@savedpageref=\count309
+\c@afterword=\count181
+\c@savedafterword=\count182
+\c@annotator=\count183
+\c@savedannotator=\count184
+\c@author=\count185
+\c@savedauthor=\count186
+\c@bookauthor=\count187
+\c@savedbookauthor=\count188
+\c@commentator=\count189
+\c@savedcommentator=\count190
+\c@editor=\count191
+\c@savededitor=\count192
+\c@editora=\count193
+\c@savededitora=\count194
+\c@editorb=\count195
+\c@savededitorb=\count196
+\c@editorc=\count197
+\c@savededitorc=\count198
+\c@foreword=\count199
+\c@savedforeword=\count266
+\c@holder=\count267
+\c@savedholder=\count268
+\c@introduction=\count269
+\c@savedintroduction=\count270
+\c@namea=\count271
+\c@savednamea=\count272
+\c@nameb=\count273
+\c@savednameb=\count274
+\c@namec=\count275
+\c@savednamec=\count276
+\c@translator=\count277
+\c@savedtranslator=\count278
+\c@shortauthor=\count279
+\c@savedshortauthor=\count280
+\c@shorteditor=\count281
+\c@savedshorteditor=\count282
+\c@labelname=\count283
+\c@savedlabelname=\count284
+\c@institution=\count285
+\c@savedinstitution=\count286
+\c@lista=\count287
+\c@savedlista=\count288
+\c@listb=\count289
+\c@savedlistb=\count290
+\c@listc=\count291
+\c@savedlistc=\count292
+\c@listd=\count293
+\c@savedlistd=\count294
+\c@liste=\count295
+\c@savedliste=\count296
+\c@listf=\count297
+\c@savedlistf=\count298
+\c@location=\count299
+\c@savedlocation=\count300
+\c@organization=\count301
+\c@savedorganization=\count302
+\c@origlocation=\count303
+\c@savedoriglocation=\count304
+\c@origpublisher=\count305
+\c@savedorigpublisher=\count306
+\c@publisher=\count307
+\c@savedpublisher=\count308
+\c@language=\count309
+\c@savedlanguage=\count310
+\c@pageref=\count311
+\c@savedpageref=\count312
 \shorthandwidth=\skip60
 \shortjournalwidth=\skip61
 \shortserieswidth=\skip62
@@ -1150,13 +1172,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count310
-\c@textcitetotal=\count311
-\c@textcitemaxnames=\count312
-\c@biburlnumpenalty=\count313
-\c@biburlucpenalty=\count314
-\c@biburllcpenalty=\count315
-\c@smartand=\count316
+\c@textcitecount=\count313
+\c@textcitetotal=\count314
+\c@textcitemaxnames=\count315
+\c@biburlnumpenalty=\count316
+\c@biburlucpenalty=\count317
+\c@biburllcpenalty=\count318
+\c@smartand=\count319
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -1168,8 +1190,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
 File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count317
-\c@bbx:relatedtotal=\count318
+\c@bbx:relatedcount=\count320
+\c@bbx:relatedtotal=\count321
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -1201,34 +1223,34 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box40
 \beforetitleunit=\skip66
 \aftertitleunit=\skip67
-\ttl@plus=\dimen191
-\ttl@minus=\dimen192
+\ttl@plus=\dimen198
+\ttl@minus=\dimen199
 \ttl@toksa=\toks40
-\titlewidth=\dimen193
-\titlewidthlast=\dimen194
-\titlewidthfirst=\dimen195
+\titlewidth=\dimen256
+\titlewidthlast=\dimen257
+\titlewidthfirst=\dimen258
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\easylist\easylist.sty"
 Package: easylist 2014/01/11 v.1.4 Numbered items with a single command.
-\el@CounterTotal=\count319
-\el@Scratch=\count320
-\el@ControlCounter=\count321
-\el@CounterLevel=\count322
-\c@List1=\count323
-\c@List2=\count324
-\c@List3=\count325
-\c@List4=\count326
-\c@List5=\count327
-\c@List6=\count328
-\c@List7=\count329
-\c@List8=\count330
-\c@List9=\count331
-\c@List10=\count332
-\el@ProgressiveDimension=\dimen196
+\el@CounterTotal=\count322
+\el@Scratch=\count323
+\el@ControlCounter=\count324
+\el@CounterLevel=\count325
+\c@List1=\count326
+\c@List2=\count327
+\c@List3=\count328
+\c@List4=\count329
+\c@List5=\count330
+\c@List6=\count331
+\c@List7=\count332
+\c@List8=\count333
+\c@List9=\count334
+\c@List10=\count335
+\el@ProgressiveDimension=\dimen259
 \el@CounterBox=\box41
 \el@ControlBox=\box42
-\el@TotalMargin=\dimen197
-\el@LeftMove=\dimen198
+\el@TotalMargin=\dimen260
+\el@LeftMove=\dimen261
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -1264,30 +1286,14 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
 )
-\XKV@depth=\count333
+\XKV@depth=\count336
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count334
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen199
-\captionmargin@=\dimen256
-\captionwidth=\dimen257
-\caption@tempdima=\dimen258
-\caption@indent=\dimen259
-\caption@parindent=\dimen260
-\caption@hangindent=\dimen261
-)
-\c@ContinuedFloat=\count335
+\c@@todonotes@numberoftodonotes=\count337
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -1299,9 +1305,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count336
-\Gm@cntv=\count337
-\c@Gm@tempcnt=\count338
+\Gm@cnth=\count338
+\Gm@cntv=\count339
+\c@Gm@tempcnt=\count340
 \Gm@bindingoffset=\dimen262
 \Gm@wd@mp=\dimen263
 \Gm@odd@mp=\dimen264
@@ -1329,43 +1335,43 @@ File: finnish.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count339
-\@quotereset=\count340
+\@quotelevel=\count341
+\@quotereset=\count342
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 146.
+(biblatex)                Setting 'uniquename=init' on input line 149.
 
 (di.aux (kansilehti.aux))
 \openout1 = `di.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 146.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 149.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
+\scratchcounter=\count343
 \scratchdimen=\dimen270
 \scratchbox=\box43
-\nofMPsegments=\count342
-\nofMParguments=\count343
+\nofMPsegments=\count344
+\nofMParguments=\count345
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count344
+\MPscratchCnt=\count346
 \MPscratchDim=\dimen271
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
 \everyMPtoPDFconversion=\toks45
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1383,12 +1389,15 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
 your preamble.
- on input line 146.
+ on input line 149.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1398,10 +1407,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'di.bbl' found.
 (di.bbl)
-Package biblatex Info: Reference section=0 on input line 146.
-Package biblatex Info: Reference segment=0 on input line 146.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Reference section=0 on input line 149.
+Package biblatex Info: Reference segment=0 on input line 149.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1493,9 +1500,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./tty-logo.pdf>])
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 162.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 165.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 168.
  [1
 
 
@@ -1507,7 +1514,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
  [2
 
 ]
-Overfull \hbox (15.92015pt too wide) in paragraph at lines 226--227
+Overfull \hbox (15.92015pt too wide) in paragraph at lines 229--230
 []\T1/lmr/m/n/12 Matemaattisesti op-ti-moin-nis-sa on ta-voit-tee-na et-siä fun
 k-tiol-le käy-väs-tä jou-kos-ta minimi-
  []
@@ -1516,31 +1523,31 @@ k-tiol-le käy-väs-tä jou-kos-ta minimi-
 
 
 ]
-Overfull \hbox (2.14616pt too wide) in paragraph at lines 250--251
+Overfull \hbox (2.14616pt too wide) in paragraph at lines 253--254
 []\T1/lmr/m/n/12 Vektori \T1/lmr/bx/n/12 x \T1/lmr/m/n/12 si-säl-tää op-ti-moin
 -ti-teh-tä-vän kaik-ki suun-nit-te-lu-muut-tu-jat (de-sign va-riables).
  []
 
 [2]
-Overfull \hbox (7.96188pt too wide) in paragraph at lines 278--279
+Overfull \hbox (7.96188pt too wide) in paragraph at lines 281--282
 []\T1/lmr/m/n/12 Tapaus, jos-sa yh-tä-lö-muo-toi-sia rajoite-ehtoja on an-net-t
 u-ja suun-nit-te-lu-muut-tu-jia enem-
  []
 
 
-Overfull \hbox (1.43199pt too wide) in paragraph at lines 280--281
+Overfull \hbox (1.43199pt too wide) in paragraph at lines 283--284
 []\T1/lmr/m/n/12 Standardimuotoisessa op-ti-moin-ti-teh-tä-väs-sä epäyh-tä-lö-r
 a-joit-teet il-moi-te-taan ai-na kaa-
  []
 
 [3] [4]
-Overfull \hbox (4.20514pt too wide) in paragraph at lines 313--314
+Overfull \hbox (4.20514pt too wide) in paragraph at lines 316--317
 []\T1/lmr/m/n/12 Dynaamisessa teh-tä-väs-sä et-si-tään siis koh-de-funk-tioon s
 i-joi-tet-ta-vien suun-nit-te-lu-muut-
  []
 
 
-Overfull \hbox (19.85754pt too wide) in paragraph at lines 313--314
+Overfull \hbox (19.85754pt too wide) in paragraph at lines 316--317
 \T1/lmr/m/n/12 tu-jien si-jas-ta funk-tiot, jot-ka esi-te-tään jon-kin pa-ra-me
 t-rin suh-teen.  ([]Rao 1999, s. 15) 
  []
@@ -1549,7 +1556,7 @@ t-rin suh-teen.  ([]Rao 1999, s. 15)
 LaTeX Warning: Marginpar on page 5 moved.
 
 [5]
-Overfull \hbox (4.07727pt too wide) in paragraph at lines 338--339
+Overfull \hbox (4.07727pt too wide) in paragraph at lines 341--342
 []\T1/lmr/m/n/12 Rakenteiden op-ti-moin-nis-sa ta-voit-tee-na on löy-tää mah-do
 l-li-sim-man ta-lou-del-li-nen, mut-
  []
@@ -1562,33 +1569,40 @@ found PDF version <1.7>, but at most version <1.5> allowed
 File: Kuvat/mitoitusoptimointi.pdf Graphic file (type pdf)
 
 <use Kuvat/mitoitusoptimointi.pdf>
-Package pdftex.def Info: Kuvat/mitoitusoptimointi.pdf used on input line 345.
+Package pdftex.def Info: Kuvat/mitoitusoptimointi.pdf used on input line 348.
 (pdftex.def)             Requested size: 199.16928pt x 107.04016pt.
  [6] [7 <./Kuvat/mitoitusoptimointi.pdf>]
-[8
+<Kuvat/puristettu_sauva.pdf, id=58, 614.295pt x 794.97pt>
+File: Kuvat/puristettu_sauva.pdf Graphic file (type pdf)
 
-] (Kuvaajat/nurjahdus.tex) [9]
-Overfull \hbox (14.63622pt too wide) in paragraph at lines 421--422
+<use Kuvat/puristettu_sauva.pdf>
+Package pdftex.def Info: Kuvat/puristettu_sauva.pdf used on input line 380.
+(pdftex.def)             Requested size: 142.26378pt x 184.1008pt.
+ [8
+
+] [9 <./Kuvat/puristettu_sauva.pdf>]
+[10] (Kuvaajat/nurjahdus.tex) [11]
+Overfull \hbox (14.63622pt too wide) in paragraph at lines 532--533
 []\T1/lmr/m/n/12 Tässä diplo-mi-työs-sä kä-si-tel-tä-vät pro-fii-lit ra-jau-tu-
 vat lu-juus-luo-kan S355 -rakenneputkiin,
  []
 
-<Kuvat/ristikko_upperchord_buckling.pdf, id=64, 596.34697pt x 257.39963pt>
+<Kuvat/ristikko_upperchord_buckling.pdf, id=212, 596.34697pt x 257.39963pt>
 File: Kuvat/ristikko_upperchord_buckling.pdf Graphic file (type pdf)
 
 <use Kuvat/ristikko_upperchord_buckling.pdf>
 Package pdftex.def Info: Kuvat/ristikko_upperchord_buckling.pdf used on input l
-ine 431.
+ine 542.
 (pdftex.def)             Requested size: 426.79134pt x 184.21214pt.
- [10 <./Kuvat/ristikko_upperchord_buckling.pdf>]
-<Kuvat/ristikko_paarre_normaalivoima.pdf, id=73, 561.5161pt x 98.88945pt>
+ [12 <./Kuvat/ristikko_upperchord_buckling.pdf>]
+<Kuvat/ristikko_paarre_normaalivoima.pdf, id=220, 561.5161pt x 98.88945pt>
 File: Kuvat/ristikko_paarre_normaalivoima.pdf Graphic file (type pdf)
 
 <use Kuvat/ristikko_paarre_normaalivoima.pdf>
 Package pdftex.def Info: Kuvat/ristikko_paarre_normaalivoima.pdf used on input 
-line 441.
+line 552.
 (pdftex.def)             Requested size: 426.79134pt x 75.1643pt.
- [11 <./Kuvat/ristikko_paarre_normaalivoima.pdf>] [12
+ [13 <./Kuvat/ristikko_paarre_normaalivoima.pdf>] [14
 
 ] (di.aux (kansilehti.aux))
 Package logreq Info: Writing requests to 'di.run.xml'.
@@ -1596,13 +1610,13 @@ Package logreq Info: Writing requests to 'di.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33535 strings out of 493328
- 770377 string characters out of 3139127
- 1370769 words of memory out of 3000000
- 36461 multiletter control sequences out of 15000+200000
+ 33601 strings out of 493328
+ 771551 string characters out of 3139127
+ 1371919 words of memory out of 3000000
+ 36523 multiletter control sequences out of 15000+200000
  76197 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,96p,1198b,2401s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,96p,1198b,2403s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
@@ -1620,9 +1634,9 @@ lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb>
-Output written on di.pdf (15 pages, 292226 bytes).
+Output written on di.pdf (17 pages, 379565 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 285 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

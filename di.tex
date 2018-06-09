@@ -5,6 +5,8 @@
 
 \usepackage[finnish,english]{babel}		% Kielimäärittelyt
 
+
+
 \usepackage{lmodern}					% Tavutus skandinaavisille
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -13,7 +15,8 @@
 	
 \usepackage{tabularx}					% Paremmat taulukot
 
-\usepackage{graphicx}					% Grafiikkapaketti
+\usepackage{graphicx}
+\usepackage{subcaption}					% Grafiikkapaketti
 
 \usepackage{setspace} 					% Kansilehden tarkastajaboksia varten
 \usepackage{hyphenat} 					% Joku höskä kansilehden toimintaa varten
@@ -358,19 +361,127 @@ Topologian optimoinnissa rakennekokonaisuudelle haetaan optimitopologia siten, e
 
 \section{Teräshallin jäykistäminen}
 
-\section{Jäykistäminen yleisesti}
 
+\subsection{Jäykisteen jäykkyyden ja lujuuden välinen yhteys}
+Tähän vielä tekstiä yleisesti; jäykistäminen on 1) jäykistämistä ulkoisia vaakakuormia vastaan ja 2) jäykistämistä kantavien rakenteiden stabiliteetin säilyttämistä varten. yms yms. Löytyy Winterin artikkelista. 
+\todo{TÄMÄ KESKEN}
 
-
-\subsection{Puristetun sauvan stabiliteetti EN 1993 mukaisesti}
-Puristetun sauvan stabiliteetti perustuu Eulerin nurjahdukseen, jossa ideaalisuoraa homogeenisesta materiaalista koostuvaa hoikkaa pilaria kuormitetaan keskeisesti. Voimaa, joka aiheuttaa pilarin nurjahduksen kutsutaan nurjahduskuormaksi tai kriittiseksi voimaksi ja se määritellään kaavalla
+Puristetun sauvan stabiliteetti perustuu Eulerin nurjahdukseen, jossa ideaalisuoraa homogeenisesta materiaalista koostuvaa hoikkaa sauvaa kuormitetaan keskeisesti. Kuorma, joka saa aikaan sauvan stabiliteetin menetyksen kutsutaan kriittiseksi kuormaksi tai nurjahdusvoimaksi ja se määritetään Eulerin kaavalla
 
 \begin{equation}
 \label{euler}
-N_{cr} = \frac{\pi^2 E I}{L^2},
+P_{cr} = \frac{\pi^2 E I}{L^2},
 \end{equation}
 
-missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L$ on pilarin kyseeseen tulevaa nurjahdusmuotoa vastaava nurjahduspituus. \todo{jotain nurjahdusmuodoista yms tähän.}
+missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L$ on kyseistä nurjahdusmuotoa vastaava nurjahduspituus. Kaavan (\ref{euler}) mukaan pienentämällä sauvan nurjahduspituutta $L$ kasvaa sauvan kriittinen kuorma eksponentiaalisesti. Nurjahduspituuden pienentäminen voidaan toteuttaa lisäämällä sauvan poikittaisten tukien määrää. Tätä toimenpidettä kutsutaan jäykistämiseksi. Jäykistämisellä pyritään kasvattamaan sauvan kuormankantokykyä parantamalla sen stabiliteettia. Yksinkertaista puristetun sauvan ja jäykisteen rakennetta on esitetty kuvassa (\ref{fig:puristettu_sauva}), jossa nivelellisesti tuettua kuormalla $P$ puristettua sauvaa tuetaan keskikohdastaan joustavalla jäykisterakenteella. Sauvalla on alkuepäkeskisyys $\Delta_0$ sekä jäykistesiteen puristumasta aiheutuva siirtymä $\Delta$. Jäykistesiteen puristuma aiheuttaa jäykisteeseen aksiaalisen puristusvoiman $P_{br}$.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=5cm]{Kuvat/puristettu_sauva.pdf}
+\caption{Jäykistesauvan toiminta puristetun sauvan tuentana.}
+\label{fig:puristettu_sauva}
+\end{figure}
+
+Jäykistävä rakenne tukee puristettua sauvaa siten, että nurjahdus pääsee tapahtumaan ainoastaan tuki- ja jäykistepisteiden välillä. Toimiakseen jäykisteellä tulee olla riittävä määrä aksiaalista jäykkyyttä sekä jäykisteen poikkileikkauksella lujuutta \parencite{winter}. Kun ideaalisuoraa sauvaa kuormitetaan kaavan (\ref{euler}) mukaisella kriittisellä kuormalla $P_{cr}$, on pienin toimivan jäykisteen aksiaalisen jäykkyyden arvo kaavan
+
+\begin{equation}
+\label{ideaalijäykkyys}
+\beta_i = \frac{\gamma_i P_{cr}}{L},
+\end{equation}
+
+mukainen, missä $L$ on sauvaa tukipisteiden välinen etäisyys ja $\gamma_i$ on jäykistävien siteiden määrästä riippuva kerroin \parencite[76]{timoshenko}. Jäykistesiteen jäykkyys $\beta_i$ on siis pienin jäykkyys, jolla ideaalisuoran puristetun sauvan nurjahdus tapahtuu lokaalisti tukipisteiden välillä. $P_{cr}$ määritellään kaavan (\ref{euler}) mukaisesti käyttämällä nurjahduspituutena jäykisteiden välistä etäisyyttä. 
+
+Kertoimen $\gamma_i$ avulla voidaan määrittää jäykisteiden ideaalijäykkyys, kun puristettua sauvaa tuetaan useammalla jäykisteellä ja kun jäykisteiden välinen keskinäinen etäisyys on vakio. Jäykkyyskertoimet ja niitä vastaavat rakenteet on esitetty taulukossa (\ref{tab:ideaalijäykkyydet}).
+
+\begin{table}[htb]
+\centering
+\caption{Ideaalisuoraa sauvaa jäykistävien rakenteiden vaaditut jäykkyyden kertoimet.}
+\begin{tabular}{c c c c c c}
+\label{tab:ideaalijäykkyydet}
+
+Siteiden määrä & 1 & 2 & 3 & 4 & 5   \\
+\hline
+Kerroin $\gamma_i$ & 2,000 &3,000 & 3,413 & 3,623 & 3,731 
+\end{tabular}
+\end{table}
+
+Taulukosta huomataan, että siteiden määrän kasvaessa kasvaa myös vaadittu ideaalijäykkyyden arvo. Tämä on ilmeistä, sillä näin myös sauvaa voidaan kuormittaa suuremmalla puristusvoimalla sen nurjahduskestävyyden ollessa suurempi. Stephen Timoshenko esitti nämä kertoimet \parencite{timoshenko} johtamalla ne differentiaalilaskennan kautta jatkuvalle palkille joka tuettu jousituilla. 
+
+Myös George Winter päätyi samoihin kertoimiin \parencite{winter} yksinkertaisemmalla tavalla määrittämällä tasapainoehdot sauvan ja jäykisteiden välisten liittymispisteiden ympäri ja ratkaisemalla kertoimet sauvan ominaismuotojen kautta. Winterin teoria perustui otaksumaan, jossa liitospisteessä on fiktiivinen nivel, jolloin sauvaan ei kohdistu lainkaan taivutusmomenttia. Winterin esittämä tasapainomalli ottaa huomioon myös sauvan alkuepäkeskisyyden $\Delta_0$. Kuvan (\ref{fig:puristettu_sauva}) rakennemallista voidaan vastaavalla tavalla muodostaa tasapainoehto
+
+\begin{equation}
+\label{tasapainoehto}
+P (\Delta_0 + \Delta) = \frac{P_{br} L}{2},
+\end{equation}
+
+missä $P$ on sauvaan kohdistuva aksiaalinen voima, $\Delta_0$ sauvan alkuvinous, $\Delta$ jäykisteen puristuma ja $P_{br}$ on jäykisteen sauvaan kohdistama tukireaktio. Kun otaksutaan jäykisteessä vaikuttavan tukreaktion suuruisen aksiaalisen voiman, voidaan jousiteorian nojalla määrittää yhteys jäykkyyden ja puristuman välillä kaavalla
+
+\begin{equation}
+\label{jousiteoria}
+P_{br} = \beta \Delta,
+\end{equation}
+
+missä $\beta$ on jäykistesauvan aksiaalinen jäykkyys. Kun sijoitetaan tämä rakenteen tasapainoehdon kaavaan (\ref{tasapainoehto}) saadaan aksiaalisen jäykkyyden arvoksi
+
+\begin{equation}
+\label{breq}
+\beta_{req} = \frac{2 P}{L} (\frac{\Delta_0}{\Delta} + 1),
+\end{equation}
+
+missä $\beta_{req}$ on siis jäykisteenä toimivan rakenteen vaadittu aksiaalinen jäykkyys kun huomioidaan alkusiirtymä $\Delta_0$. Ideaalisuoralla sauvalla ($\Delta_0$ = 0) kaava saa saman arvon kuin aikaisemmin esitetty ideaalijäykkyyden arvo (\ref{ideaalijäykkyys}), sillä taulukon (\ref{tab:ideaalijäykkyydet}) mukaisesti kyseisen rakenteen jäykkyyskerroin $\gamma_i$ = 2,0. Voidaan siis kirjoittaa, että yleisesti
+
+\begin{equation}
+\label{breq_2}
+\beta_{req} = \beta_i (\frac{\Delta_0}{\Delta} + 1).
+\end{equation}
+
+
+
+
+
+
+%Sauvan siirtyessä jäykisteen kohdalta kohdistaa se jäykisteeseen aksiaalisen puristuman. Jousiteorian nojalla jäykisteessä vaikuttava voima on 
+%
+%
+%
+%missä $\beta$ on jäykistesauvan aksiaalinen jäykkyys sekä $\Delta$ jäykistesauvan puristuma, eli puristetun sauvan siirtymä jäykistepisteessä. 
+%
+%Kun kirjoitetaan tasapainoyhtälö sauvan tukipisteen suhteen ottamalla huomioon sauvan alkuvinous $/Delta_0$, saadaan yhteys
+%
+%\begin{equation}
+%\label{tasapainoehto}
+%P (\Delta_0 + \Delta) = \beta L \Delta.
+%\end{equation}
+%
+%Sijoittamalla tähän kaavan (\ref{jäykistevoima_jousiteoria}) mukainen sauvan puristuman ja jäykkyyden välinen yhteys, saadaan kuvan (\ref{fig:puristettu_sauva}) rakenteen jäykisteelle kohdistuvaksi jäykistevoiman arvoksi
+%
+%\begin{equation}
+%\label{jäykistevoima}
+%P_{br} = \frac{\beta P \Delta_0}{\beta L - P}.
+%\end{equation}
+%
+%Alla olevissa kuvaajissa on havainnollistettu edellä esitettyjen kaavojen välisiä yhteyksiä. Kuvaajat on määritelty alkuvinouden arvolla $\Delta_0 = 0,002L$. 
+%
+%\begin{figure}[htb]
+%\begin{subfigure}{0.45\textwidth}
+%		\input{Kuvaajat/jäykistevoima.tex}
+%		\label{fig:jäykistevoimakuvaaja}
+%		\caption{}
+%	\end{subfigure}
+%	~
+%	\begin{subfigure}{0.45\textwidth}
+%		\input{Kuvaajat/jäykistevoima_2.tex}
+%		\label{fig:jäykistevoimakuvaaja_2}
+%		\caption{}
+%	\end{subfigure}
+%	\caption{Jäykisteen aksiaalisen jäykkyyden vaikutus jäykisteen puristusvoimaan kuvan (\ref{fig:puristettu_sauva}) mukaisessa rakenteessa.}
+%\end{figure}
+%
+%Vasemmanpuoleisessa kuvaajassa (\ref{fig:jäykistevoimakuvaaja}) kuvataan jäykisteessä vaikuttavaa voimaa suhteessa jäykisteen aksiaaliseen jäykkyyteen. Kuvaajasta havaitaan, että jäykkyyden lähestyessä kaavassa (\ref{ideaalijäykkyys}) määritettyä ideaalisen jäykkyyden arvoa $\beta_i$, alkaa jäykisteessä vaikuttava puristusvoima kasvaa lähestyen ääretöntä. Oikeanpuoleisessa (\ref{fig:jäykistevoimakuvaaja_2}) kuvaajassa puolestaan havainnollistetaan jäykistevoiman suhdetta puristetun sauvan normaalivoimaan eri jäykkyysarvot omaavilla jäykisteillä. Kuvaajasta voidaan havaita, että jäykisteen jäykkyyden ollessa ainoastaan $2\beta_i$, on suurimmillaan jäykisteessä vaikuttava aksiaalinen voima 0,6 \% puristetussa sauvassa vaikuttavasta voimasta ja jäykkyydellä $4\beta_i$ n. 0,25 \%.
+%
+%Edellä esitettyjen kaavojen perusteella voidaan todeta, jäykisteeltä vaaditaan vähintään ideaalijäykkyyden (kaava \ref{ideaalijäykkyys}) mukaista aksiaalista jäykkyyttä, että alkuvinouden vaatimaa lujuutta ja että näillä kahdella on yhteys, joka on kuvan (\ref{fig:puristettu_sauva}) mukaisessa alkeisrakenteessa kaavan (\ref{jäykistevoima}) suuruinen.  
+
+\subsection{Puristetun sauvan stabiliteetti EN 1993 mukaisesti}
 
 Puristetun sauvan todellisen aksiaalisen puristuskapasiteetin määrittämiseksi on Eulerin teoreettisen nurjahduskapasiteetin lisäksi huomioitava epätarkkuustekijät, joita ovat esimerkiksi poikkeama ideaalisuorasta rakenteesta, materiaalin epälineaarisuus tai materiaalin muokkaamisen seurauksena syntyneet jäännösjännitykset. Näiden tekijöiden huomioiminen vaatii poikkeuksetta epälineaarista analyysia ja niiden laskentaan on historian aikana kehitetty laskentakaavoja, jotka perustuvat niin kokeelliseen tutkimukseen, kuin erilaisiin lujuusopin teorioihin.\parencite[27]{ziemian} Teräsrakenteiden suunnittelustandardi (\citeauthor{en1993})\todo{viittaus kuntoon!} esittää näiden poikkeamien huomioon ottamiseksi viisi (5) erilaista epätarkkuustekijää rakenteen valmistustavasta ja profiilin muodosta riippuen. Nämä epätarkkuustekijät on esitetty taulukossa (\ref{epätarkkuustekijät}). 
 
