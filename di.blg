@@ -1,18 +1,18 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
-[2] Config.pm:357> INFO - Logfile is 'di.blg'
-[139] biber-MSWIN64:303> INFO - === 
-[210] Biber.pm:359> INFO - Reading 'di.bcf'
-[659] Biber.pm:835> INFO - Found 8 citekeys in bib section 0
-[785] Biber.pm:3670> INFO - Processing section 0
-[929] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
-[949] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[980] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
-[1103] Utils.pm:164> WARN - ISBN '0-07-Y85821-7' in entry 'timoshenko' is invalid - run biber with '--validate_datamodel' for details.
-[1115] Utils.pm:164> WARN - ISBN '7978-952-9683-50-5' in entry 'try_kaitila' is invalid - run biber with '--validate_datamodel' for details.
-[1193] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1195] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[1196] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[1] Config.pm:357> INFO - Logfile is 'di.blg'
+[86] biber-MSWIN64:303> INFO - === 
+[217] Biber.pm:359> INFO - Reading 'di.bcf'
+[450] Biber.pm:835> INFO - Found 8 citekeys in bib section 0
+[491] Biber.pm:3670> INFO - Processing section 0
+[579] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[592] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[615] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
+[786] Utils.pm:164> WARN - ISBN '0-07-Y85821-7' in entry 'timoshenko' is invalid - run biber with '--validate_datamodel' for details.
+[817] Utils.pm:164> WARN - ISBN '7978-952-9683-50-5' in entry 'try_kaitila' is invalid - run biber with '--validate_datamodel' for details.
+[1125] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1125] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1125] Biber.pm:3499> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[1126] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
 [1227] bbl.pm:608> INFO - Writing 'di.bbl' with encoding 'UTF-8'
-[1232] bbl.pm:712> INFO - Output to di.bbl
-[1245] Biber.pm:109> INFO - WARNINGS: 2
+[1233] bbl.pm:712> INFO - Output to di.bbl
+[1260] Biber.pm:109> INFO - WARNINGS: 2

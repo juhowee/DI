@@ -217,6 +217,8 @@ Avainsanat: \par
 
 \section{Johdanto}
 
+Tähän voisi ottaa esim kirjasta Structures (Schodek) rakenteiden mitoituksesta yleensä: serviceability, efficiency, construction, costs ja other.
+
 \subsection{Tutkimuksen tausta}
 \subsection{Työn tavoitteet}
 \subsection{Työn rajaukset}
@@ -361,24 +363,31 @@ Topologian optimoinnissa rakennekokonaisuudelle haetaan optimitopologia siten, e
 
 \section{Teräshallin jäykistäminen}
 
+\subsection{Jäykistäminen yleisesti}
+
+Kantavien rakenneosien stabiliteetti varmistetaan jäykistämällä rakennus. Rakennus on jäykistettava sekä vaaka- että pystysuunnassa ja jäykisteille kohdistuvat kuormat on vietävä perustuksille. 
+
+Jäykistäminen ja jäykistejärjestelmän toimintatarkoitus jaetaan ulkoisia kuormia ja sisäisiä kuormia vastaanottaviin jäykisterakenteisiin. Tavallisesti jäykisterakenteista puhuttaessa ulkoisilla kuormilla tarkoitetaan ulkoisia vaakavoima, joita ovat esimerkiksi tuulikuorma ja pystykuormista rakenteille niiden epätarkkuuksista aiheutuvat lisävaakavoimat. Vaakakuormat aiheuttavat rakennukseen sivusiirtymiä tai kiertymää, jolloin pystykuormat muuttuvat rakenneosiin nähden epäkeskeiseksi ja puristetut rakenneosat ovat vaarassa menettää kantavuutensa esimerkiksi stabiliteetin menetyksen seurauksena. Jäykisterakenteiden on tarkoitus estää tätä vaakakuormista aiheutuvaa muodonmuutosta ja näin ollen säilyttää rakennuksen muoto jäykkänä kokonaisuutena, jolloin kuormat ohjautuvat rakenneosia pitkin suunnitellusti perustuksille. Tavallisia ulkoisia vaakakuormia vastaan toimivia jäykisterakenteita teräshallissa ovat katon tuuliristikko tai pilarien väliset vinositeet. 
+
+Sisäisiä voimia vastaan toimivilla jäykisteillä tarkoitetaan rakenteita, jotka tukevat kantavan rungon puristettuja tai taivutettuja rakenneosia stabiliteetin menetystä vastaan. Puristetuilla ja myös taivutetuilla rakenneosilla mitoittavaksi tekijäksi usein muodostuu sisäiset stabiliteetti-ilmiöt, kuten nurjahdus ja kiepahdus. Sisäisen jäykistejärjestelmän tarkoitus on muodostaa tukipisteitä näihin rakenneosiin ja näin estää nämä stabiliteetinmenetysilmiöt rajoittamalla vapaata nurjahdus- tai kiepahduspituutta. Yksi esimerkki sisäisestä jäykistysjärjestelmästä teräshallissa on kattoristikon yläpaarteen nurjahdustuennat, joista tavallisesti käytetään yleisnimitystä katon jäykistesiteet. 
+
+
 
 \subsection{Jäykisteen jäykkyyden ja lujuuden välinen yhteys}
-Tähän vielä tekstiä yleisesti; jäykistäminen on 1) jäykistämistä ulkoisia vaakakuormia vastaan ja 2) jäykistämistä kantavien rakenteiden stabiliteetin säilyttämistä varten. yms yms. Löytyy Winterin artikkelista. 
-\todo{TÄMÄ KESKEN}
 
-Puristetun sauvan stabiliteetti perustuu Eulerin nurjahdukseen, jossa ideaalisuoraa homogeenisesta materiaalista koostuvaa hoikkaa sauvaa kuormitetaan keskeisesti. Kuorma, joka saa aikaan sauvan stabiliteetin menetyksen kutsutaan kriittiseksi kuormaksi tai nurjahdusvoimaksi ja se määritetään Eulerin kaavalla
+Puristetun sauvan stabiliteetti perustuu Eulerin nurjahdukseen, jossa ideaalisuoraa homogeenisesta materiaalista koostuvaa hoikkaa sauvaa kuormitetaan keskeisesti. Kuormaa, joka saa aikaan sauvan stabiliteetin menetyksen kutsutaan kriittiseksi kuormaksi tai nurjahdusvoimaksi ja se määritetään Eulerin nurjahduksen kaavalla
 
 \begin{equation}
 \label{euler}
-P_{cr} = \frac{\pi^2 E I}{L^2},
+P_{cr} = \frac{\pi^2 E I}{L_{cr}^2},
 \end{equation}
 
-missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L$ on kyseistä nurjahdusmuotoa vastaava nurjahduspituus. Kaavan (\ref{euler}) mukaan pienentämällä sauvan nurjahduspituutta $L$ kasvaa sauvan kriittinen kuorma eksponentiaalisesti. Nurjahduspituuden pienentäminen voidaan toteuttaa lisäämällä sauvan poikittaisten tukien määrää. Tätä toimenpidettä kutsutaan jäykistämiseksi. Jäykistämisellä pyritään kasvattamaan sauvan kuormankantokykyä parantamalla sen stabiliteettia. Yksinkertaista puristetun sauvan ja jäykisteen rakennetta on esitetty kuvassa (\ref{fig:puristettu_sauva}), jossa nivelellisesti tuettua kuormalla $P$ puristettua sauvaa tuetaan keskikohdastaan joustavalla jäykisterakenteella. Sauvalla on alkuepäkeskisyys $\Delta_0$ sekä jäykistesiteen puristumasta aiheutuva siirtymä $\Delta$. Jäykistesiteen puristuma aiheuttaa jäykisteeseen aksiaalisen puristusvoiman $P_{br}$.
+missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L_{cr}$ on kyseistä nurjahdusmuotoa vastaava nurjahduspituus. Kaavan (\ref{euler}) mukaan pienentämällä sauvan nurjahduspituutta $L$ kasvaa sauvan kriittinen kuorma eksponentiaalisesti. Nurjahduspituuden pienentäminen voidaan toteuttaa lisäämällä sauvan poikittaisten tukien määrää. Tätä toimenpidettä kutsutaan jäykistämiseksi. Jäykistämisellä pyritään kasvattamaan sauvan kuormankantokykyä parantamalla sen stabiliteettia. Yksinkertaista puristetun sauvan ja jäykisteen rakennetta on esitetty kuvassa (\ref{fig:puristettu_sauva}), jossa nivelellisesti tuettua kuormalla $P$ puristettua sauvaa tuetaan keskikohdastaan joustavalla jäykisterakenteella. Sauvalla on alkuepäkeskisyys $\Delta_0$ sekä jäykistesiteen puristumasta aiheutuva siirtymä $\Delta$. Jäykistesiteen puristuma aiheuttaa jäykisteeseen aksiaalisen puristusvoiman $P_{br}$.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=5cm]{Kuvat/puristettu_sauva.pdf}
-\caption{Jäykistesauvan toiminta puristetun sauvan tuentana.}
+\caption{Rakennemalliesimerkki jäykisteen toiminnasta, missä puristettua alkuepäkeskisyyden omaavaa sauvaa tuetaan jännevälin keskeltä jousimaisella jäykisterakenteella.}
 \label{fig:puristettu_sauva}
 \end{figure}
 

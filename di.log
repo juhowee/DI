@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.20)  9 JUN 2018 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.20)  11 JUN 2018 21:36
 entering extended mode
 **./di.tex
 (di.tex
@@ -1572,51 +1572,54 @@ File: Kuvat/mitoitusoptimointi.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kuvat/mitoitusoptimointi.pdf used on input line 348.
 (pdftex.def)             Requested size: 199.16928pt x 107.04016pt.
  [6] [7 <./Kuvat/mitoitusoptimointi.pdf>]
-<Kuvat/puristettu_sauva.pdf, id=58, 614.295pt x 794.97pt>
+[8
+
+] <Kuvat/puristettu_sauva.pdf, id=61, 614.295pt x 794.97pt>
 File: Kuvat/puristettu_sauva.pdf Graphic file (type pdf)
 
 <use Kuvat/puristettu_sauva.pdf>
-Package pdftex.def Info: Kuvat/puristettu_sauva.pdf used on input line 380.
+Package pdftex.def Info: Kuvat/puristettu_sauva.pdf used on input line 385.
 (pdftex.def)             Requested size: 142.26378pt x 184.1008pt.
- [8
-
-] [9 <./Kuvat/puristettu_sauva.pdf>]
-[10] (Kuvaajat/nurjahdus.tex) [11]
-Overfull \hbox (14.63622pt too wide) in paragraph at lines 532--533
+ [9 <./Kuvat/puristettu_sauva.pdf>] [10]
+(Kuvaajat/nurjahdus.tex) [11]
+Overfull \hbox (14.63622pt too wide) in paragraph at lines 537--538
 []\T1/lmr/m/n/12 Tässä diplo-mi-työs-sä kä-si-tel-tä-vät pro-fii-lit ra-jau-tu-
 vat lu-juus-luo-kan S355 -rakenneputkiin,
  []
 
-<Kuvat/ristikko_upperchord_buckling.pdf, id=212, 596.34697pt x 257.39963pt>
+[12]
+<Kuvat/ristikko_upperchord_buckling.pdf, id=215, 596.34697pt x 257.39963pt>
 File: Kuvat/ristikko_upperchord_buckling.pdf Graphic file (type pdf)
 
 <use Kuvat/ristikko_upperchord_buckling.pdf>
 Package pdftex.def Info: Kuvat/ristikko_upperchord_buckling.pdf used on input l
-ine 542.
+ine 547.
 (pdftex.def)             Requested size: 426.79134pt x 184.21214pt.
- [12 <./Kuvat/ristikko_upperchord_buckling.pdf>]
-<Kuvat/ristikko_paarre_normaalivoima.pdf, id=220, 561.5161pt x 98.88945pt>
+
+<Kuvat/ristikko_paarre_normaalivoima.pdf, id=216, 561.5161pt x 98.88945pt>
 File: Kuvat/ristikko_paarre_normaalivoima.pdf Graphic file (type pdf)
 
 <use Kuvat/ristikko_paarre_normaalivoima.pdf>
 Package pdftex.def Info: Kuvat/ristikko_paarre_normaalivoima.pdf used on input 
-line 552.
+line 557.
 (pdftex.def)             Requested size: 426.79134pt x 75.1643pt.
- [13 <./Kuvat/ristikko_paarre_normaalivoima.pdf>] [14
+ [13 <./Kuvat/ristikko_upperchord_buckling.pdf>] [14 <./Kuvat/ristikko_paarre_n
+ormaalivoima.pdf>] [15
 
-] (di.aux (kansilehti.aux))
+] (di.aux
+(kansilehti.aux))
 Package logreq Info: Writing requests to 'di.run.xml'.
 \openout1 = `di.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33601 strings out of 493328
- 771551 string characters out of 3139127
- 1371919 words of memory out of 3000000
- 36523 multiletter control sequences out of 15000+200000
+ 33593 strings out of 493328
+ 771366 string characters out of 3139127
+ 1374898 words of memory out of 3000000
+ 36515 multiletter control sequences out of 15000+200000
  76197 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,96p,1198b,2403s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,96p,1198b,2391s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
@@ -1634,9 +1637,9 @@ lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb>
-Output written on di.pdf (17 pages, 379565 bytes).
+Output written on di.pdf (18 pages, 379082 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
+ 288 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
