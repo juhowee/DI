@@ -1,8 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {finnish}
+\babel@toc {english}{}
+\babel@toc {finnish}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Johdanto}{1}
 \defcounter {refsection}{0}\relax 
@@ -18,16 +16,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Optimointiteht\IeC {\"a}v\IeC {\"a}n luokittelu}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Rakenteiden optimointi}{6}
+\contentsline {subsection}{\numberline {2.3}Ter\IeC {\"a}srakenteen massan optimointi}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Ter\IeC {\"a}shallin j\IeC {\"a}ykist\IeC {\"a}minen}{8}
+\contentsline {subsection}{\numberline {2.4}Ter\IeC {\"a}srakenteen kustannusten muodostuminen ja optimointi}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}J\IeC {\"a}ykist\IeC {\"a}minen yleisesti}{8}
+\contentsline {section}{\numberline {3}Ter\IeC {\"a}shallin j\IeC {\"a}ykist\IeC {\"a}minen}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}J\IeC {\"a}ykisteen j\IeC {\"a}ykkyyden ja lujuuden v\IeC {\"a}linen yhteys}{8}
+\contentsline {subsection}{\numberline {3.1}J\IeC {\"a}ykist\IeC {\"a}minen yleisesti}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{11}
+\contentsline {subsection}{\numberline {3.2}J\IeC {\"a}ykisteen j\IeC {\"a}ykkyyden ja lujuuden v\IeC {\"a}linen yhteys}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Ristikon yl\IeC {\"a}paarteen tuenta hallin pituussuunnassa}{13}
+\contentsline {subsection}{\numberline {3.3}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {}Viitteet}{15}
+\contentsline {subsection}{\numberline {3.4}Ristikon yl\IeC {\"a}paarteen tuenta hallin pituussuunnassa}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {}Viitteet}{19}

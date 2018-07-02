@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,21 +18,25 @@
 
 
 \refsection{0}
-  \sortlist[entry]{nyt/global/}
+  \datalist[entry]{nyt/global//global/global}
     \entry{arora}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=0859b9633906de4a34ec6b8f3e59800f}{%
+        {{uniquename=0,uniquepart=base,hash=0859b9633906de4a34ec6b8f3e59800f}{%
            family={Arora},
            familyi={A\bibinitperiod},
            given={Jasbir\bibnamedelima S},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{0859b9633906de4a34ec6b8f3e59800f}
       \strng{fullhash}{0859b9633906de4a34ec6b8f3e59800f}
+      \strng{bibnamehash}{0859b9633906de4a34ec6b8f3e59800f}
+      \strng{authorbibnamehash}{0859b9633906de4a34ec6b8f3e59800f}
       \strng{authornamehash}{0859b9633906de4a34ec6b8f3e59800f}
       \strng{authorfullhash}{0859b9633906de4a34ec6b8f3e59800f}
       \field{sortinit}{A}
-      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -41,23 +45,55 @@
       \field{title}{Introduction to optimum design}
       \field{year}{2004}
     \endentry
+    \entry{haapio_doct}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=38b99968b5d9a06114fa9c2357feb8da}{%
+           family={Haapio},
+           familyi={H\bibinitperiod},
+           given={Jaakko},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Tampereen teknillinen yliopisto}%
+      }
+      \strng{namehash}{38b99968b5d9a06114fa9c2357feb8da}
+      \strng{fullhash}{38b99968b5d9a06114fa9c2357feb8da}
+      \strng{bibnamehash}{38b99968b5d9a06114fa9c2357feb8da}
+      \strng{authorbibnamehash}{38b99968b5d9a06114fa9c2357feb8da}
+      \strng{authornamehash}{38b99968b5d9a06114fa9c2357feb8da}
+      \strng{authorfullhash}{38b99968b5d9a06114fa9c2357feb8da}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Feature-Based Costing Method for Skeletal Steel Structures based on the Process Approach}
+      \field{type}{Väitöskirja}
+      \field{year}{2012}
+    \endentry
     \entry{try_kaitila}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=ba374e9dcc4f8106bab14905b410935a}{%
+        {{uniquename=0,uniquepart=base,hash=ba374e9dcc4f8106bab14905b410935a}{%
            family={Kaitila},
            familyi={K\bibinitperiod},
            given={Olli},
-           giveni={O\bibinitperiod}}}%
+           giveni={O\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Teräsrakenneyhdistys}%
       }
       \strng{namehash}{ba374e9dcc4f8106bab14905b410935a}
       \strng{fullhash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{bibnamehash}{ba374e9dcc4f8106bab14905b410935a}
+      \strng{authorbibnamehash}{ba374e9dcc4f8106bab14905b410935a}
       \strng{authornamehash}{ba374e9dcc4f8106bab14905b410935a}
       \strng{authorfullhash}{ba374e9dcc4f8106bab14905b410935a}
       \field{sortinit}{K}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -67,21 +103,25 @@
     \endentry
     \entry{mela_doct}{thesis}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=58f07ca48443e971859245fe2c6f78b5}{%
+        {{uniquename=0,uniquepart=base,hash=58f07ca48443e971859245fe2c6f78b5}{%
            family={Mela},
            familyi={M\bibinitperiod},
            given={Kristo},
-           giveni={K\bibinitperiod}}}%
+           giveni={K\bibinitperiod},
+           givenun=0}}%
       }
       \list{institution}{1}{%
         {Tampereen teknillinen yliopisto}%
       }
       \strng{namehash}{58f07ca48443e971859245fe2c6f78b5}
       \strng{fullhash}{58f07ca48443e971859245fe2c6f78b5}
+      \strng{bibnamehash}{58f07ca48443e971859245fe2c6f78b5}
+      \strng{authorbibnamehash}{58f07ca48443e971859245fe2c6f78b5}
       \strng{authornamehash}{58f07ca48443e971859245fe2c6f78b5}
       \strng{authorfullhash}{58f07ca48443e971859245fe2c6f78b5}
       \field{sortinit}{M}
-      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -91,18 +131,22 @@
     \endentry
     \entry{rao}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=01f82bb83632588593a4d74979c576d5}{%
+        {{uniquename=0,uniquepart=base,hash=01f82bb83632588593a4d74979c576d5}{%
            family={Rao},
            familyi={R\bibinitperiod},
            given={Singiresu\bibnamedelima S},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{01f82bb83632588593a4d74979c576d5}
       \strng{fullhash}{01f82bb83632588593a4d74979c576d5}
+      \strng{bibnamehash}{01f82bb83632588593a4d74979c576d5}
+      \strng{authorbibnamehash}{01f82bb83632588593a4d74979c576d5}
       \strng{authornamehash}{01f82bb83632588593a4d74979c576d5}
       \strng{authorfullhash}{01f82bb83632588593a4d74979c576d5}
       \field{sortinit}{R}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -113,7 +157,7 @@
     \endentry
     \entry{en1993}{report}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=453d127a48233c4ec7005e7e2b902eab}{%
+        {{uniquename=0,uniquepart=base,hash=453d127a48233c4ec7005e7e2b902eab}{%
            family={{SFS-EN 1993-1-1}},
            familyi={S\bibinitperiod}}}%
       }
@@ -125,10 +169,13 @@
       }
       \strng{namehash}{453d127a48233c4ec7005e7e2b902eab}
       \strng{fullhash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{bibnamehash}{453d127a48233c4ec7005e7e2b902eab}
+      \strng{authorbibnamehash}{453d127a48233c4ec7005e7e2b902eab}
       \strng{authornamehash}{453d127a48233c4ec7005e7e2b902eab}
       \strng{authorfullhash}{453d127a48233c4ec7005e7e2b902eab}
       \field{sortinit}{S}
-      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -137,23 +184,28 @@
     \endentry
     \entry{timoshenko}{book}{}
       \name{author}{2}{}{%
-        {{uniquename=0,hash=a3801f34cb8e23319090fc44b600d36a}{%
+        {{uniquename=0,uniquepart=base,hash=a3801f34cb8e23319090fc44b600d36a}{%
            family={Timoshenko},
            familyi={T\bibinitperiod},
            given={Stephen\bibnamedelima P},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{uniquename=0,hash=73400b9316d28160ca9c4c24b3e3f709}{%
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=73400b9316d28160ca9c4c24b3e3f709}{%
            family={Gere},
            familyi={G\bibinitperiod},
            given={James\bibnamedelima M},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{3840cc02106314cc7ba1808eea1fed58}
       \strng{fullhash}{3840cc02106314cc7ba1808eea1fed58}
+      \strng{bibnamehash}{3840cc02106314cc7ba1808eea1fed58}
+      \strng{authorbibnamehash}{3840cc02106314cc7ba1808eea1fed58}
       \strng{authornamehash}{3840cc02106314cc7ba1808eea1fed58}
       \strng{authorfullhash}{3840cc02106314cc7ba1808eea1fed58}
       \field{sortinit}{T}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -164,18 +216,22 @@
     \endentry
     \entry{winter}{article}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=0a0eb26ee8d59439d4b56d421033a61a}{%
+        {{uniquename=0,uniquepart=base,hash=0a0eb26ee8d59439d4b56d421033a61a}{%
            family={Winter},
            familyi={W\bibinitperiod},
            given={George},
-           giveni={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{0a0eb26ee8d59439d4b56d421033a61a}
       \strng{fullhash}{0a0eb26ee8d59439d4b56d421033a61a}
+      \strng{bibnamehash}{0a0eb26ee8d59439d4b56d421033a61a}
+      \strng{authorbibnamehash}{0a0eb26ee8d59439d4b56d421033a61a}
       \strng{authornamehash}{0a0eb26ee8d59439d4b56d421033a61a}
       \strng{authorfullhash}{0a0eb26ee8d59439d4b56d421033a61a}
       \field{sortinit}{W}
-      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -185,18 +241,22 @@
     \endentry
     \entry{ziemian}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,hash=8eb6a48ee6f3d0ff73170f920ca940c5}{%
+        {{uniquename=0,uniquepart=base,hash=8eb6a48ee6f3d0ff73170f920ca940c5}{%
            family={Ziemian},
            familyi={Z\bibinitperiod},
            given={Ronald\bibnamedelima D},
-           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
       \strng{fullhash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{bibnamehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
+      \strng{authorbibnamehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
       \strng{authornamehash}{8eb6a48ee6f3d0ff73170f920ca940c5}
       \strng{authorfullhash}{8eb6a48ee6f3d0ff73170f920ca940c5}
       \field{sortinit}{Z}
-      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -205,7 +265,8 @@
       \field{title}{Stability design criteria for metal structures}
       \field{year}{2010}
     \endentry
-  \endsortlist
+  \enddatalist
+  \missing{haapio}
 \endrefsection
 \endinput
 

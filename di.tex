@@ -21,6 +21,9 @@
 \usepackage{setspace} 					% Kansilehden tarkastajaboksia varten
 \usepackage{hyphenat} 					% Joku höskä kansilehden toimintaa varten
 
+
+\usepackage[gen]{eurosym}				% eurosymboli
+
 % Plotit
 \usepackage{pgfplots}
 
@@ -338,7 +341,7 @@ Mikäli optimointitehtävä sisältää yhden tavoitefunktion sijasta useamman f
 
 
 
-\subsection{Rakenteiden optimointi}
+\subsection{Teräsrakenteen massan optimointi}
 
 Rakenteiden optimoinnissa tavoitteena on löytää mahdollisimman taloudellinen, mutta vaatimukset täyttävä rakenne. Tavallisimpia optimointitehtäviä ovat esimerkiksi rakenteiden massan tai tuotantokustannusten minimointi. Kun suunniteltava rakenne asetetaan matemaattiseksi malliksi ja formuloidaan optimointitehtävän muotoon, voidaan rakenne optimoida.  
 
@@ -355,6 +358,73 @@ Mitoitusoptimoinnissa rakennekokonaisuudelle haetaan sellaiset rakenneosat, joil
 Muodon tai geometrian optimoinnissa eri rakenneosien välisten liitoskohtien sijaintia muuttamalla pyritään hakemaan paras ratkaisu siten, että asetetut reunaehdot täyttyvät. Geometrian optimoinnissa rakenneosien välisten liitosten lukumäärä säilyy vakiona, ainoastaan niiden keskinäinen sijainti muuttuu. Tavallisesti tähän tehtävätyyppiin liitetään myös mitoitusoptimointi. Esimerkiksi eräsristikon geometrian optimointitehtävässä vaihdetaan diagonaalisauvojen liitoskohtien sijaintia paarteilla ja pyritään sillä hakemaan ristikolle optimirakenne.
 
 Topologian optimoinnissa rakennekokonaisuudelle haetaan optimitopologia siten, että asetetut reunaehdot täyttyvät. Koska topologia käsitteenä kuvaa ainoastaan rakennekokonaisuuden sauvojen liittymistä toisiinsa sekä kokonaisuudessa olevien liitosten määrää, sisältää topologian optimointi tavallisesti myös geometrian ja mitoituksen optimoinnin. Topologian optimoinnissa haetaan siis esimerkiksi teräsristikon tapauksessa optimein sauvajärjestely muuttamalla sekä sauvojen ja liitosten määrää että liitosten välistä keskinäistä sijaintia. 
+
+\subsection{Teräsrakenteen kustannusten muodostuminen ja optimointi}
+
+Konepajavalmistetun teräskokoonpanon kustannukset muodostuvat materiaalista, valmistuksesta, kuljetuksesta konepajalta työmaalle ja asennuksesta työmaalla. Jaakko Haapio tutki väitöskirjassaan \parencite{haapio_doct} teollisten, toimisto- ja kaupallisten rakennusten teräsrunkojen kustannuksia ja kehitti laskentakaavat kokoonpanon kokonaiskustannusten arviointiin. Väitöskirjassa esitetty teoria tarjoaa myös hyvät lähtökohdat rakenteiden kustannusoptimointiin.
+
+Teräskokoonpanon valmistus ja siten kustannusten muodostuminen jaettiin väitöskirjassa kustannuspaikkoihin. Kokoonpanon kokonaiskustannus muodostuu kumulatiivisesti näiden kustannuspaikkojen osakustannuksista. Esitetyt kustannuspaikat ovat
+
+\begin{enumerate}
+\item Materiaalikustannukset $C_{SM}$
+\item Puhdistus- ja esikäsittelykustannukset $C_B$
+\item Leikkauskustannukset (levyrakenteille) $C_{Cu}$
+\item Katkaisukustannukset (profiileille) $C_S$
+\item Hitsatun profiilin hitsauskustannukset $C_{Bw}$
+\item Muodonleikkauskustannukset $C_{Co}$
+\item Porauskustannukset $C_D$
+\item Viimeistelykustannukset $C_{PT}$
+\item Pintakäsittelykustannukset $C_P$
+\item Kuljetuskustannukset $C_T$
+\item Asennuskustannukset $C_E$.
+\end{enumerate}
+
+Lisäksi voidaan erikseen esittää kokoonpanoon liittyvien osien kustannukset, joita ovat 
+
+\begin{enumerate}
+\item Liittyvien osien valmistuskustannukset $C_{PF}$
+\item Liittyvien osien asennuskustannukset $C_{PA}$.
+\end{enumerate}
+
+Valmistuskustannukset voidaan esittää ensimmäisen listan mukaisten kustannuspaikkojen avulla. Liittyvien osien asennuskustannukset jaotellaan pultti- ja hitsausliitoksiin. Tässä diplomityössä käsitellään ainoastaan teräsprofiiliin hitsaamalla liitettäviä levyosia. Näin ollen liittyvien osien asennuskustannus  $C_{PA}$ muodostuu pelkästään hitsaamisesta. Hitsatun profiilin hitsauskustannuksia $C_{Bw}$ ei käsitellä tässä työssä lainkaan. 
+
+Kunkin kustannuspaikan kustannus esitetään työhön käytetyn ajan ja hintatekijöiden tulojen perusteella kaavalla
+
+\begin{equation}
+\label{kustannuspaikka}
+C_k = (T_{Nk} + T_{Pk}) \frac{c_{Lk} + c_{Eqk} + c_{Mk} + c_{REk} + c_{Sek}}{u_k} + T_{Pk} (c_{Ck} + c_{Enk})+C_{Ck},
+\end{equation}  
+
+missä $C_k$ tarkoittaa kustannuspaikassa $k$ muodostuvaa kustannusta. $T_{Nk}$ tarkoittaa kustannuspaikassa tuottamatonta aikaa ja $T_{Pk}$ tuottavaa aikaa. Tuottamattomaksi ajaksi määritellään kaikki prosessia varten tehtävät valmistavat työt ja tuottavaksi ajaksi varsinainen prosessin mukainen työvaihe. Hintatekijöitä ovat työvoimakustannukset $c_{Lk}$, laiteinvestoinnit $c_{Eqk}$, laitteiden ylläpito- ja huoltokustannukset $c_{Mk}$, kiinteistö- ja tilakustannukset $c_{REk}$ ja tuotantotilojen ylläpitokustannukset $c_{Sek}$. Lisäksi pelkästään prosessissa tuottavan ajan perusteella muodostuu kustannuksia prosessista kuluvasta materiaalista $c_{Ck}$ ja prosessiin käytetystä energiasta $c_{Enk}$. Myös ajasta riippumattomat eli kiinteät kulut $C_{Ck}$ on esitetty. Prosessin hyötysuhdetta kuvataan muuttujalla $u_k$. \parencite{haapio}
+
+Materiaalikustannukset $C_{SM}$ muodostuvat valmistukseen raaka-aineena konepajalle tulevista teräslevyistä ja -profiileista. Teräsosan hinta määrittyy osan painon (kg) ja hintatekijöiden (\euro{}/kg) tulona. Hintatekijöitä ovat profiileille määritetyt valmiit massa- ja materiaaliperusteiset hinnat. Levyrakenteille vaikuttaa näiden lisäksi myös levyn paksuus sekä tilattavan levytavaran määrä.
+
+Puhdistus- ja esikäsittelykustannukset $C_B$ muodostuvat valmistettavaksi tarkoitetun raaka-aineen puhdistuksesta liasta ja rasvasta sekä ruostepinnan ja valssihilseen poistosta. Yleinen käytössä oleva menetelmä on suihkupuhdistus, johon myös väitöskirjan esittämät kustannukset nojaavat. Kustannukset muodostuvat kaavan (\ref{kustannuspaikka}) mukaisesti. Prosessiin käytetty tuottava aika perustuu kuljettimen nopeuteen ja suihkupuhdistettavan osan pituuteen. Prosessi on käytännössä jatkuva, joten siinä ei ole tuottamatonta aikaa. Prosessissa kuluva materiaali on suihkupuhdistuksessa käytettävät puhdistusrakeet. 
+
+Levyrakenteiden leikkaamisella tarkoitetaan raaka-ainelevystä joko poltto- tai plasmaleikkausmenetelmällä leikattavien levyosien irroitusta raaka-ainelevystä. Kustannus $C_{Cu}$ muodostuu kaavan (\ref{kustannuspaikka}) mukaisesti. Tuottavalla ajalla tarkoitetaan varsinaista leikkaustyötä, ja se muodostuu leikkeen pituuden ja leikkausnopeuden osamääränä. Prosessissa kuluva materiaali on leikkauksessa tarvittava kaasu sekä kuluvana osana kaasusuutin. 
+
+Teräsprofiilien sahaamiskustannukset muodostuvat raaka-aineprofiilin katkaisemisesta sahaamalla tarvittavaan mittaan. Kustannus $C_S$ muodostuu kaavan (\ref{kustannuspaikka}) mukaisesti. Tuottamaton aika muodostuu vakiokestoisten valmistelutöiden lisäksi myös profiilin kuljettamisesta kuljettimella, jolloin siihen vaikuttaa myös sahattavan profiilin pituus. Tuottava aika perustuu sahattavan profiilin dimensioihin, sahan liikkeen nopeuteen, sahattavaan materiaaliin ja sahaamistehokkuuteen. Prosessissa kuluva materiaali on sahanterän kuluminen. 
+
+Hitsauskustannuksista käsitellään tässä diplomityössä ainoastaan teräsprofiiliin liitettävien levyosien hitsaaminen, joka muodostaa koko profiiliin liitettävän osan asennuskustannuksen $C_{PA}$. Hitsaustyö jakautuu hitsattavan osan silloitukseen (puhekielessä heftaus) sekä varsinaiseen liittämishitsaukseen. Kustannus $C_{PA}$ muodostuu kaavan (\ref{kustannuspaikka}) mukaisesti. Väitöskirjassa on esitetty hitsaamiskustannukset piena- ja V-hitsille. Kustannus perustuu hitsin pituuteen ja hitsin vahvuuteen. \todo{tähän lisää kustannuksista}
+
+Muotoleikkauksella (coping) tarkoitetaan tässä profiiliin ja osiin tehtäviä kolouksia, lovia, aukkoja ja viisteitä. Nämä tehdään tavallisesti polttoleikkaamalla. Kustannus $C_{Co}$ muodostuu kaavan (\ref{kustannuspaikka}) mukaisesti. Tuottava aika muodostuu leikkausajasta, joka määritetään leikkeen pituuden ja leikkausnopeuden osamääränä, kuten levyosien leikkaaminenkin. Myös prosessissa kuluva materiaali muodostuu levyosien leikkaamisen tapaan leikkauksessa tarvittavasta kaasusta ja kuluvista kaasusuuttimista. 
+
+Porauskustannukset $C_D$ muodostuvat kokoonpanon pääosaan sekä siihen liittyviin osiin poraamalla tehtävistä rei'istä. Kustannus $C_D$ muodostuu kaavan (\ref{kustannuspaikka}) mukaisesti. Tuottamaton aika muodostuu valmistelutöiden lisäksi profiilin tai osan kuljettamisesta kuljettimella, jolloin myös käsiteltävän osan pituus vaikuttaa prosessin tuottamattomaan aikaan. Tuottava aika on poraustyötä ja sen pituus muodostuu materiaalin paksuudesta, porattavan reiän koosta ja poran syöttönopeudesta. Prosessissa kuluvana osana on poranterä.
+
+Viimeistelytöitä ovat käsittelyn jäljiltä jääneen teräspurseen poisto sekä hitsien tarkistus. Kustannus $C_{PT}$ määritellään soveltaen kaavaa (\ref{kustannuspaikka}) jättämällä esimerkiksi energia- ja materiaalikulukustannukset huomioimatta, sillä kustannus muodostuu ainoastaan työvoima- ja tilakustannuksista. Tuottava aika muodostuu pursepoistettavien reunojen pituudesta ja tarkastettavien hitsien pituuksista. 
+
+Pintakäsittelytyöt koostuvat pinnan maalauskäsittelystä ja kuivumisprosessista. Kustannus $C_P$ määritellään soveltaen kaavaa (\ref{kustannuspaikka}). Maalauskäsittelyä seuraava kuivumisprosessi on myös tuottavaa aikaa, jolloin pintakäsittelyprosessiin ei kokonaisuudessaan jää tuottamatonta aikaa tai se jää tuottavaan aikaan nähden niin lyhyeksi että se voidaan sivuttaa. Maalaukseen kuluva aika muodostuu maalattavan pinnan kuivapaksuudesta, maalattavasta pinta-alasta ja maalauslaitteen maalinvirtausnopeudesta. Myös käytettävä maalausjärjestelmä vaikuttaa kustannuksiin. Yleisimpiä käytössä olevia maalausjärjestelmiä ovat alkydi-, epoksi-, polyuretaani- ja akryylimaalit.  Materiaalikulu muodostuu prosessissa kuluvan maalin määrästä. \todo{jotain kuivumisesta}
+
+Kuljetuskustannukset muodostuvat teräskokoonpanon kuljetuksesta konepajalta työmaalle. Kuljetuksen hinta määräytyy joko massa- tai tilavuusperusteisesti ja kustannuksen suhde kuljetettavaan matkaan on Haapion väitöskirjan mukaan lineaarinen. 
+
+Asennuskustannukset $C_E$ muodostuvat kuorman purkamisesta työmaalla varastointialueelle, asennettavien teräskokoonpanojen siirrosta varastointialueelta nostoalueelle, teräskokoonpanon nostosta suunnitellulle paikalle ja kokoonpanon pulttikiinnityksestä muuhun teräsrunkoon. Kustannukset muodostuvat työhön kuluneesta ajasta, työvoimakustannuksista ja laitekuluista kaavaa (\ref{kustannuspaikka}) soveltaen. Asennusaika muodostuu teräskokoonpanon nostoon, liittämiseen, henkilönostimen käyttöön ja nostokoukun takaisin kuljettamiseen kuluvasta kokonaisajasta. Näihin aikoihin vaikuttaa edelleen nosturin ja henkilönostimen nopeudet ja noston vaatima matka.  Laitekulut muodostuvat nosturin ja siirtokaluston kuluista ja niihin vaikuttaa käyttömäärän (matka) lisäksi niiden tyyppi. 
+
+
+
+
+
+
+
 
 
 
