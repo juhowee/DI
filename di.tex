@@ -359,7 +359,7 @@ Muodon tai geometrian optimoinnissa eri rakenneosien välisten liitoskohtien sij
 
 Topologian optimoinnissa rakennekokonaisuudelle haetaan optimitopologia siten, että asetetut reunaehdot täyttyvät. Koska topologia käsitteenä kuvaa ainoastaan rakennekokonaisuuden sauvojen liittymistä toisiinsa sekä kokonaisuudessa olevien liitosten määrää, sisältää topologian optimointi tavallisesti myös geometrian ja mitoituksen optimoinnin. Topologian optimoinnissa haetaan siis esimerkiksi teräsristikon tapauksessa optimein sauvajärjestely muuttamalla sekä sauvojen ja liitosten määrää että liitosten välistä keskinäistä sijaintia. 
 
-\subsection{Teräsrakenteen kustannusten muodostuminen ja optimointi}
+\subsection{Teräsrakenteen kustannusten muodostuminen}
 
 Konepajavalmistetun teräskokoonpanon kustannukset muodostuvat materiaalista, valmistuksesta, kuljetuksesta konepajalta työmaalle ja asennuksesta työmaalla. Jaakko Haapio tutki väitöskirjassaan \parencite{haapio_doct} teollisten, toimisto- ja kaupallisten rakennusten teräsrunkojen kustannuksia ja kehitti laskentakaavat kokoonpanon kokonaiskustannusten arviointiin. Väitöskirjassa esitetty teoria tarjoaa myös hyvät lähtökohdat rakenteiden kustannusoptimointiin.
 
@@ -388,14 +388,14 @@ Lisäksi voidaan erikseen esittää kokoonpanoon liittyvien osien kustannukset, 
 
 Valmistuskustannukset voidaan esittää ensimmäisen listan mukaisten kustannuspaikkojen avulla. Liittyvien osien asennuskustannukset jaotellaan pultti- ja hitsausliitoksiin. Tässä diplomityössä käsitellään ainoastaan teräsprofiiliin hitsaamalla liitettäviä levyosia. Näin ollen liittyvien osien asennuskustannus  $C_{PA}$ muodostuu pelkästään hitsaamisesta. Hitsatun profiilin hitsauskustannuksia $C_{Bw}$ ei käsitellä tässä työssä lainkaan. 
 
-Kunkin kustannuspaikan kustannus esitetään työhön käytetyn ajan ja hintatekijöiden tulojen perusteella kaavalla
+Kunkin kustannuspaikan kustannus esitetään työhön käytetyn ajan $T$ ja hintatekijöiden $c$ tulojen perusteella kaavalla
 
 \begin{equation}
 \label{kustannuspaikka}
 C_k = (T_{Nk} + T_{Pk}) \frac{c_{Lk} + c_{Eqk} + c_{Mk} + c_{REk} + c_{Sek}}{u_k} + T_{Pk} (c_{Ck} + c_{Enk})+C_{Ck},
 \end{equation}  
 
-missä $C_k$ tarkoittaa kustannuspaikassa $k$ muodostuvaa kustannusta. $T_{Nk}$ tarkoittaa kustannuspaikassa tuottamatonta aikaa ja $T_{Pk}$ tuottavaa aikaa. Tuottamattomaksi ajaksi määritellään kaikki prosessia varten tehtävät valmistavat työt ja tuottavaksi ajaksi varsinainen prosessin mukainen työvaihe. Hintatekijöitä ovat työvoimakustannukset $c_{Lk}$, laiteinvestoinnit $c_{Eqk}$, laitteiden ylläpito- ja huoltokustannukset $c_{Mk}$, kiinteistö- ja tilakustannukset $c_{REk}$ ja tuotantotilojen ylläpitokustannukset $c_{Sek}$. Lisäksi pelkästään prosessissa tuottavan ajan perusteella muodostuu kustannuksia prosessista kuluvasta materiaalista $c_{Ck}$ ja prosessiin käytetystä energiasta $c_{Enk}$. Myös ajasta riippumattomat eli kiinteät kulut $C_{Ck}$ on esitetty. Prosessin hyötysuhdetta kuvataan muuttujalla $u_k$. \parencite{haapio}
+missä $C_k$ tarkoittaa kustannuspaikassa $k$ muodostuvaa kustannusta. $T_{Nk}$ tarkoittaa kustannuspaikassa tuottamatonta aikaa ja $T_{Pk}$ tuottavaa aikaa. Tuottamattomaksi ajaksi määritellään kaikki prosessia varten tehtävät valmistavat työt ja tuottavaksi ajaksi varsinainen prosessin mukainen työvaihe. Hintatekijöitä ovat työvoimakustannukset $c_{Lk}$, laiteinvestoinnit $c_{Eqk}$, laitteiden ylläpito- ja huoltokustannukset $c_{Mk}$, kiinteistö- ja tilakustannukset $c_{REk}$ ja tuotantotilojen ylläpitokustannukset $c_{Sek}$. Lisäksi pelkästään prosessissa tuottavan ajan perusteella muodostuu kustannuksia prosessista kuluvasta materiaalista $c_{Ck}$ ja prosessiin käytetystä energiasta $c_{Enk}$. Myös ajasta riippumattomat eli kiinteät kulut $C_{Ck}$ on esitetty. Prosessin hyötysuhdetta kuvataan muuttujalla $u_k$. \parencite{haapio_doct}
 
 Materiaalikustannukset $C_{SM}$ muodostuvat valmistukseen raaka-aineena konepajalle tulevista teräslevyistä ja -profiileista. Teräsosan hinta määrittyy osan painon (kg) ja hintatekijöiden (\euro{}/kg) tulona. Hintatekijöitä ovat profiileille määritetyt valmiit massa- ja materiaaliperusteiset hinnat. Levyrakenteille vaikuttaa näiden lisäksi myös levyn paksuus sekä tilattavan levytavaran määrä.
 
@@ -439,9 +439,21 @@ Kantavien rakenneosien stabiliteetti varmistetaan jäykistämällä rakennus. Ra
 
 Jäykistäminen ja jäykistejärjestelmän toimintatarkoitus jaetaan ulkoisia kuormia ja sisäisiä kuormia vastaanottaviin jäykisterakenteisiin. Tavallisesti jäykisterakenteista puhuttaessa ulkoisilla kuormilla tarkoitetaan ulkoisia vaakavoima, joita ovat esimerkiksi tuulikuorma ja pystykuormista rakenteille niiden epätarkkuuksista aiheutuvat lisävaakavoimat. Vaakakuormat aiheuttavat rakennukseen sivusiirtymiä tai kiertymää, jolloin pystykuormat muuttuvat rakenneosiin nähden epäkeskeiseksi ja puristetut rakenneosat ovat vaarassa menettää kantavuutensa esimerkiksi stabiliteetin menetyksen seurauksena. Jäykisterakenteiden on tarkoitus estää tätä vaakakuormista aiheutuvaa muodonmuutosta ja näin ollen säilyttää rakennuksen muoto jäykkänä kokonaisuutena, jolloin kuormat ohjautuvat rakenneosia pitkin suunnitellusti perustuksille. Tavallisia ulkoisia vaakakuormia vastaan toimivia jäykisterakenteita teräshallissa ovat katon tuuliristikko tai pilarien väliset vinositeet. 
 
-Sisäisiä voimia vastaan toimivilla jäykisteillä tarkoitetaan rakenteita, jotka tukevat kantavan rungon puristettuja tai taivutettuja rakenneosia stabiliteetin menetystä vastaan. Puristetuilla ja myös taivutetuilla rakenneosilla mitoittavaksi tekijäksi usein muodostuu sisäiset stabiliteetti-ilmiöt, kuten nurjahdus ja kiepahdus. Sisäisen jäykistejärjestelmän tarkoitus on muodostaa tukipisteitä näihin rakenneosiin ja näin estää nämä stabiliteetinmenetysilmiöt rajoittamalla vapaata nurjahdus- tai kiepahduspituutta. Yksi esimerkki sisäisestä jäykistysjärjestelmästä teräshallissa on kattoristikon yläpaarteen nurjahdustuennat, joista tavallisesti käytetään yleisnimitystä katon jäykistesiteet. 
+Sisäisiä voimia vastaan toimivilla jäykisteillä tarkoitetaan rakenteita, jotka tukevat kantavan rungon puristettuja tai taivutettuja rakenneosia stabiliteetin menetystä vastaan. Hoikilla puristetuilla ja myös taivutetuilla rakenneosilla mitoittavaksi tekijäksi usein muodostuu sisäiset stabiliteetti-ilmiöt, kuten nurjahdus ja kiepahdus. Sisäisen jäykistejärjestelmän tarkoitus on muodostaa tukipisteitä näihin rakenneosiin ja näin estää nämä stabiliteetinmenetysilmiöt rajoittamalla vapaata nurjahdus- tai kiepahduspituutta. Yksi esimerkki sisäisestä jäykistysjärjestelmästä teräshallissa on kattoristikon yläpaarteen nurjahdustuennat, joista tavallisesti käytetään yleisnimitystä katon jäykistesiteet tai katto-orret.
 
+Jäykistäminen perustuu rakenteiden mekaniikan otaksumaan, jonka mukaan rakenteisiin ja rakenteiden muodostamiin kokonaisuuksiin kohdistuva kuorma ohjautuu rakenteille niiden jäykkyyksien suhteessa. Koska rakennuksissa vaikuttavat pystykuormat ovat tavallisesti hyvin paljon vaakakuormia suurempia, toteutetaan rakenteet ensisijaisesti pystykuormia kantaviva runkorakenteina ja näille mitoitetaan erillinen yleensä huomattavasti kevyempi jäykistejärjestelmä vaakakuormia varten. Yksinkertainen jäykistysjärjestelmän toimintaperiaate on esitetty kuvassa (\ref{fig:jaykistys_periaate}).
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=10cm]{Kuvat/jaykistys_periaate.pdf}
+\caption{Periaatekuva ristikkorakenteisen jäykistystornin toimintaperiaatteesta.}
+\label{fig:jaykistys_periaate}
+\end{figure}
+
+Kuvassa on esitetty punaisella pilarirakenteeseen vaikuttava ulkoinen pysty- ja vaakakuorma ja vihreällä rakennetta tukevat tukireaktiot. Katkoviivalla on esitetty rakenteiden siirtymät. Vasemmanpuoleisessa tilanteessa puristetun pilarirakenteen jäykistäminen on toteutettu mastopilarirakenteella. Oikeanpuoleisessa tilanteessa puolestaan mastopilarin tuenta on muutettu nivelellisesti tuetuksi ja rakennetta tukee vaakasuunnassa jäykisteristikko. 
+
+Vasemmanpuoleisessa tilanteessa pilarin juureen kohdistuu kuormiin nähden vastakkaissuuntaiset ja yhtäsuuret tukireaktiot sekä vaakakuormasta aiheutuva taivutusmomentti. Oikeanpuoleisessa tilanteessa pilaria tukee ristikkomallinen jäykistejärjestelmä, joka on vaakakuorman suunnassa huomattavasti pilaria jäykempi rakenne ja näinollen suurin osa vaakakuormasta siirtyy tälle rakenteelle. Vasemmanpuoleisessa tilanteessa pilari jouduttaisiin mitoittamaan myös vaakakuormista aiheutuville rasituksille, kun taas oikeanpuoleisessa tilanteessa sen tarvitsee kantaa ainoastaan pystysuuntainen rasitus, mikä onkin sen pääasiallinen tarkoitus. Vaakakuormat vastaanotetaan jäykisterakenteella. Myös siirtymät ovat oikeanpuoleisessa tilanteessa huomattavasti vasemmanpuoleista tilannetta pienemmät, sillä jäykistysjärjestelmä tuo rakennekokonaisuudelle huomattavasti lisää jäykkyyttä vaakakuorman suunnassa. Jäykisteellä saadaan siis aikaiseksi pienemmät siirtymät sekä varsinainen kantava runkorakenne voidaan mitoittaa sen varsinaista käyttötarkoitusta eli pystykuormien kantamista varten.
+ 
 
 \subsection{Jäykisteen jäykkyyden ja lujuuden välinen yhteys}
 
@@ -452,7 +464,7 @@ Puristetun sauvan stabiliteetti perustuu Eulerin nurjahdukseen, jossa ideaalisuo
 P_{cr} = \frac{\pi^2 E I}{L_{cr}^2},
 \end{equation}
 
-missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L_{cr}$ on kyseistä nurjahdusmuotoa vastaava nurjahduspituus. Kaavan (\ref{euler}) mukaan pienentämällä sauvan nurjahduspituutta $L$ kasvaa sauvan kriittinen kuorma eksponentiaalisesti. Nurjahduspituuden pienentäminen voidaan toteuttaa lisäämällä sauvan poikittaisten tukien määrää. Tätä toimenpidettä kutsutaan jäykistämiseksi. Jäykistämisellä pyritään kasvattamaan sauvan kuormankantokykyä parantamalla sen stabiliteettia. Yksinkertaista puristetun sauvan ja jäykisteen rakennetta on esitetty kuvassa (\ref{fig:puristettu_sauva}), jossa nivelellisesti tuettua kuormalla $P$ puristettua sauvaa tuetaan keskikohdastaan joustavalla jäykisterakenteella. Sauvalla on alkuepäkeskisyys $\Delta_0$ sekä jäykistesiteen puristumasta aiheutuva siirtymä $\Delta$. Jäykistesiteen puristuma aiheuttaa jäykisteeseen aksiaalisen puristusvoiman $P_{br}$.
+missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti tarkasteltavan akselin ympäri ja $L_{cr}$ on kyseistä nurjahdusmuotoa vastaava nurjahduspituus. Kaavan (\ref{euler}) mukaan pienentämällä sauvan nurjahduspituutta $L$ kasvaa sauvan kriittinen kuorma eksponentiaalisesti. Nurjahduspituuden pienentäminen rakenteissa toteutetaan tavallisesti lisäämällä sauvan poikittaisten tukien määrää. Tätä toimenpidettä kutsutaan jäykistämiseksi. Jäykistämisellä pyritään kasvattamaan sauvan kuormankantokykyä parantamalla sen stabiliteettia. Yksinkertaista puristetun sauvan ja sitä tukevan jäykisteen muodostamaa rakennetta on esitetty kuvassa (\ref{fig:puristettu_sauva}), jossa nivelellisesti tuettua kuormalla $P$ puristettua sauvaa tuetaan keskikohdastaan joustavalla jäykisterakenteella. Sauvalla on alkuepäkeskisyys $\Delta_0$ sekä jäykistesiteen puristumasta aiheutuva siirtymä $\Delta$. Jäykistesiteen puristuma aiheuttaa jäykisteeseen aksiaalisen puristusvoiman $P_{br}$.
 
 \begin{figure}[htb]
 \centering
@@ -461,7 +473,7 @@ missä $E$ on materiaalin kimmokerroin, $I$ on poikkileikkauksen neliömomentti 
 \label{fig:puristettu_sauva}
 \end{figure}
 
-Jäykistävä rakenne tukee puristettua sauvaa siten, että nurjahdus pääsee tapahtumaan ainoastaan tuki- ja jäykistepisteiden välillä. Toimiakseen jäykisteellä tulee olla riittävä määrä aksiaalista jäykkyyttä sekä jäykisteen poikkileikkauksella lujuutta \parencite{winter}. Kun ideaalisuoraa sauvaa kuormitetaan kaavan (\ref{euler}) mukaisella kriittisellä kuormalla $P_{cr}$, on pienin toimivan jäykisteen aksiaalisen jäykkyyden arvo kaavan
+Jäykistävä rakenne tukee puristettua sauvaa siten, että nurjahdus pääsee tapahtumaan ainoastaan tuki- ja jäykistepisteiden välillä. Toimiakseen näin, tulee jäykisteellä olla riittävä määrä aksiaalista jäykkyyttä sekä jäykisteen poikkileikkauksella lujuutta \parencite{winter}. Kun ideaalisuoraa sauvaa kuormitetaan kaavan (\ref{euler}) mukaisella kriittisellä kuormalla $P_{cr}$, on pienin toimivan jäykisteen aksiaalisen jäykkyyden arvo kaavan
 
 \begin{equation}
 \label{ideaalijäykkyys}
@@ -484,9 +496,15 @@ Kerroin $\gamma_i$ & 2,000 &3,000 & 3,413 & 3,623 & 3,731
 \end{tabular}
 \end{table}
 
-Taulukosta huomataan, että siteiden määrän kasvaessa kasvaa myös vaadittu ideaalijäykkyyden arvo. Tämä on ilmeistä, sillä näin myös sauvaa voidaan kuormittaa suuremmalla puristusvoimalla sen nurjahduskestävyyden ollessa suurempi. Stephen Timoshenko esitti nämä kertoimet \parencite{timoshenko} johtamalla ne differentiaalilaskennan kautta jatkuvalle palkille joka tuettu jousituilla. 
+Taulukosta huomataan, että siteiden määrän kasvaessa kasvaa myös vaadittu ideaalijäykkyyden arvo. Tämä on ilmeistä, sillä näin myös sauvaa voidaan kuormittaa suuremmalla puristusvoimalla sen nurjahduskestävyyden ollessa suurempi. Stephen Timoshenko esitti nämä kertoimet \parencite{timoshenko} johtamalla ne differentiaalilaskennan kautta jatkuvalle palkille joka tuettu jousituilla. Jäykisteiden kasvaessa kertoimen arvo suppenee ja lähestyy arvoa 4,0. Tätä on havainnollistettu kuvaajassa (\ref{fig:jäykkyyskertoimet}).
 
-Myös George Winter päätyi samoihin kertoimiin \parencite{winter} yksinkertaisemmalla tavalla määrittämällä tasapainoehdot sauvan ja jäykisteiden välisten liittymispisteiden ympäri ja ratkaisemalla kertoimet sauvan ominaismuotojen kautta. Winterin teoria perustui otaksumaan, jossa liitospisteessä on fiktiivinen nivel, jolloin sauvaan ei kohdistu lainkaan taivutusmomenttia. Winterin esittämä tasapainomalli ottaa huomioon myös sauvan alkuepäkeskisyyden $\Delta_0$. Kuvan (\ref{fig:puristettu_sauva}) rakennemallista voidaan vastaavalla tavalla muodostaa tasapainoehto
+\begin{figure}[htb]
+\input{Kuvaajat/jäykkyyskerroin_timoshenko.tex}
+\caption{\parencite{timoshenko} mukaiset puristettua sauvaa tukevien siteiden ideaalijäykkyyden kertoimet. }
+\label{fig:jäykkyyskertoimet}
+\end{figure}
+
+Myös George Winter päätyi samoihin kertoimiin \parencite{winter} yksinkertaisemmalla tavalla määrittämällä tasapainoehdot sauvan ja jäykisteiden välisten liittymispisteiden ympäri ja ratkaisemalla kertoimet sauvan ominaismuotojen kautta. Winterin teoria perustui otaksumaan, jossa liitospisteessä on fiktiivinen nivel, jolloin sauvaan ei kohdistu lainkaan taivutusmomenttia. Winterin esittämä tasapainomalli ottaa huomioon myös sauvan alkuepäkeskisyyden $\Delta_0$. Kuvan (\ref{fig:puristettu_sauva}) rakennemallista voidaan vastaavalla tavalla muodostaa tasapainoehto tilanteessa jossa sauvaa tukee vain yksi jäykisteside. Tasapainoehto on
 
 \begin{equation}
 \label{tasapainoehto}
@@ -507,16 +525,38 @@ missä $\beta$ on jäykistesauvan aksiaalinen jäykkyys. Kun sijoitetaan tämä 
 \beta_{req} = \frac{2 P}{L} (\frac{\Delta_0}{\Delta} + 1),
 \end{equation}
 
-missä $\beta_{req}$ on siis jäykisteenä toimivan rakenteen vaadittu aksiaalinen jäykkyys kun huomioidaan alkusiirtymä $\Delta_0$. Ideaalisuoralla sauvalla ($\Delta_0$ = 0) kaava saa saman arvon kuin aikaisemmin esitetty ideaalijäykkyyden arvo (\ref{ideaalijäykkyys}), sillä taulukon (\ref{tab:ideaalijäykkyydet}) mukaisesti kyseisen rakenteen jäykkyyskerroin $\gamma_i$ = 2,0. Voidaan siis kirjoittaa, että yleisesti
+missä $\beta_{req}$ on siis jäykisteenä toimivan rakenteen vaadittu aksiaalinen jäykkyys kun huomioidaan alkusiirtymä $\Delta_0$. Ideaalisuoralla sauvalla ($\Delta_0$ = 0) kaava saa saman arvon kuin aikaisemmin esitetty ideaalijäykkyyden arvo (\ref{ideaalijäykkyys}), sillä taulukon (\ref{tab:ideaalijäykkyydet}) mukaisesti kyseisen rakenteen jäykkyyskerroin $\gamma_i$ = 2,0. Voidaan siis kirjoittaa, että yleisesti puristettua sauvaa tukevien jäykisteiden aksiaalisen jäykkyyden arvon on oltava vähintään
 
 \begin{equation}
 \label{breq_2}
 \beta_{req} = \beta_i (\frac{\Delta_0}{\Delta} + 1).
 \end{equation}
 
+Jäykistävään siteeseen kohdistuva voima riippuu jäykisteen aksiaalisesta jäykkyydestä ja puristumasta kaavan (\ref{jousiteoria}) mukaisesti. Kun merkitään systeemin kokonaissiirtymää $\Delta_T = \Delta_0 + \Delta$ ja sijoitetaan tämä tasapainoyhtälöön (\ref{tasapainoehto}) sekä edelleen ideaalijäykkyyden kaavaan (\ref{ideaalijäykkyys}) saadaan kokonaissiirtymälle $\Delta_T$ sekä jäykisteen todelliselle jäykkyydelle $\beta$ yhteys
 
+\begin{equation}
+\label{delta_tot}
+\Delta_T = \frac{\Delta_0}{1-\frac{P}{P_{cr}}} = \frac{\Delta_0}{1-\frac{\beta_i}{\beta}}.
+\end{equation}
 
+Tästä voidaan edelleen johtaa jousiteorian (\ref{jousiteoria}) mukaan jäykistesiteelle kohdistuvan voiman yhtälö
 
+\begin{equation}
+\label{jäykistevoima}
+P_{br} = \frac{\gamma_i P_{cr}}{L} \frac{\Delta_0}{1-\frac{P}{P_{cr}}} = \beta_i \frac{\Delta_0}{1-\frac{\beta_i}{\beta}}.
+\end{equation}
+
+Kaava osoittaa, että siteeseen kohdistuva voima riippuu hyvin paljon sen tukeman puristetun sauvan alkuvinoudesta $\Delta_0$. Mikäli alkuvinouden arvo on $\Delta_0 = 0$ ei jäykistesiteeseen Winterin teorian mukaisesti kohdistu lainkaan aksiaalista rasitusta. Käänteisesti tämä siis tarkoittaa sitä, että rakennetta jäykistäviin siteisiin kohdistuva voima on seurausta puristettujen rakenteiden vinoudesta. Tämä oli yksi Winterin mallin tärkeä havainto. Puristetun sauvan ollessa ideaalisuora, palautuu jäykkyysvaade kaavan (\ref{ideaalijäykkyys}) mukaiseen ideaalijäykän jäykistesiteen muotoon, kuten jo aikaisemmin todettiin ja jonka Timoshenko oli osoittanut. 
+
+Toinen Winterin mallin tärkeä havainto oli, että ideaalijäykillä siteillä jäykisteisiin kohdistuva voima on hyvin suuri, kuten kaava (\ref{jäykistevoima}) osoittaa. Kuvaajassa (\ref{fig:jäykistevoimakuvaaja}) on esitetty jäykistesiteeseen kohdistuvan voiman yhteys puristetussa sauvassa vaikuttavaan voimaan kun alkuvinouden arvo on $L/500$. Kuvaaja osoittaa, että hyvin pienen jäykkyyden omaavaan jäykistesiteeseen kohdistuva voima alkaa kasvaa ja lähestyä ääretöntä kun sen tukemassa sauvassa vaikuttava voima lähestyy sen kriittistä kuormaa. 
+
+\begin{figure}[htb]
+\input{Kuvaajat/jäykistevoima_2.tex}
+\caption{Winterin \parencite{winter} mallin mukainen jäykisteeseen kohdistuva voima kaavan (\ref{jäykistevoima}) mukaisesti erilaisilla siteen jäykkyyksillä alkuvinoiden arvolla $L/500$.}
+\end{figure}
+\label{fig:jäykistevoimakuvaaja}
+
+Tämä osoittaa, että jäykistesysteemiä ei voida suunnitella Timoshenkon mukaisen ideaalisen jäykkyyden (kaava \ref{ideaalijäykkyys} ja taulukko \ref{tab:ideaalijäykkyydet}) perusteella, vaan jäykisteiden jäykkyyden on oltava ideaalijäykkyyttä suurempia. Toisaalta jo 1,5 -kertainen jäykkyys ideaalijäykkyyteen nähden riittää kuvaajan (\ref{fig:jäykistevoimakuvaaja}) perusteella pitämään jäykistevoiman hallituissa rajoissa vaikka puristetussa sauvassa vaikuttaisi kriittisen kuorman suuruinen voima. 
 
 
 %Sauvan siirtyessä jäykisteen kohdalta kohdistaa se jäykisteeseen aksiaalisen puristuman. Jousiteorian nojalla jäykisteessä vaikuttava voima on 
@@ -559,6 +599,12 @@ missä $\beta_{req}$ on siis jäykisteenä toimivan rakenteen vaadittu aksiaalin
 %Vasemmanpuoleisessa kuvaajassa (\ref{fig:jäykistevoimakuvaaja}) kuvataan jäykisteessä vaikuttavaa voimaa suhteessa jäykisteen aksiaaliseen jäykkyyteen. Kuvaajasta havaitaan, että jäykkyyden lähestyessä kaavassa (\ref{ideaalijäykkyys}) määritettyä ideaalisen jäykkyyden arvoa $\beta_i$, alkaa jäykisteessä vaikuttava puristusvoima kasvaa lähestyen ääretöntä. Oikeanpuoleisessa (\ref{fig:jäykistevoimakuvaaja_2}) kuvaajassa puolestaan havainnollistetaan jäykistevoiman suhdetta puristetun sauvan normaalivoimaan eri jäykkyysarvot omaavilla jäykisteillä. Kuvaajasta voidaan havaita, että jäykisteen jäykkyyden ollessa ainoastaan $2\beta_i$, on suurimmillaan jäykisteessä vaikuttava aksiaalinen voima 0,6 \% puristetussa sauvassa vaikuttavasta voimasta ja jäykkyydellä $4\beta_i$ n. 0,25 \%.
 %
 %Edellä esitettyjen kaavojen perusteella voidaan todeta, jäykisteeltä vaaditaan vähintään ideaalijäykkyyden (kaava \ref{ideaalijäykkyys}) mukaista aksiaalista jäykkyyttä, että alkuvinouden vaatimaa lujuutta ja että näillä kahdella on yhteys, joka on kuvan (\ref{fig:puristettu_sauva}) mukaisessa alkeisrakenteessa kaavan (\ref{jäykistevoima}) suuruinen.  
+
+
+\subsection{Useaa puristettua sauvaa tukevan jäykistesarjan mitoitus}
+
+
+
 
 \subsection{Puristetun sauvan stabiliteetti EN 1993 mukaisesti}
 
@@ -612,26 +658,65 @@ Tässä diplomityössä käsiteltävät profiilit rajautuvat lujuusluokan S355 -
 
 
 
-\subsection{Ristikon yläpaarteen tuenta hallin pituussuunnassa}
+\subsection{Hallirakennuksen katon pituussuuntainen jäykistys}
 
-Teräsristikon puristettu yläpaarre on tuettava ristikon tasoon nähden poikittaisessa suunnassa rakennuksen pituussuuntaisin tukirakentein. Tukirakenteet on kuvattu ristikon tuentaa esittävässä kuvassa (\ref{fig:ristikon_nurjahdus}). Näistä tukirakenteista käytetään nimitystä kattositeet tai ristikon (nurjahdus)siteet ja ne kuuluvat osana rakennuksen jäykistysjärjestelmää.  \parencite{try_kaitila}
- 
+Teräshallin katon pituussuuntainen jäykistysjärjestelmä muodostuu katon tasossa olevista jäykisteristikoista sekä pääkannatinristikoiden yläpaarteita tukevista katto-orsista. Myös näihin rakenteisiin liittyvät osat kuten pääkannattimen yläpaarre, katon päätypalkki sekä pääty- ja pääpilarit kuuluvat osaltaan jäykistysjärjestelmään. Katon jäykistysjärjestelmän topologia ja jäykistysjärjestelmän osat on esitetty kuvassa (\ref{fig:kattojaykistys}).
+
 \begin{figure}[htb]
+\includegraphics[width=12cm]{Kuvat/kattojaykistys.pdf}
+\caption{Teräsrakenteisen hallin kattojäykistyksen periaate.}
+\label{fig:kattojaykistys}
+\end{figure}
 
-\includegraphics[width=15cm]{Kuvat/ristikko_upperchord_buckling.pdf}
+Katon päädyn tasoristikon tehtävänä on vastaanottaa hallin päätyyn kohdistuva tuulikuorma sekä katto-orsilta pääkannattimien tuennasta aiheutuva kuorma. Päätyristikosta käytetään myös nimitystä tuuliristikko. Päätyristikon rakenneosat on esitetty periaatteellisesti kuvassa (\ref{fig:tuuliristikko}). Ristikon paarteet muodostuvat hallin päätypalkista ja ensimmäisen kehän pääkannatinristikon yläpaarteesta. Nämä rakenneosat toimivat myös pystykuormaa kannattelevina rakenneosina päätyristikkoon nähden poikittaisessa suunnassa. Paarteet toimivat jatkuvina rakenteina. Päätypalkki on tavallisesti tuettu hallin päätypilareilla, joista käytetään myös nimitystä tuulipilarit. Jäykisteristikko muodostetaan näihin paarrerakenteisiin nivelellisesti liittyvillä uumasauvoilla eli diagonaaleilla sekä mahdollisilla vertikaalisauvoilla. 
+
+\begin{figure}[htb]
+\includegraphics[width=15cm]{Kuvat/tuuliristikko.pdf}
+\caption{Periaatekuva päädyn jäykisteristikon rakenteesta ja sen osista.}
+\label{fig:tuuliristikko}
+\end{figure}
+
+Periaatekuvassa (\ref{fig:kattojaykistys}) esitetyssä kattojäykistystopologiassa jäykisteristikon diagonaalit liittyvät päätypalkilla päätypilareiden yläpäähän ja ensimmäisen kehän pääkannatinristikon yläpaarteella katto-orsien kohdalle. Tällainen jäykistetopologia ei aiheuta jäykisteiden aksiaalisesta rasituksesta johtuvia poikittaisia taivutusmomentteja päätypalkille tai kattoristikon yläpaarteelle. Käytännön suunnittelussa kuitenkaan päätyristikon sauvoituksen topologian ei tarvitse johtaa tällaiseen tilanteeseen, vaan rakenneosille voidaan sallia myös poikittaista taivutusmomenttia, joka otetaan rakenneosien mitoituksessa huomioon. Päätyristikkoa esittävässä periaatekuvassa (\ref{fig:tuuliristikko}) onkin esitettynä tapaus, jossa tuuliristikon diagonaalit ja vertikaalit eivät päätypalkin kohdalla liity päätypilareiden kohdalle, vaan kytkeytyvät päätypalkin kentän alueelle. Pääkannatinristikon puolella katto-orret ja päätyristikon uumasauvat puolestaan kytkeytyvät samaan pisteeseen. Kuvan tapauksessa siis päätypalkki on mitoitettava myös päätyristikon aiheuttamalle poikittaiselle taivutukselle, mutta pääkannatinristikon yläpaarretta ei. 
+
+Kattojäykisteiden topologiasta voidaan siis eritellä neljä erilaista tapausta rakenteiden mitoituksen kannalta:
+
+\begin{enumerate}
+\item Päätypalkille ja pääkannatinristikon yläpaarteelle poikittaista taivutusta ei synny
+\item Päätypalkille aiheutuu päätyristikon uumasauvojen topologiasta poikittaista taivutusta
+\item Pääkannatinristikon yläpaarteelle aiheutuu päätyristikon uumasauvojen topologiasta poikittaista taivutusta
+\item Sekä päätypalkille että pääkannatinrisitkon yläpaarteelle aiheutuu päätyristikolta poikittaista taivutusta
+\end{enumerate}
+
+Nämä tapaukset on eritelty kuvassa (\ref{fig:tuuliristikko_topologiat}).
+
+\begin{figure}[htb]
+\includegraphics[width=12cm]{Kuvat/tuuliristikko_topologiat.pdf}
+\caption{Päätyristikon topologiavaihtoehdot katon rakenneosille poikittaista taivutusta aiheuttavien tapausten perusteella.}
+\label{fig:tuuliristikko_topologiat}
+\end{figure}
+
+Ristikon topologiaa suunniteltaessa voidaan diagonaalien geometria sitoa siis sekä päätypilareihin että katto-orsiin (1), pelkästään katto-orsiin (2), pelkästään päätypilareihin (3) tai suunnitella topologia täysin vapaasti (4). Ilmeistä on, että päätypalkin sekä pääkannatinristikon yläpaarteen mitoituksen kannalta edullisinta on tilanne, jossa poikittaista taivutusta ei synny. Päätypalkki on pystykuorman vuoksi taivutettu rakenne ja pääkannatinristikon yläpaarre puolestaan puristettu ja taivutettu rakenne, joten vaakasuuntainen taivutus johtaa näiden rakenteiden mitoituksessa kahden suunnan taivutuksen sekä yhdistetyn normaalivoiman mitoitustapaan. Kuitenkin taas päätyristikon massan tai sauvamäärän kannalta edullista voi olla mitoittaa rakenne niin, että poikittaista taivutusta päätyristikon paarreosille sallitaan. Näin ollen kyseessä on optimointitehtävä. 
+
+Pääkannatinristikon yläpaarteeseen liittyy kuvan (\ref{fig:kattojaykistys}) mukaisesti toisella puolella päätyristikko ja toisella puolella katto-orret. Katto-orsien tehtävä on jäykistää hallin pääkannatinristikoiden puristetut yläpaarteet pääkannatinristikon tasosta kohtisuoraa nurjahdusta vastaan. Tätä on havainnollistettu kuvassa (\ref{fig:ristikon_nurjahdus}). Katto-orret muodostavat yhdessä ristikoiden yläpaarteiden kanssa jäykistysjärjestelmän. Tämä jäykistysjärjestelmä tukeutuu kokonaisuudessaan hallin päätyristikkoon, sillä se on selkeästi katto-orsien jäykistysjärjestelmää jäykempi rakenne hallin pituussuunnassa. Päätyristikko mitoitetaan ulkoisen vaakakuorman (tuulikuorma) lisäksi myös katto-orsijärjestelmältä sille kohdistuvalle sisäiselle rasitukselle.  \parencite{try_kaitila}  
+
+
+\begin{figure}[htb]
+\includegraphics[width=12cm]{Kuvat/ristikko_upperchord_buckling.pdf}
 \caption{Putkiristikon puristetun yläpaarteen nurjahdusmuoto ja nurjahdustuennat.}
 \label{fig:ristikon_nurjahdus}
 \end{figure}
 
-Ristikon tuenta ja nurjahdustukien väliset etäisyydet $L$ suunnitellaan siten, että nurjahduksen kaavan (\ref{phi}) esittämä yläpaarteen nurjahduskapasiteetti $N_{b,Rd}$ ei alita paarteeseen ristikon pystykuormista aiheutuvaa aksiaalista puristusvoimaa. Puristusvoiman ylittäessä yläpaarteen nurjahduskapasiteetin, on yläpaarteeseen muodostuvan nurjahtavan sauvan nurjahdusmuoto kuvan (\ref{fig:ristikon_nurjahdus}) mukainen. Suunnittelustandardin (\citeauthor{en1993} liite BB) mukaan kaavassa (\ref{euler}) tarvittavaksi nurjahduspituudeksi voidaan putkiristikon paarteelle asettaa 0,9 kertaa ristikon poikittaistukien väli.
+Ristikon tuenta ja katto-orsien väliset etäisyydet $L$ suunnitellaan siten, että nurjahduksen kaavan (\ref{en_buckl_coeff}) esittämä yläpaarteen nurjahduskapasiteetti $N_{b,Rd}$ ei alita paarteessa vaikuttavaa aksiaalista puristusvoimaa. Puristusvoiman ylittäessä yläpaarteen nurjahduskapasiteetin, on yläpaarteeseen muodostuvan nurjahtavan sauvan nurjahdusmuoto kuvan (\ref{fig:ristikon_nurjahdus}) mukainen. Suunnittelustandardin (\citeauthor{en1993} liite BB) mukaan kaavassa (\ref{euler}) tarvittavaksi nurjahduspituudeksi voidaan putkiristikon paarteelle asettaa 0,9 kertaa katto-orsien välinen etäisyys.
 
-Ristikko kannattelee pystykuormaa palkin tavoin. Ristikon paarteet toimivat taivutuksessa kuten palkin laipat vastaanottaen taivutusmomentista aiheutuvan veto- ja puristusrasituksen. Uumasauvat välittävät leikkausrasituksia palkin uuman tavoin. Koska ristikko ei kuitenkaan ole jatkuva rakenne, paarteille kohdistuvan normaalivoiman jakauma on jatkuvan jakauman sijasta portaittainen. Tätä porrastusta on havainnollistettu kuvassa (\ref{fig:ristikon_yläpaarteen_puristus}), jossa on esitettynä ristikon yläpaarteen puristusvoiman porrastuksen periaate. Normaalivoima puristetulla yläpaarteella muttuu aina vedetyn uumasauvan kohdalla, kuten kuva esittää. 
+Pääkannatinristikon toiminta perustuu sen paarteiden ja uumasauvojen yhteistoimintaa ja kannattelee pystykuormaa palkin tavoin. Ristikon paarteet toimivat taivutuksessa kuten palkin laipat vastaanottaen taivutusmomentista aiheutuvan veto- ja puristusrasituksen. Uumasauvat välittävät leikkausrasituksia palkin uuman tavoin. Koska ristikko ei kuitenkaan ole jatkuva rakenne, paarteille kohdistuvan normaalivoiman jakauma on jatkuvan jakauman sijasta portaittainen. Tätä porrastusta on havainnollistettu kuvassa (\ref{fig:ristikon_yläpaarteen_puristus}), jossa on esitettynä ristikon yläpaarteen puristusvoiman porrastuksen periaate. Normaalivoima puristetulla yläpaarteella muttuu aina vedetyn uumasauvan kohdalla, kuten kuva esittää. 
 
 \begin{figure}[htb]
 \includegraphics[width=15cm]{Kuvat/ristikko_paarre_normaalivoima.pdf}
 \caption{Periaatekuva normaalivoiman $N_c$ portaittaisesta jakautumisesta ristikon yläpaarteelle pystykuormasta $p$ Pratt -tyypin ristikossa.}
 \label{fig:ristikon_yläpaarteen_puristus}
 \end{figure}
+
+
 
 
 

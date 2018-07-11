@@ -18,16 +18,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Ter\IeC {\"a}srakenteen massan optimointi}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Ter\IeC {\"a}srakenteen kustannusten muodostuminen ja optimointi}{7}
+\contentsline {subsection}{\numberline {2.4}Ter\IeC {\"a}srakenteen kustannusten muodostuminen}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Ter\IeC {\"a}shallin j\IeC {\"a}ykist\IeC {\"a}minen}{12}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}J\IeC {\"a}ykist\IeC {\"a}minen yleisesti}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}J\IeC {\"a}ykisteen j\IeC {\"a}ykkyyden ja lujuuden v\IeC {\"a}linen yhteys}{12}
+\contentsline {subsection}{\numberline {3.2}J\IeC {\"a}ykisteen j\IeC {\"a}ykkyyden ja lujuuden v\IeC {\"a}linen yhteys}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{15}
+\contentsline {subsection}{\numberline {3.3}Useaa puristettua sauvaa tukevan j\IeC {\"a}ykistesarjan mitoitus}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Ristikon yl\IeC {\"a}paarteen tuenta hallin pituussuunnassa}{17}
+\contentsline {subsection}{\numberline {3.4}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {}Viitteet}{19}
+\contentsline {subsection}{\numberline {3.5}Hallirakennuksen katon pituussuuntainen j\IeC {\"a}ykistys}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {}Viitteet}{24}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.28)  17 JUN 2018 23:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.28)  11 JUL 2018 16:24
 entering extended mode
 **./di.tex
 (di.tex
@@ -1533,15 +1533,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'di.bbl' found.
-(di.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                haapio
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(di.bbl)
 Package biblatex Info: Reference section=0 on input line 152.
 Package biblatex Info: Reference segment=0 on input line 152.
 
@@ -1709,22 +1701,12 @@ File: Kuvat/mitoitusoptimointi.pdf Graphic file (type pdf)
 Package pdftex.def Info: Kuvat/mitoitusoptimointi.pdf  used on input line 353.
 (pdftex.def)             Requested size: 199.16928pt x 107.04016pt.
 [6]
-Overfull \hbox (2.58401pt too wide) in paragraph at lines 362--362
-|[]\T1/phv/b/n/14.4 Teräsrakenteen kus-tan-nus-ten muo-dos-tu-mi-nen ja op-ti-m
-oin-
- []
-
-
 Overfull \hbox (1.79785pt too wide) in paragraph at lines 364--365
 \T1/lmr/m/n/12 val-mis-tuk-ses-ta, kul-je-tuk-ses-ta ko-ne-pa-jal-ta työ-maal-l
 e ja asen-nuk-ses-ta työ-maal-la. Jaak-
  []
 
 [7 <./Kuvat/mitoitusoptimointi.pdf>] [8] [9]
-
-LaTeX Warning: Marginpar on page 10 moved.
-
-
 Overfull \hbox (4.60074pt too wide) in paragraph at lines 416--417
 []\T1/lmr/m/n/12 Pintakäsittelytyöt koos-tu-vat pin-nan maa-laus-kä-sit-te-lys-
 tä ja kui-vu-mis-pro-ses-sis-ta. Kus-
@@ -1736,35 +1718,69 @@ Overfull \hbox (2.53828pt too wide) in paragraph at lines 418--419
 je-tuk-ses-ta ko-ne-pa-jal-ta työ-
  []
 
-[10] [11] [12
+[10] [11]
+<Kuvat/jaykistys_periaate.pdf, id=72, 824.77403pt x 434.7271pt>
+File: Kuvat/jaykistys_periaate.pdf Graphic file (type pdf)
+<use Kuvat/jaykistys_periaate.pdf>
+Package pdftex.def Info: Kuvat/jaykistys_periaate.pdf  used on input line 448.
+(pdftex.def)             Requested size: 284.52756pt x 149.97437pt.
+ [12
 
-]
-<Kuvat/puristettu_sauva.pdf, id=75, 614.295pt x 794.97pt>
+] [13 <./Kuvat/jaykistys_periaate.pdf, page is rotated 270 degrees>]
+<Kuvat/puristettu_sauva.pdf, id=84, 614.295pt x 794.97pt>
 File: Kuvat/puristettu_sauva.pdf Graphic file (type pdf)
 <use Kuvat/puristettu_sauva.pdf>
-Package pdftex.def Info: Kuvat/puristettu_sauva.pdf  used on input line 459.
+Package pdftex.def Info: Kuvat/puristettu_sauva.pdf  used on input line 471.
 (pdftex.def)             Requested size: 142.26378pt x 184.1008pt.
- [13 <./Kuvat/puristettu_sauva.pdf>] [14] (Kuvaajat/nurjahdus.tex) [15]
-Overfull \hbox (14.63622pt too wide) in paragraph at lines 611--612
+ [14 <./Kuvat/puristettu_sauva.pdf>]
+(Kuvaajat/jÃ¤ykkyyskerroin_timoshenko.tex) [15] [16]
+(Kuvaajat/jÃ¤ykistevoima_2.tex)
+Overfull \hbox (17.80905pt too wide) in paragraph at lines 604--604
+|[]\T1/phv/b/n/14.4 Useaa pu-ris-tet-tua sau-vaa tu-ke-van jäy-kis-te-sar-jan m
+i-toi-tus| 
+ []
+
+[17] (Kuvaajat/nurjahdus.tex) [18]
+Overfull \hbox (14.63622pt too wide) in paragraph at lines 657--658
 []\T1/lmr/m/n/12 Tässä diplo-mi-työs-sä kä-si-tel-tä-vät pro-fii-lit ra-jau-tu-
 vat lu-juus-luo-kan S355 -rakenneputkiin,
  []
 
-[16]
-<Kuvat/ristikko_upperchord_buckling.pdf, id=229, 596.34697pt x 257.39963pt>
+<Kuvat/kattojaykistys.pdf, id=242, 536.42406pt x 330.79576pt>
+File: Kuvat/kattojaykistys.pdf Graphic file (type pdf)
+<use Kuvat/kattojaykistys.pdf>
+Package pdftex.def Info: Kuvat/kattojaykistys.pdf  used on input line 666.
+(pdftex.def)             Requested size: 341.43306pt x 210.55267pt.
+[19]
+<Kuvat/tuuliristikko.pdf, id=246, 1058.68387pt x 555.42178pt>
+File: Kuvat/tuuliristikko.pdf Graphic file (type pdf)
+<use Kuvat/tuuliristikko.pdf>
+Package pdftex.def Info: Kuvat/tuuliristikko.pdf  used on input line 674.
+(pdftex.def)             Requested size: 426.79134pt x 223.91063pt.
+ [20 <./Kuvat/kattojaykistys.pdf>]
+<Kuvat/tuuliristikko_topologiat.pdf, id=253, 797.85976pt x 376.71959pt>
+File: Kuvat/tuuliristikko_topologiat.pdf Graphic file (type pdf)
+<use Kuvat/tuuliristikko_topologiat.pdf>
+Package pdftex.def Info: Kuvat/tuuliristikko_topologiat.pdf  used on input line
+ 693.
+(pdftex.def)             Requested size: 341.43306pt x 161.21024pt.
+ [21 <./Kuvat/tuuliristikko.pdf>]
+<Kuvat/ristikko_upperchord_buckling.pdf, id=264, 596.34697pt x 257.39963pt>
 File: Kuvat/ristikko_upperchord_buckling.pdf Graphic file (type pdf)
 <use Kuvat/ristikko_upperchord_buckling.pdf>
 Package pdftex.def Info: Kuvat/ristikko_upperchord_buckling.pdf  used on input 
-line 621.
-(pdftex.def)             Requested size: 426.79134pt x 184.21214pt.
-<Kuvat/ristikko_paarre_normaalivoima.pdf, id=230, 561.5161pt x 98.88945pt>
+line 704.
+(pdftex.def)             Requested size: 341.43306pt x 147.37129pt.
+
+[22 <./Kuvat/tuuliristikko_topologiat.pdf, page is rotated 270 degrees> <./Kuva
+t/ristikko_upperchord_buckling.pdf>]
+<Kuvat/ristikko_paarre_normaalivoima.pdf, id=276, 561.5161pt x 98.88945pt>
 File: Kuvat/ristikko_paarre_normaalivoima.pdf Graphic file (type pdf)
 <use Kuvat/ristikko_paarre_normaalivoima.pdf>
 Package pdftex.def Info: Kuvat/ristikko_paarre_normaalivoima.pdf  used on input
- line 631.
+ line 714.
 (pdftex.def)             Requested size: 426.79134pt x 75.1643pt.
- [17 <./Kuvat/ristikko_upperchord_buckling.pdf>] [18 <./Kuvat/ristikko_paarre_n
-ormaalivoima.pdf>] [19
+ [23 <./Kuvat/ristikko_paarre_normaalivoima.pdf>] [24
 
 ] (di.aux (kansilehti.aux))
 Package logreq Info: Writing requests to 'di.run.xml'.
@@ -1772,18 +1788,18 @@ Package logreq Info: Writing requests to 'di.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34091 strings out of 493305
- 793808 string characters out of 3130237
- 1392752 words of memory out of 3000000
- 37020 multiletter control sequences out of 15000+200000
+ 34149 strings out of 493305
+ 795438 string characters out of 3130237
+ 1632005 words of memory out of 3000000
+ 37066 multiletter control sequences out of 15000+200000
  76314 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,96p,1199b,2424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,96p,1247b,2416s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
-}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
-enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
-t.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.
+enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
+sy.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
+m.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
 thex.enc}{C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/
 8r.enc}<C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/euro
 sym/feymr10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
@@ -1792,19 +1808,20 @@ blic/lm/lmbx12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 ype1/public/lm/lmcsc10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/lm/lmex10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/lm/lmmi12.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/JUVA/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/JUVA/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/JUVA/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/JUVA/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/JUVA/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/JUVA/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/JUVA/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on di.pdf (22 pages, 401527 bytes).
+.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/JUVA/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/JUVA/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/JUVA/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/JUVA/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/JUVA/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/JUVA/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/JUVA/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/JUVA/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/JUVA/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on di.pdf (27 pages, 500744 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
+ 347 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
