@@ -45,6 +45,37 @@
       \field{title}{Introduction to optimum design}
       \field{year}{2004}
     \endentry
+    \entry{mazzolani}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=d9f4ec5e046805e9bb1c93b5ae386020}{%
+           family={Ballio},
+           familyi={B\bibinitperiod},
+           given={Giulio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cd119e09011dce9f27791cbbe9423747}{%
+           family={Mazzolani},
+           familyi={M\bibinitperiod},
+           given={Federico\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2a784f9ab60ca4ac472dedb07647d605}
+      \strng{fullhash}{2a784f9ab60ca4ac472dedb07647d605}
+      \strng{bibnamehash}{2a784f9ab60ca4ac472dedb07647d605}
+      \strng{authorbibnamehash}{2a784f9ab60ca4ac472dedb07647d605}
+      \strng{authornamehash}{2a784f9ab60ca4ac472dedb07647d605}
+      \strng{authorfullhash}{2a784f9ab60ca4ac472dedb07647d605}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-412-23660-5}
+      \field{title}{Theory and design of steel structures}
+      \field{year}{1983}
+    \endentry
     \entry{haapio_doct}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=38b99968b5d9a06114fa9c2357feb8da}{%

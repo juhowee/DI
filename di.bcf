@@ -1989,22 +1989,24 @@
     <bcf:citekey order="12">mela_doct</bcf:citekey>
     <bcf:citekey order="13">haapio_doct</bcf:citekey>
     <bcf:citekey order="14">haapio_doct</bcf:citekey>
-    <bcf:citekey order="15">winter</bcf:citekey>
-    <bcf:citekey order="16">timoshenko</bcf:citekey>
-    <bcf:citekey order="17">timoshenko</bcf:citekey>
+    <bcf:citekey order="15">mazzolani</bcf:citekey>
+    <bcf:citekey order="16">mazzolani</bcf:citekey>
+    <bcf:citekey order="17">winter</bcf:citekey>
     <bcf:citekey order="18">timoshenko</bcf:citekey>
     <bcf:citekey order="19">timoshenko</bcf:citekey>
-    <bcf:citekey order="20">winter</bcf:citekey>
-    <bcf:citekey order="21">winter</bcf:citekey>
+    <bcf:citekey order="20">timoshenko</bcf:citekey>
+    <bcf:citekey order="21">timoshenko</bcf:citekey>
     <bcf:citekey order="22">winter</bcf:citekey>
-    <bcf:citekey order="23">ziemian</bcf:citekey>
-    <bcf:citekey order="24">en1993</bcf:citekey>
-    <bcf:citekey order="25">en1993</bcf:citekey>
+    <bcf:citekey order="23">winter</bcf:citekey>
+    <bcf:citekey order="24">winter</bcf:citekey>
+    <bcf:citekey order="25">ziemian</bcf:citekey>
     <bcf:citekey order="26">en1993</bcf:citekey>
     <bcf:citekey order="27">en1993</bcf:citekey>
     <bcf:citekey order="28">en1993</bcf:citekey>
-    <bcf:citekey order="29">try_kaitila</bcf:citekey>
+    <bcf:citekey order="29">en1993</bcf:citekey>
     <bcf:citekey order="30">en1993</bcf:citekey>
+    <bcf:citekey order="31">try_kaitila</bcf:citekey>
+    <bcf:citekey order="32">en1993</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

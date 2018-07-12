@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.28)  11 JUL 2018 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.28)  12 JUL 2018 11:08
 entering extended mode
 **./di.tex
 (di.tex
@@ -1719,68 +1719,68 @@ je-tuk-ses-ta ko-ne-pa-jal-ta työ-
  []
 
 [10] [11]
-<Kuvat/jaykistys_periaate.pdf, id=72, 824.77403pt x 434.7271pt>
+<Kuvat/jaykistys_periaate.pdf, id=72, 837.46292pt x 561.8403pt>
 File: Kuvat/jaykistys_periaate.pdf Graphic file (type pdf)
 <use Kuvat/jaykistys_periaate.pdf>
 Package pdftex.def Info: Kuvat/jaykistys_periaate.pdf  used on input line 448.
-(pdftex.def)             Requested size: 284.52756pt x 149.97437pt.
+(pdftex.def)             Requested size: 284.52756pt x 190.886pt.
  [12
 
 ] [13 <./Kuvat/jaykistys_periaate.pdf, page is rotated 270 degrees>]
 <Kuvat/puristettu_sauva.pdf, id=84, 614.295pt x 794.97pt>
 File: Kuvat/puristettu_sauva.pdf Graphic file (type pdf)
 <use Kuvat/puristettu_sauva.pdf>
-Package pdftex.def Info: Kuvat/puristettu_sauva.pdf  used on input line 471.
+Package pdftex.def Info: Kuvat/puristettu_sauva.pdf  used on input line 473.
 (pdftex.def)             Requested size: 142.26378pt x 184.1008pt.
- [14 <./Kuvat/puristettu_sauva.pdf>]
-(Kuvaajat/jÃ¤ykkyyskerroin_timoshenko.tex) [15] [16]
-(Kuvaajat/jÃ¤ykistevoima_2.tex)
-Overfull \hbox (17.80905pt too wide) in paragraph at lines 604--604
+ [14] (Kuvaajat/jÃ¤ykkyyskerroin_timoshenko.tex) [15 <./Kuvat/puristettu_sauva.
+pdf>] [16] (Kuvaajat/jÃ¤ykistevoima_2.tex)
+Overfull \hbox (17.80905pt too wide) in paragraph at lines 606--606
 |[]\T1/phv/b/n/14.4 Useaa pu-ris-tet-tua sau-vaa tu-ke-van jäy-kis-te-sar-jan m
 i-toi-tus| 
  []
 
 [17] (Kuvaajat/nurjahdus.tex) [18]
-Overfull \hbox (14.63622pt too wide) in paragraph at lines 657--658
+Overfull \hbox (14.63622pt too wide) in paragraph at lines 659--660
 []\T1/lmr/m/n/12 Tässä diplo-mi-työs-sä kä-si-tel-tä-vät pro-fii-lit ra-jau-tu-
 vat lu-juus-luo-kan S355 -rakenneputkiin,
  []
 
-<Kuvat/kattojaykistys.pdf, id=242, 536.42406pt x 330.79576pt>
+[19]
+<Kuvat/kattojaykistys.pdf, id=245, 536.42406pt x 330.79576pt>
 File: Kuvat/kattojaykistys.pdf Graphic file (type pdf)
 <use Kuvat/kattojaykistys.pdf>
-Package pdftex.def Info: Kuvat/kattojaykistys.pdf  used on input line 666.
+Package pdftex.def Info: Kuvat/kattojaykistys.pdf  used on input line 668.
 (pdftex.def)             Requested size: 341.43306pt x 210.55267pt.
-[19]
 <Kuvat/tuuliristikko.pdf, id=246, 1058.68387pt x 555.42178pt>
 File: Kuvat/tuuliristikko.pdf Graphic file (type pdf)
 <use Kuvat/tuuliristikko.pdf>
-Package pdftex.def Info: Kuvat/tuuliristikko.pdf  used on input line 674.
+Package pdftex.def Info: Kuvat/tuuliristikko.pdf  used on input line 676.
 (pdftex.def)             Requested size: 426.79134pt x 223.91063pt.
  [20 <./Kuvat/kattojaykistys.pdf>]
 <Kuvat/tuuliristikko_topologiat.pdf, id=253, 797.85976pt x 376.71959pt>
 File: Kuvat/tuuliristikko_topologiat.pdf Graphic file (type pdf)
 <use Kuvat/tuuliristikko_topologiat.pdf>
 Package pdftex.def Info: Kuvat/tuuliristikko_topologiat.pdf  used on input line
- 693.
+ 695.
 (pdftex.def)             Requested size: 341.43306pt x 161.21024pt.
  [21 <./Kuvat/tuuliristikko.pdf>]
 <Kuvat/ristikko_upperchord_buckling.pdf, id=264, 596.34697pt x 257.39963pt>
 File: Kuvat/ristikko_upperchord_buckling.pdf Graphic file (type pdf)
 <use Kuvat/ristikko_upperchord_buckling.pdf>
 Package pdftex.def Info: Kuvat/ristikko_upperchord_buckling.pdf  used on input 
-line 704.
+line 706.
 (pdftex.def)             Requested size: 341.43306pt x 147.37129pt.
 
-[22 <./Kuvat/tuuliristikko_topologiat.pdf, page is rotated 270 degrees> <./Kuva
-t/ristikko_upperchord_buckling.pdf>]
-<Kuvat/ristikko_paarre_normaalivoima.pdf, id=276, 561.5161pt x 98.88945pt>
+[22 <./Kuvat/tuuliristikko_topologiat.pdf, page is rotated 270 degrees>]
+<Kuvat/ristikko_paarre_normaalivoima.pdf, id=272, 561.5161pt x 98.88945pt>
 File: Kuvat/ristikko_paarre_normaalivoima.pdf Graphic file (type pdf)
 <use Kuvat/ristikko_paarre_normaalivoima.pdf>
 Package pdftex.def Info: Kuvat/ristikko_paarre_normaalivoima.pdf  used on input
- line 714.
+ line 716.
 (pdftex.def)             Requested size: 426.79134pt x 75.1643pt.
- [23 <./Kuvat/ristikko_paarre_normaalivoima.pdf>] [24
+
+[23 <./Kuvat/ristikko_upperchord_buckling.pdf> <./Kuvat/ristikko_paarre_normaal
+ivoima.pdf>] [24
 
 ] (di.aux (kansilehti.aux))
 Package logreq Info: Writing requests to 'di.run.xml'.
@@ -1788,10 +1788,10 @@ Package logreq Info: Writing requests to 'di.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34149 strings out of 493305
- 795438 string characters out of 3130237
- 1632005 words of memory out of 3000000
- 37066 multiletter control sequences out of 15000+200000
+ 34154 strings out of 493305
+ 795554 string characters out of 3130237
+ 1637387 words of memory out of 3000000
+ 37071 multiletter control sequences out of 15000+200000
  76314 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,19n,96p,1247b,2416s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1819,7 +1819,7 @@ rams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/JUVA/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/JUVA/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/JUVA/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on di.pdf (27 pages, 500744 bytes).
+Output written on di.pdf (27 pages, 504020 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

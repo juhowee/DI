@@ -24,12 +24,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}J\IeC {\"a}ykist\IeC {\"a}minen yleisesti}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}J\IeC {\"a}ykisteen j\IeC {\"a}ykkyyden ja lujuuden v\IeC {\"a}linen yhteys}{13}
+\contentsline {subsection}{\numberline {3.2}J\IeC {\"a}ykisteen j\IeC {\"a}ykkyyden ja lujuuden v\IeC {\"a}linen yhteys}{14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Useaa puristettua sauvaa tukevan j\IeC {\"a}ykistesarjan mitoitus}{18}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Puristetun sauvan stabiliteetti EN 1993 mukaisesti}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Hallirakennuksen katon pituussuuntainen j\IeC {\"a}ykistys}{19}
+\contentsline {subsection}{\numberline {3.5}Hallirakennuksen katon pituussuuntainen j\IeC {\"a}ykistys}{20}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {}Viitteet}{24}
