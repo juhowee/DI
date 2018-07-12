@@ -1,0 +1,292 @@
+% Dokumentin asetukset
+\documentclass[12pt]{article}
+
+\usepackage{mathtools}
+
+\usepackage[finnish,english]{babel}	% Kielimäärittelyt
+
+\usepackage{lmodern}					% Tavutus skandinaavisille
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+	
+\usepackage{tabularx}					% Paremmat taulukot
+
+\usepackage{graphicx}					% Grafiikkapaketti
+
+\usepackage{setspace} 					% Kansilehden tarkastajaboksia varten
+\usepackage{hyphenat} 					% Joku höskä kansilehden toimintaa varten
+
+
+%Lähdeluettelon muotoilua
+% Määritetään viittaukset nimi-vuosiluku -tyylille
+\usepackage[backend=biber,style=authoryear,giveninits=true,maxcitenames=2]{biblatex}		
+% Pakotetaan lähdeluettelon muotoilu sukunimi-etunimi -muotoon				
+\DeclareNameAlias{author}{last-first}
+% Lähdeluettelon merkintöjen välille 1.5 riviväliä
+\setlength\bibitemsep{1.5\itemsep}
+% Poistetaan lainausmerkit "" ja kursiivit teoksen nimistä lähdeluettelossa
+\DeclareFieldFormat*{title}{#1}
+\DeclareFieldFormat*{journaltitle}{#1}
+\DeclareFieldFormat*{booktitle}{#1}
+
+% Korvataan "ja" -> & -merkillä lähdeluettelossa
+\AtBeginBibliography{
+\renewcommand*{\finalnamedelim}{%
+\ifnumgreater{\value{liststop}}{2}{}{}%
+\addspace\&\space}%
+}
+
+% Korvataan "ja" -> & -merkillä viitteissä
+\AtEveryCite{
+\renewcommand*{\finalnamedelim}{%
+\ifnumgreater{\value{liststop}}{2}{}{}%
+\addspace\&\space}%
+}
+
+\usepackage[parfill]{parskip}			% Poistaa kappaleen ensimmäisen rivin sisennyksen käytöstä
+
+\usepackage{helvet}						% Helvetica -fontti otsikoita varten
+
+\usepackage{titlesec}					% Otsikkojen tyylien muokkaus
+\usepackage[ampersand]{easylist}
+\usepackage{amssymb}
+
+\usepackage{fancyhdr}
+
+\usepackage[textsize=small]{todonotes}	% TODO -merkinnät
+\setlength{\marginparwidth}{2.3cm}
+
+% Kuva- ja taulukkotekstien asetukset
+\usepackage[labelsep=period]{caption}
+\captionsetup{labelfont={it,bf},textfont=it}
+
+% Listausmerkinnät
+\ListProperties(Hide=100, Space*=0.6pt, Hang=true, Progressive=3ex, Style*=-- ,
+Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
+
+% Sivun asetukset
+\RequirePackage[paper=a4paper,inner=4cm,outer=2cm,top=2.5cm,bottom=2.5cm,headsep=1em]{geometry}
+%\setlength\brokenpenalty{1000}
+\setstretch{1.2} % Line height
+
+% Asetetaan uusi otsikko (section) alkamaan uudelta sivulta
+\newcommand{\sectionbreak}{\clearpage}
+
+% Sivunumerointi sivun oikeaan yläkulmaan
+\pagestyle{myheadings}
+
+% Sivunumerointityyli precontent -osiossa (roomalaiset)
+\newenvironment{precontent}{\pagenumbering{roman}}{\cleardoublepage}
+
+% Sivunumerointityyli content -osiossa (numeerinen)
+\newenvironment{content}{\pagenumbering{arabic}}{}
+
+% Sivunumerointi vain erillisellä komennolla 
+\pagenumbering{gobble}
+
+% Dokumentin tiedot
+\title{BETONIN VALINTA LATTIOIHIN}
+\author{JUHO VASTAPUU}
+\newcommand{\documenttype}{Kandidaatintyö} % Työn tyyppi kansilehdellä, esim. "diplomityö"
+\newcommand{\inspector}   {TkT Jukka Lahdensivu } % Työn tarkastaja
+\newcommand{\approvaldate}{6.6.2016}      % Työn hyväksyttämispäivämäärä
+
+% Sisällysluettelon otsikko suomeksi.
+\addto\captionsfinnish{
+  \renewcommand{\contentsname}%
+    {SISÄLLYSLUETTELO}%
+}
+
+% ------------
+% Images
+%
+% The first parameter is width of the image, and defaults to
+% 70% of page width.
+% Usage example: \centeredpicture[1.0]{esimKuva}{Matlabilla tehty PDF-muotoinen esimerkkikuva.}
+% ------------
+\newcommand{\centeredpicture}[3][0.7]{
+        \begin{figure}[h]
+        \begin{center}
+        \includegraphics[width=#1\textwidth]{#2}
+        \end{center}
+        \caption{#3}
+        \label{fig:#2}
+        \end{figure}
+}
+
+\newcommand{\tablefromimage}[3][0.7]{
+        \begin{table}[h]
+        \caption{#3}
+        \label{table:#2}
+        \end{table}
+        \begin{figure}[h]
+        \begin{center}
+        \includegraphics[width=#1\textwidth]{#2}
+        \end{center}
+        \end{figure}
+}
+
+% Poistaa () -merkinnät vuosiluvun ympäriltä lähdeluettelossa
+%\renewcommand\harvardyearleft{\unskip, }
+%\renewcommand\harvardyearright[1]{.} 
+
+
+
+\addbibresource{biblio.bib}
+
+
+
+\begin{document}
+
+\selectlanguage{finnish}
+
+
+\include{kansilehti}
+
+% Määritetään precontent -osion otsikkotyyli
+\titleformat{\section}
+        {\Large\sffamily\bfseries}
+        {\makebox[2em][l]{\thesection}}
+        {0pt}
+        {\uppercase}
+\titlespacing{\section}{0pt}{0pt}{18pt}
+
+\begin{precontent}
+\section*{Tiivistelmä}
+\begin{spacing}{1.0}
+{\fontfamily{phv}\selectfont
+\textbf{JUHO VASTAPUU}: Betonin valinta lattioihin\\
+Tampereen teknillinen yliopisto\\
+Kandidaatintyö, 27 sivua, 2 liitesivua\\
+Kesäkuu 2016\\
+Rakennustekniikan kandidaatin tutkinto-ohjelma\\
+Pääaine: Talonrakentaminen\\
+Tarkastaja: TkT Jukka Lahdensivu\par
+
+Avainsanat: betonilattia, betonilaatta, lattialuokka, kutistuminen, halkeilu, betonin valinta, lattiabetoni, työselostus\par
+}
+\end{spacing}
+
+
+
+
+
+\section*{Alkusanat}
+
+
+\tableofcontents
+
+\end{precontent}
+
+% Määritetään content -osion otsikkotyylit
+\titleformat{\section}
+        {\Large\sffamily\bfseries}
+        {\makebox[2em][l]{\thesection}}
+        {0pt}
+        {\uppercase}
+\titlespacing{\section}{0pt}{0pt}{42pt}
+
+\titleformat{\subsection}
+        {\large\sffamily\bfseries}
+        {\makebox[2em][l]{\thesubsection}}
+        {0pt}
+        {}
+\titlespacing{\subsection}{0pt}{18pt}{12pt}
+
+\titleformat{\subsubsection}
+        {\large\sffamily\bfseries}
+        {\makebox[3em][l]{\thesubsubsection}}
+        {0pt}
+        {}
+\titlespacing{\subsubsection}{0pt}{18pt}{12pt}
+
+
+
+\begin{content}
+
+
+\section{Johdanto}
+
+\subsection{Tutkimuksen tausta}
+\subsection{Työn tavoitteet}
+\subsection{Työn rajaukset}
+
+\section{Optimointi}
+\subsection{Optimointi matematiikassa}
+
+Matemaattisella optimoinnilla tarkoitetaan prosessia, jolla löydetään jollekkin funktiolle paras mahdollinen arvo sille asetetut reunaehdot huomioiden. Asettamalla optimoitava kohde sekä halutut rajoite-ehdot matemaattiseen muotoon, voidaan optimoimalla löytää matemaattisin keinoin paras käypä ratkaisu. Käyvällä ratkaisulla tarkoitetaan ratkaisua, joka kuuluu annettujen rajoite-ehtojen joukkoon. 
+
+Matemaattisesti optimoinnissa on tavoitteena etsiä funktiolle käyvästä joukosta minimi- tai maksimiarvo. Optimointitekniikoita ja algoritmeja on kehitetty lukuisia ja kukin niistä soveltuu käytettäväksi eri tavalla eri optimointitehtäviin. Optimointi ja erilaisten optimoitimenetelmien tutkiminen on yksi matemaattisen operaatiotutkimuksen osa-alueista. Optimoinnista voidaan joissain yhteyksissä käyttää myös nimitystä matemaattinen ohjelmointi (engl. mathematical programming), jolla viitataan matemaattisten algoritmien kehittämiseen ja ohjelmoimista optimointitarkoituksiin.  \parencite[1]{engopt}
+
+Optimointitehtävä kirjoitetaan matemaattisesti seuraavanlaisessa muodossa.
+\begin{equation*}
+\text{Etsi } \textbf{x} = 
+\begin{Bmatrix} 
+x_1 \\ 
+x_2 \\ 
+\vdots \\
+x_n  
+\end{Bmatrix}
+\text{    joka minimoi } f(\textbf{X}) \text{, siten että}
+\end{equation*}
+\begin{align}
+\begin{split}
+g_j(\textbf{x}) \leq 0, \quad j = 1,2, \cdots , m  \\ 
+h_j(\textbf{x}) = 0, \quad j = 1,2, \cdots , p
+\end{split}
+\end{align}
+
+missä \textbf{x} on pystyvektori, joka sisältää n-kappaletta suunnittelumuuttujia, f(\textbf{x}) on tavoitefunktio, $g_j(\textbf{x})$ ja $h_j(\textbf{x})$ ovat rajoite-ehtoja. Rajoite-ehdot voivat olla yhtälön mukaisesti joko epäyhtälö- tai yhtälömuotoisesti ilmoitettuja. Suunnittelumuuttujien lukumäärä (n) sekä rajoite-ehtojen lukumäärä (m ja/tai p) eivät ole riippuvaisia toisistaan. Tällaista optimointitehtävää kutsutaan rajoitetuksi optimointiongelmaksi. Optimointiongelman ei kuitenkaan tarvitse olla rajoitettu, vaan se voidaan ilmoittaa myös rajoittamattomana. \parencite[6]{engopt}
+
+Vektori \textbf{x} sisältää optimointitehtävän kaikki suunnittelumuuttujat. Muuttamalla jonkin suunnittelumuuttujan $x_i$ arvoa, muuttuu myös tavoitefunktion f(\textbf{x}) arvo. Suunnittelumuuttujista voidaan käyttää myös nimitystä optimointimuuttujat tai vapaat muuttujat, eli niiden arvoja voidaan muutella vapaasti kun haetaan tavoitefunktiolle arvoa. Toisistaan riippumattomien eli itsenäisten suunnittelumuuttujien lukumäärä on optimointiongelman vapausasteluku (design degree of freedom). Yleisesti ottaen suunnittelumuuttujien tulee olla toisistaan riippumattomia, mutta joissain tapauksissa niiden määrä voi olla ongelman vapausastelukua suurempi. Tämä on perusteltua esimerkiksi silloin, kun kohdefunktion määrittely pelkillä itsenäisillä suunnittelumuuttujilla olisi hankalaa. Jokaiselle suunnittelumuuttujalle täytyy myös pystyä asettamaan jokin numeerinen lähtöarvo, jotta optimointitehtävä pystytään suorittamaan. 
+
+Kohde- tai tavoitefunktio f(\textbf{x}) on optimointitehtävän matemaattinen muoto ilmoitettuna suunnittelumuuttujavektorin \textbf{x} funktiona. Optimointitehtävän tavoitteena on joko minimoida tai maksimoida kohdefunktion arvo. Mikäli optimointitehtävässä on useampi kuin yksi kohdefunktio, käytetään tehtävästä nimitystä monitavoiteoptimointi. Tällöin kohdefunktio ilmaistaan matemaattisesti kohdefunktioiden joukkona 
+\begin{align}
+\textbf{f(x)} = \begin{bmatrix}
+f_1(\textbf{x}) &  f_2(\textbf{x}) & \cdots & f_p(\textbf{x})
+\end{bmatrix},
+\end{align}
+jossa jokainen kohdefunktio koostuu kuitenkin samasta suunnittelumuuttujavektorista \textbf{x}.
+
+
+
+\parencite[16-17]{intro}
+
+
+\subsection{Rakenteiden optimointi}
+
+
+%\section{Algoritmiavusteinen suunnittelu}
+%\subsection{Parametrinen suunnittelu}
+%\subsection{Algoritmiavusteinen mallinnus}
+%\subsection{Teräsrakenteiden algoritmiavusteinen suunnittelu}
+
+%\section{Teräshallin jäykistäminen}
+%\subsection{Rakennuksen kokonaisstabiliteetti}
+%\subsection{Teräshallin jäykistysjärjestelmän osat}
+%\subsection{Standardit ja suunnitteluohjeet}
+
+%\section{Pituussuuntaisen jäykistyksen optimointi Grasshopperilla}
+%\subsection{Parametrit}
+%\subsection{Suunnittelumuuttujat}
+%\subsection{Ohjelman rakenne ja rajoitteet}
+%\subsection{Optimointi Galapagoksella}
+%\subsection{Tulokset}
+
+%\section{Johtopäätökset}
+%\subsection{Tavoitteiden saavuttaminen}
+%\subsection{Tulosten analysointi}
+%\subsection{Yhteenveto}
+
+
+\section*{Viitteet}
+\addcontentsline{toc}{section}{\protect\numberline{}Viitteet}
+\renewcommand{\addcontentsline}[3]{}
+\renewcommand{\section}[2]{}
+%\bibliographystyle{authoryear} 
+\printbibliography[title=none,heading=none]   % b) heading in Finnish
+%\addtocontents{toc}{%               % b) add Finnish heading to table of contents
+%\protect\noindent Lähteet\protect\par
+
+\end{content}
+\end{document}
